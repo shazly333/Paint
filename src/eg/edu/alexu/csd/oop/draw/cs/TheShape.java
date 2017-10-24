@@ -1,8 +1,8 @@
 package eg.edu.alexu.csd.oop.draw.cs;
 
-import eg.edu.alexu.csd.oop.draw.Shape;
-
-import java.awt.*;
+import java.awt.Color;
+import java.awt.Graphics;
+import java.awt.Point;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.util.HashMap;
@@ -11,13 +11,13 @@ import java.util.Map;
 
 public abstract class TheShape implements eg.edu.alexu.csd.oop.draw.Shape {
     public static String[] types = {"Circle","Rectangle","Ellipse","Line","Triangle","Square"};
-    private int  typeInd = -1;
-    private Point pos = new Point(0,0);
-    private Map<String, Double> prop = new HashMap<String, Double>();
+    int  typeInd = -1;
+    Point pos = new Point(0,0);
+    Map<String, Double> prop = new HashMap<String, Double>();
     Color col = new Color(Color.HSBtoRGB(0,0,0));
     Color fillCol = new Color(Color.HSBtoRGB(255,255,255));
     @Override
-    public void setPosition(Point position) {
+    public void setPosition(final Point position) {
         pos = position;
     }
 
@@ -27,7 +27,7 @@ public abstract class TheShape implements eg.edu.alexu.csd.oop.draw.Shape {
     }
 
     @Override
-    public void setProperties(Map<String, Double> properties) {
+    public void setProperties(final Map<String, Double> properties) {
         prop = properties;
     }
 
@@ -37,7 +37,7 @@ public abstract class TheShape implements eg.edu.alexu.csd.oop.draw.Shape {
     }
 
     @Override
-    public void setColor(Color color) {
+    public void setColor(final Color color) {
         col = color;
     }
 
@@ -47,7 +47,7 @@ public abstract class TheShape implements eg.edu.alexu.csd.oop.draw.Shape {
     }
 
     @Override
-    public void setFillColor(Color color) {
+    public void setFillColor(final Color color) {
         fillCol = color;
     }
 

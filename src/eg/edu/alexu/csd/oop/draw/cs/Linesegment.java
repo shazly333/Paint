@@ -5,11 +5,18 @@ import java.io.BufferedReader;
 import java.io.BufferedWriter;
 
 public class Linesegment extends TheShape {
-
+    final String endxx = "endx";
+    final String endyy = "endy";
+    public Linesegment (final double endx, final double endy)
+    {
+        this.prop.put(endxx, endx);
+        this.prop.put(endyy, endx);
+    }
     @Override
     public void draw(final Graphics canvas) {
         // TODO Auto-generated method stub
-
+        canvas.setColor(this.col);
+        canvas.drawLine(this.pos.x, this.pos.y, prop.get(endxx).intValue(), prop.get(endyy).intValue());
     }
 
     @Override
