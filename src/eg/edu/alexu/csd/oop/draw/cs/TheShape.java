@@ -5,6 +5,7 @@ import java.awt.Graphics;
 import java.awt.Point;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -14,6 +15,7 @@ public abstract class TheShape implements eg.edu.alexu.csd.oop.draw.Shape {
     int  typeInd = -1;
     Point pos = new Point(0,0);
     Map<String, Double> prop = new HashMap<String, Double>();
+    public static ArrayList<TheShape> allshapes = new ArrayList<>();
     Color col = new Color(Color.HSBtoRGB(0,0,0));
     Color fillCol = new Color(Color.HSBtoRGB(255,255,255));
     @Override

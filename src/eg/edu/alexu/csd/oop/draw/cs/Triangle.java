@@ -15,14 +15,27 @@ public class Triangle extends TheShape {
     final String pointby = "pointby";
     int [] allx;
     int [] ally;
+    public Triangle ()
+    {
+        this.prop.put(pointax, 1.0);
+        this.prop.put(pointay, 1.0);
+        this.prop.put(pointbx, 5.0);
+        this.prop.put(pointby, 5.0);
+        this.prop.put(pointcx, 9.0);
+        this.prop.put(pointcy, 9.0);
+        final int [] xx = {1, 5, 9};
+        final int [] yy = {1, 5, 9};
+        allx = xx;
+        ally = yy;
+    }
     public Triangle (final Point a, final Point b, final Point c)
     {
         this.prop.put(pointax, (double) a.x);
-        this.prop.put(pointax, (double) a.y);
-        this.prop.put(pointax, (double) b.x);
-        this.prop.put(pointax, (double) b.y);
-        this.prop.put(pointax, (double) c.x);
-        this.prop.put(pointax, (double) c.y);
+        this.prop.put(pointay, (double) a.y);
+        this.prop.put(pointbx, (double) b.x);
+        this.prop.put(pointby, (double) b.y);
+        this.prop.put(pointcx, (double) c.x);
+        this.prop.put(pointcy, (double) c.y);
         final int [] xx = {a.x, b.x, c.x};
         final int [] yy = {a.y, b.y, c.y};
         allx = xx;
@@ -32,7 +45,6 @@ public class Triangle extends TheShape {
     public void draw(final Graphics canvas) {
         // TODO Auto-generated method stub
         canvas.setColor(this.col);
-        //   canvas.drawpo(this.pos.x, this.pos.y, prop.get(width).intValue(), prop.get(height).intValue());
         canvas.drawPolygon(allx, ally, 3);
     }
 
@@ -40,7 +52,8 @@ public class Triangle extends TheShape {
     @Override
     public Object clone() throws CloneNotSupportedException {
         // TODO Auto-generated method stub
-        return null;
+        TheShape.allshapes.add(new Triangle());
+        return allshapes.get(allshapes.size() - 1 );
     }
 
     @Override

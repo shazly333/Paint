@@ -1,14 +1,25 @@
 package eg.edu.alexu.csd.oop.draw.cs;
 
 import java.awt.Graphics;
+import java.awt.Point;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 
 public class Square extends TheShape {
-    final String length = "len";
-    public Square (final double len)
-    {
+    final String length = "length";
+    final String startxx = "startxx";
+    final String Startyy = "Starty";
+
+    public Square () {
+        this.prop.put(length, 1.0);
+        this.prop.put(startxx, 2.0);
+        this.prop.put(Startyy, 2.0);
+    }
+    public Square (final double len, final Point bottomleft) {
         this.prop.put(length, len);
+        this.prop.put(startxx, (double) bottomleft.x);
+        this.prop.put(Startyy, (double) bottomleft.y);
+
     }
     @Override
     public void draw(final Graphics canvas) {
@@ -20,7 +31,8 @@ public class Square extends TheShape {
     @Override
     public Object clone() throws CloneNotSupportedException {
         // TODO Auto-generated method stub
-        return null;
+        TheShape.allshapes.add(new Square());
+        return allshapes.get(allshapes.size() - 1 );
     }
 
     @Override
