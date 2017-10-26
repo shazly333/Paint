@@ -19,8 +19,10 @@ public class BasicOpsTest extends Application {
         primaryStage.setTitle("Drawing Operations Test");
         final Group root = new Group();
         final Canvas canvas = new Canvas(300, 250);
+        final Circle n =new Circle();
         final GraphicsContext gc = canvas.getGraphicsContext2D();
-        drawShapes(gc);
+        //  n.draw(gc);
+        // drawShapes(gc);
         root.getChildren().add(canvas);
         primaryStage.setScene(new Scene(root));
         primaryStage.show();

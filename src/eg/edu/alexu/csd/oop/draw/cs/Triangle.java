@@ -1,9 +1,13 @@
 package eg.edu.alexu.csd.oop.draw.cs;
 
+import java.awt.BasicStroke;
 import java.awt.Graphics;
+import java.awt.Graphics2D;
 import java.awt.Point;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Triangle extends TheShape {
 
@@ -25,6 +29,8 @@ public class Triangle extends TheShape {
         this.prop.put(pointcy, 9.0);
         final int [] xx = {1, 5, 9};
         final int [] yy = {1, 5, 9};
+        this.pos.x = prop.get(pointax).intValue();
+        this.pos.y = prop.get(pointay).intValue();
         allx = xx;
         ally = yy;
     }
@@ -36,6 +42,8 @@ public class Triangle extends TheShape {
         this.prop.put(pointby, (double) b.y);
         this.prop.put(pointcx, (double) c.x);
         this.prop.put(pointcy, (double) c.y);
+        this.pos.x = prop.get(pointax).intValue();
+        this.pos.y = prop.get(pointay).intValue();
         final int [] xx = {a.x, b.x, c.x};
         final int [] yy = {a.y, b.y, c.y};
         allx = xx;
@@ -44,16 +52,29 @@ public class Triangle extends TheShape {
     @Override
     public void draw(final Graphics canvas) {
         // TODO Auto-generated method stub
-        canvas.setColor(this.col);
+        ((Graphics2D)canvas).setColor(this.fillCol);
+        canvas.fillPolygon(allx, ally, 3);
+        ((Graphics2D)canvas).setColor(this.col);
+        ((Graphics2D)canvas).setStroke(new BasicStroke(2));
         canvas.drawPolygon(allx, ally, 3);
+
     }
 
 
     @Override
     public Object clone() throws CloneNotSupportedException {
         // TODO Auto-generated method stub
-        TheShape.allshapes.add(new Triangle());
-        return allshapes.get(allshapes.size() - 1 );
+        final TheShape newshape = new Circle();
+        newshape.setColor(this.col);
+        newshape.setFillColor(this.fillCol);
+        newshape.setPosition(this.pos);
+        final Map<String, Double> newprop = new HashMap<String, Double>();
+        for (final Map.Entry<String, Double> entry : this.prop.entrySet()) {
+            newprop.put(entry.getKey(), entry.getValue());
+        }
+        newshape.setProperties(newprop);
+        TheShape.allshapes.add(newshape);
+        return newshape;
     }
 
     @Override
