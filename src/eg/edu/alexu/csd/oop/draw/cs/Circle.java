@@ -9,12 +9,14 @@ import java.io.BufferedWriter;
 import java.util.HashMap;
 import java.util.Map;
 
+import javafx.scene.canvas.GraphicsContext;
+
 public class Circle extends TheShape {
     final String radius1 = "radius";
     final String centerxx = "centerx";
     final String centeryy = "centery";
     public Circle() {
-        this.prop.put(radius1, 50.0);
+        this.prop.put(radius1, 100.0);
         this.prop.put(centerxx, 0.0);
         this.prop.put(centeryy, 0.0);
         this.pos.x = prop.get(centerxx).intValue();
@@ -36,6 +38,14 @@ public class Circle extends TheShape {
         ((Graphics2D)canvas).setColor(this.col);
         ((Graphics2D)canvas).setStroke(new BasicStroke(2));
         canvas.drawOval(prop.get(centerxx).intValue(), prop.get(centeryy).intValue(), prop.get(radius1).intValue(), prop.get(radius1).intValue());
+
+    }
+    public void draww( final GraphicsContext canvas) {
+        canvas.setFill(fil);
+        canvas.fillOval(prop.get(centerxx).intValue(), prop.get(centeryy).intValue(), prop.get(radius1).intValue(), prop.get(radius1).intValue());
+        (canvas).setStroke(this.colr);
+
+        canvas.strokeOval(prop.get(centerxx).intValue(), prop.get(centeryy).intValue(), prop.get(radius1).intValue(), prop.get(radius1).intValue());
 
     }
 
@@ -65,4 +75,5 @@ public class Circle extends TheShape {
         // TODO Auto-generated method stub
 
     }
+
 }

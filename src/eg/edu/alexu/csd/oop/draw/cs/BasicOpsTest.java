@@ -21,7 +21,9 @@ public class BasicOpsTest extends Application {
         final Canvas canvas = new Canvas(300, 250);
         final Circle n =new Circle();
         final GraphicsContext gc = canvas.getGraphicsContext2D();
-        //  n.draw(gc);
+        final GraphicsContext a = canvas.getGraphicsContext2D();
+
+        n.draww(a);
         // drawShapes(gc);
         root.getChildren().add(canvas);
         primaryStage.setScene(new Scene(root));
