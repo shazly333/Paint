@@ -8,7 +8,7 @@ public class UpdateShape implements Command{
     public Shape newShape;
     Command removeShape;
     Command addShape;
-    public void UpdateShape(Shape oldShape,Shape newShape){
+    public UpdateShape(Shape oldShape,Shape newShape){
         this.newShape = newShape;
         this.oldShape = oldShape;
         removeShape = new RemoveShape(oldShape);

@@ -5,10 +5,8 @@ import eg.edu.alexu.csd.oop.draw.Shape;
 
 import java.awt.*;
 import java.io.*;
-import java.util.HashMap;
-import java.util.LinkedList;
+import java.util.*;
 import java.util.List;
-import java.util.Map;
 
 public class MyDrawingEngine implements DrawingEngine {
 
@@ -18,6 +16,8 @@ public class MyDrawingEngine implements DrawingEngine {
     private LinkedList<Command> commands = new LinkedList<>();
     private Canvas canvas = new Canvas();
     private MyDrawingEngine() {};
+    private Stack<Command> done = new Stack<>();
+    private Stack<Command> undone = new Stack<>();
 
     public synchronized MyDrawingEngine getInstance()
     {
@@ -41,18 +41,26 @@ public class MyDrawingEngine implements DrawingEngine {
 
     @Override
     public void addShape(Shape shape) {
-        shapes.add(shape);
+        undone.empty();
+        Command addShape = new AddShape(shape);
+        addShape.execute();
+        done.push(addShape);
     }
 
     @Override
     public void removeShape(Shape shape) {
-        shapes.remove(shape);
+        undone.empty();
+        Command removeShape = new RemoveShape(shape);
+        removeShape.execute();
+        done.push(removeShape);
     }
 
     @Override
     public void updateShape(Shape oldShape, Shape newShape) {
-        shapes.remove(oldShape);
-        shapes.add(newShape);
+        undone.empty();
+        Command updateShape = new UpdateShape(oldShape,newShape);
+        updateShape.execute();
+        done.push(updateShape);
     }
 
     @Override
@@ -67,113 +75,39 @@ public class MyDrawingEngine implements DrawingEngine {
 
     @Override
     public void undo() {
-
+        if(done.size() > 0)
+        {
+            Command command = done.pop();
+            command.reverse();
+            undone.push(command);
+        }
+        else
+        {
+            throw new RuntimeException();
+        }
     }
 
     @Override
     public void redo() {
-
+        if(undone.size() > 0)
+        {
+            Command command = undone.pop();
+            command.execute();
+            done.push(command);
+        }
+        else
+        {
+            throw new RuntimeException();
+        }
     }
 
     @Override
     public void save(String path) {
-        BufferedWriter outstream = null;
-        try {
-            outstream = new BufferedWriter(new FileWriter(path));
-            writeInt(outstream,shapes.size());
-            for (Shape shape : shapes) {
-                writeTheShape(outstream,(TheShape)shape);
-            }
-        } catch (Exception e) {}
-        finally {
-            if (outstream != null) {
-                try {
-                    outstream.close();
-                } catch (IOException e) {}
-            }
-        }
+        Saver.save(path,shapes);
     }
 
     @Override
     public void load(String path) {
-        BufferedReader instream = null;
-        try {
-            instream = new BufferedReader(new FileReader(path));
-            int size = readInt(instream);
-            for(int i = 0;i < size;i++)
-            {
-                shapes.add(readTheShape(instream));
-            }
-        }
-        catch (Exception e) {}
-        finally {
-            if (instream != null) {
-                try {
-                    instream.close();
-                } catch (IOException e) {}
-            }
-        }
-    }
-    private void writeTheShape(BufferedWriter outstream,TheShape shape) throws IOException {
-        writeInt(outstream,shape.getTypeInd());
-        writePoint(outstream,shape.getPosition());
-        writeColor(outstream,shape.getColor());
-        writeColor(outstream,shape.getFillColor());
-        writeDoubleMap(outstream,shape.getProperties());
-    }
-    private  void writePoint(BufferedWriter outstream,Point point) throws IOException {
-        writeInt(outstream,point.x);
-        writeInt(outstream,point.y);
-    }
-    private void writeColor(BufferedWriter outstream,Color color) throws IOException {
-        writeInt(outstream,color.getRGB());
-    }
-    private void writeInt(BufferedWriter outstream,int n) throws IOException {
-        outstream.write(Integer.toString(n)+"\n");
-    }
-    private void writeDouble(BufferedWriter outstream,double n) throws IOException {
-        outstream.write(Double.toString(n)+"\n");
-    }
-    private void writeDoubleMap(BufferedWriter outstream, Map<String, Double> map) throws IOException {
-        writeInt(outstream,map.size());
-        for(Map.Entry entry : map.entrySet())
-        {
-            outstream.write(entry.getKey()+"\n");
-            writeDouble(outstream,(Double) entry.getValue());
-        }
-    }
-    private int readInt(BufferedReader instream) throws IOException {
-        return Integer.parseInt(instream.readLine());
-    }
-    private double readDouble(BufferedReader instream) throws IOException {
-        return Double.parseDouble(instream.readLine());
-    }
-    private Map<String, Double> readDoubleMap(BufferedReader instream) throws IOException {
-        HashMap<String, Double> map = new HashMap<>();
-        int size = readInt(instream);
-        for (int i = 0;i < size;i++)
-        {
-            String key = instream.readLine();
-            Double value = readDouble(instream);
-            map.put(key,value);
-        }
-        return map;
-    }
-    private Point readPoint(BufferedReader instream) throws IOException {
-        Point point = new Point();
-        point.x = readInt(instream);
-        point.y = readInt(instream);
-        return point;
-    }
-    private Color readColor(BufferedReader instream) throws IOException {
-        return new Color(readInt(instream));
-    }
-    private TheShape readTheShape(BufferedReader instream) throws IOException {
-        TheShape theShape = TheShape.shapesFactory(readInt(instream));
-        theShape.setPosition(readPoint(instream));
-        theShape.setColor(readColor(instream));
-        theShape.setFillColor(readColor(instream));
-        theShape.setProperties(readDoubleMap(instream));
-        return theShape;
+        shapes = Saver.load(path);
     }
 }
