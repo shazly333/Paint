@@ -16,6 +16,7 @@ public class Linesegment extends TheShape {
     final String Startyy = "Starty";
 
     public Linesegment () {
+        this.typeind = 3;
         this.prop.put(endxx, 1.0);
         this.prop.put(endyy, 1.0);
         this.prop.put(startxx, 2.0);
@@ -25,6 +26,7 @@ public class Linesegment extends TheShape {
     }
 
     public Linesegment (final double endx, final double endy, final double startx, final double Starty) {
+        this.typeind = 3;
         this.prop.put(startxx, startx);
         this.prop.put(Startyy, Starty);
         this.prop.put(endxx, endx);

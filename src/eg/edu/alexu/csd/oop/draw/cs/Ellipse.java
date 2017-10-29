@@ -16,6 +16,7 @@ public class Ellipse extends TheShape {
     final String centerxx = "centerx";
     final String centeryy = "centery";
     public Ellipse() {
+        this.typeind = 2;
         this.prop.put(height, 5.0);
         this.prop.put(width, 8.0);
         this.prop.put(centerxx, 0.0);
@@ -23,8 +24,8 @@ public class Ellipse extends TheShape {
         this.pos.x = prop.get(centerxx).intValue();
         this.pos.y = prop.get(centeryy).intValue();
     }
-    public Ellipse (final double wdth, final double high, final Point center)
-    {
+    public Ellipse (final double wdth, final double high, final Point center) {
+        this.typeind = 2;
         this.prop.put(width, wdth);
         this.prop.put(height, high);
         this.prop.put(centerxx, (double)center.x);

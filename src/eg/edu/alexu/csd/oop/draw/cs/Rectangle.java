@@ -16,6 +16,7 @@ public class Rectangle extends TheShape {
     final String Startyy = "Starty";
 
     public Rectangle () {
+        this.typeind = 1;
         this.prop.put(width, 1.0);
         this.prop.put(height, 1.0);
         this.prop.put(startxx, 2.0);
@@ -25,6 +26,7 @@ public class Rectangle extends TheShape {
     }
 
     public Rectangle (final double lenx, final double leny, final Point bottomleft) {
+        this.typeind = 1;
         this.prop.put(width, lenx);
         this.prop.put(height, leny);
         this.prop.put(startxx, (double) bottomleft.x);

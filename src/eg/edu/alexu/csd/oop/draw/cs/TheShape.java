@@ -12,6 +12,7 @@ import java.util.Map;
 
 public abstract class TheShape implements eg.edu.alexu.csd.oop.draw.Shape {
     public static String[] types = {"Circle","Rectangle","Ellipse","Line","Triangle","Square"};
+
     int  typeInd = -1;
     Point pos = new Point(0,0);
     Map<String, Double> prop = new HashMap<String, Double>();
@@ -19,8 +20,12 @@ public abstract class TheShape implements eg.edu.alexu.csd.oop.draw.Shape {
     Color col = new Color(Color.HSBtoRGB(0,0,0));
     javafx.scene.paint.Color colr = javafx.scene.paint.Color.BLACK;
     javafx.scene.paint.Color fil = javafx.scene.paint.Color.WHITE;
-
     Color fillCol = new Color(Color.HSBtoRGB(255,255,255));
+
+    public int getTypeInd() {
+        return typeInd;
+    }
+
     @Override
     public void setPosition(final Point position) {
         pos = position;
@@ -69,4 +74,9 @@ public abstract class TheShape implements eg.edu.alexu.csd.oop.draw.Shape {
 
     public abstract void save(BufferedWriter bfW);
     public abstract void load(BufferedReader bfR);
+
+    public static TheShape shapesFactory(final int typeInd)
+    {
+        return new Circle();
+    }
 }

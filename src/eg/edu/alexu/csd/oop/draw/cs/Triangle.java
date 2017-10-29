@@ -21,6 +21,7 @@ public class Triangle extends TheShape {
     int [] ally;
     public Triangle ()
     {
+        this.typeind = 4;
         this.prop.put(pointax, 1.0);
         this.prop.put(pointay, 1.0);
         this.prop.put(pointbx, 5.0);
@@ -36,6 +37,7 @@ public class Triangle extends TheShape {
     }
     public Triangle (final Point a, final Point b, final Point c)
     {
+        this.typeind = 4;
         this.prop.put(pointax, (double) a.x);
         this.prop.put(pointay, (double) a.y);
         this.prop.put(pointbx, (double) b.x);

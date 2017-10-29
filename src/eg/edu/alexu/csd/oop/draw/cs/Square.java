@@ -15,6 +15,7 @@ public class Square extends TheShape {
     final String Startyy = "Starty";
 
     public Square () {
+        this.typeind = 5;
         this.prop.put(length, 1.0);
         this.prop.put(startxx, 2.0);
         this.prop.put(Startyy, 2.0);
@@ -22,6 +23,7 @@ public class Square extends TheShape {
         this.pos.y = prop.get(Startyy).intValue();
     }
     public Square (final double len, final Point bottomleft) {
+        this.typeind = 5;
         this.prop.put(length, len);
         this.prop.put(startxx, (double) bottomleft.x);
         this.prop.put(Startyy, (double) bottomleft.y);
