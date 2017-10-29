@@ -18,8 +18,6 @@ public abstract class TheShape implements eg.edu.alexu.csd.oop.draw.Shape {
     Map<String, Double> prop = new HashMap<String, Double>();
     public static ArrayList<TheShape> allshapes = new ArrayList<>();
     Color col = new Color(Color.HSBtoRGB(0,0,0));
-    javafx.scene.paint.Color colr = javafx.scene.paint.Color.BLACK;
-    javafx.scene.paint.Color fil = javafx.scene.paint.Color.WHITE;
     Color fillCol = new Color(Color.HSBtoRGB(255,255,255));
 
     public int getTypeInd() {
