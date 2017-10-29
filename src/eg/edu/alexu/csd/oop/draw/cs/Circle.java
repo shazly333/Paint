@@ -10,14 +10,13 @@ import java.util.HashMap;
 import java.util.Map;
 
 import javafx.scene.canvas.GraphicsContext;
-import javafx.scene.paint.Color;
 
 public class Circle extends TheShape {
     final String radius1 = "radius";
     final String centerxx = "centerx";
     final String centeryy = "centery";
     public Circle() {
-        this.typeInd = 0;
+        this.typeind = 0;
         this.prop.put(radius1, 100.0);
         this.prop.put(centerxx, 0.0);
         this.prop.put(centeryy, 0.0);
@@ -25,7 +24,7 @@ public class Circle extends TheShape {
         this.pos.y = prop.get(centeryy).intValue();
     }
     public Circle(final double radius, final Point center) {
-        this.typeInd = 0;
+        this.typeind = 0;
         this.prop.put(radius1, radius);
         this.prop.put(centerxx, (double)center.x);
         this.prop.put(centeryy, (double)center.y);
@@ -44,10 +43,11 @@ public class Circle extends TheShape {
 
     }
     public void draww( final GraphicsContext canvas) {
-        canvas.setFill(new Color(this.col.getRed(), this.col.getGreen(), this.col.getBlue(), this.col.getAlpha()));
+        final javafx.scene.paint.Color fxColor = javafx.scene.paint.Color.rgb(this.fillCol.getRed(), this.fillCol.getGreen(), this.fillCol.getBlue(), this.fillCol.getAlpha()/255.0);
+        canvas.setFill(fxColor);
         canvas.fillOval(prop.get(centerxx).intValue(), prop.get(centeryy).intValue(), prop.get(radius1).intValue(), prop.get(radius1).intValue());
-        canvas.setFill(new Color(this.fillCol.getRed(), this.fillCol.getGreen(), this.fillCol.getBlue(), this.fillCol.getAlpha()));
-
+        final javafx.scene.paint.Color fillfx = javafx.scene.paint.Color.rgb(this.col.getRed(), this.col.getGreen(), this.col.getBlue(), this.col.getAlpha()/255.0);
+        canvas.setFill(fillfx);
         canvas.strokeOval(prop.get(centerxx).intValue(), prop.get(centeryy).intValue(), prop.get(radius1).intValue(), prop.get(radius1).intValue());
 
     }

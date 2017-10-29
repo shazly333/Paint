@@ -13,15 +13,15 @@ import java.util.Map;
 public abstract class TheShape implements eg.edu.alexu.csd.oop.draw.Shape {
     public static String[] types = {"Circle","Rectangle","Ellipse","Line","Triangle","Square"};
 
-    int  typeInd = -1;
+    public int  typeind = -1;
     Point pos = new Point(0,0);
     Map<String, Double> prop = new HashMap<String, Double>();
     public static ArrayList<TheShape> allshapes = new ArrayList<>();
     Color col = new Color(Color.HSBtoRGB(0,0,0));
-    Color fillCol = new Color(Color.HSBtoRGB(255,255,255));
+    Color fillCol = new Color(Color.HSBtoRGB(100,100,100));
 
     public int getTypeInd() {
-        return typeInd;
+        return typeind;
     }
 
     @Override

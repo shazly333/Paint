@@ -23,8 +23,9 @@ public class BasicOpsTest extends Application {
         final GraphicsContext gc = canvas.getGraphicsContext2D();
         final GraphicsContext a = canvas.getGraphicsContext2D();
 
-        n.draww(a);
+        //n.draww(a);
         // drawShapes(gc);
+        n.getTypeInd();
         root.getChildren().add(canvas);
         primaryStage.setScene(new Scene(root));
         primaryStage.show();
