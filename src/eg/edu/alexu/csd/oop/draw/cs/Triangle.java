@@ -4,8 +4,6 @@ import java.awt.BasicStroke;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Point;
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -63,7 +61,8 @@ public class Triangle extends TheShape {
         canvas.drawPolygon(allx, ally, 3);
 
     }
-    public void draww( final GraphicsContext canvas) {
+    @Override
+    public void draw( final GraphicsContext canvas) {
         final double[] yfx = new double[3];
         final double[] xfx = new double[3];
         for (int i = 0; i < 3; i++)
@@ -97,16 +96,7 @@ public class Triangle extends TheShape {
         return newshape;
     }
 
-    @Override
-    public void save(final BufferedWriter bfW) {
-        // TODO Auto-generated method stub
 
-    }
 
-    @Override
-    public void load(final BufferedReader bfR) {
-        // TODO Auto-generated method stub
-
-    }
 
 }

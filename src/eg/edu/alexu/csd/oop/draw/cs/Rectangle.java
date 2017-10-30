@@ -4,10 +4,10 @@ import java.awt.BasicStroke;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Point;
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
 import java.util.HashMap;
 import java.util.Map;
+
+import javafx.scene.canvas.GraphicsContext;
 
 public class Rectangle extends TheShape {
     final String width = "width";
@@ -61,14 +61,10 @@ public class Rectangle extends TheShape {
         return newshape;
     }
 
-    @Override
-    public void save(final BufferedWriter bfW) {
-        // TODO Auto-generated method stub
 
-    }
 
     @Override
-    public void load(final BufferedReader bfR) {
+    public void draw(final GraphicsContext canvas) {
         // TODO Auto-generated method stub
 
     }

@@ -3,10 +3,10 @@ package eg.edu.alexu.csd.oop.draw.cs;
 import java.awt.BasicStroke;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
 import java.util.HashMap;
 import java.util.Map;
+
+import javafx.scene.canvas.GraphicsContext;
 
 public class Linesegment extends TheShape {
 
@@ -61,14 +61,9 @@ public class Linesegment extends TheShape {
         return newshape;
     }
 
-    @Override
-    public void save(final BufferedWriter bfW) {
-        // TODO Auto-generated method stub
-
-    }
 
     @Override
-    public void load(final BufferedReader bfR) {
+    public void draw(final GraphicsContext canvas) {
         // TODO Auto-generated method stub
 
     }

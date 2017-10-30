@@ -43,7 +43,7 @@ public class BasicOpsTest extends Application {
                 final double startX = events.getSceneX();
                 final double startY = events.getSceneY();
                 graphicsContext.clearRect(0, 0, 1000, 1000);
-                System.out.println(drawingEngine.shapes.size());
+                //   System.out.println(drawingEngine.shapes.size());
 
                 final Circle movedCircle =new Circle(100, startX, startY);
                 //  drawingEngine.updateShape(firstCircle, movedCircle);
