@@ -3,11 +3,11 @@ package eg.edu.alexu.csd.oop.draw.cs;
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Point;
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
+
+import javafx.scene.canvas.GraphicsContext;
 
 
 public abstract class TheShape implements eg.edu.alexu.csd.oop.draw.Shape {
@@ -70,9 +70,7 @@ public abstract class TheShape implements eg.edu.alexu.csd.oop.draw.Shape {
     @Override
     public abstract Object clone() throws CloneNotSupportedException;
 
-    public abstract void save(BufferedWriter bfW);
-    public abstract void load(BufferedReader bfR);
-
+    public abstract void draw(final GraphicsContext canvas);
     public static TheShape shapesFactory(final int typeInd)
     {
         return new Circle();

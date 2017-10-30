@@ -9,6 +9,8 @@ import java.io.BufferedWriter;
 import java.util.HashMap;
 import java.util.Map;
 
+import javafx.scene.canvas.GraphicsContext;
+
 public class Triangle extends TheShape {
 
     final String pointax = "pointa";
@@ -59,6 +61,22 @@ public class Triangle extends TheShape {
         ((Graphics2D)canvas).setColor(this.col);
         ((Graphics2D)canvas).setStroke(new BasicStroke(2));
         canvas.drawPolygon(allx, ally, 3);
+
+    }
+    public void draww( final GraphicsContext canvas) {
+        final double[] yfx = new double[3];
+        final double[] xfx = new double[3];
+        for (int i = 0; i < 3; i++)
+        {
+            yfx[i] = ally[i];
+            xfx[i] = allx[i];
+        }
+        final javafx.scene.paint.Color fxColor = javafx.scene.paint.Color.rgb(this.fillCol.getRed(), this.fillCol.getGreen(), this.fillCol.getBlue(), this.fillCol.getAlpha()/255.0);
+        canvas.setFill(fxColor);
+        canvas.fillPolygon(yfx, xfx, 3);
+        final javafx.scene.paint.Color fillfx = javafx.scene.paint.Color.rgb(this.col.getRed(), this.col.getGreen(), this.col.getBlue(), this.col.getAlpha()/255.0);
+        canvas.setFill(fillfx);
+        canvas.strokePolygon(yfx, xfx, 3);
 
     }
 

@@ -18,7 +18,7 @@ public interface Shape {
     public java.awt.Color getFillColor();
     /* redraw the shape on the canvas */
     public void draw(java.awt.Graphics canvas);
-    /* create a deep clone of the shape */
+    /* create graphicsContext deep clone of the shape */
 
 
     public Object clone() throws CloneNotSupportedException;
