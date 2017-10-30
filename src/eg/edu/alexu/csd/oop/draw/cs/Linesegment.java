@@ -12,7 +12,7 @@ public class Linesegment extends TheShape {
 
     final String endxx = "endx";
     final String endyy = "endy";
-    final String startxx = "startxx";
+    final String startxx = "startx";
     final String Startyy = "Starty";
 
     public Linesegment () {
@@ -65,6 +65,9 @@ public class Linesegment extends TheShape {
     @Override
     public void draw(final GraphicsContext canvas) {
         // TODO Auto-generated method stub
+        final javafx.scene.paint.Color fxColor = javafx.scene.paint.Color.rgb(this.fillCol.getRed(), this.fillCol.getGreen(), this.fillCol.getBlue(), this.fillCol.getAlpha()/255.0);
+        canvas.setFill(fxColor);
+        canvas.strokeLine(prop.get(startxx).intValue(), prop.get(Startyy).intValue(), prop.get(endxx).intValue(), prop.get(endyy).intValue());
 
     }
 

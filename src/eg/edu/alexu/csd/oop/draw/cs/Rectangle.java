@@ -12,27 +12,27 @@ import javafx.scene.canvas.GraphicsContext;
 public class Rectangle extends TheShape {
     final String width = "width";
     final String height = "height";
-    final String startxx = "startxx";
-    final String Startyy = "Starty";
+    final String startx = "startx";
+    final String Starty = "Starty";
 
     public Rectangle () {
         this.typeind = 1;
         this.prop.put(width, 1.0);
         this.prop.put(height, 1.0);
-        this.prop.put(startxx, 2.0);
-        this.prop.put(Startyy, 2.0);
-        this.pos.x = prop.get(startxx).intValue();
-        this.pos.y = prop.get(Startyy).intValue();
+        this.prop.put(startx, 2.0);
+        this.prop.put(Starty, 2.0);
+        this.pos.x = prop.get(startx).intValue();
+        this.pos.y = prop.get(Starty).intValue();
     }
 
     public Rectangle (final double lenx, final double leny, final Point bottomleft) {
         this.typeind = 1;
         this.prop.put(width, lenx);
         this.prop.put(height, leny);
-        this.prop.put(startxx, (double) bottomleft.x);
-        this.prop.put(Startyy, (double) bottomleft.y);
-        this.pos.x = prop.get(startxx).intValue();
-        this.pos.y = prop.get(Startyy).intValue();
+        this.prop.put(startx, (double) bottomleft.x);
+        this.prop.put(Starty, (double) bottomleft.y);
+        this.pos.x = prop.get(startx).intValue();
+        this.pos.y = prop.get(Starty).intValue();
 
     }
     @Override
@@ -66,6 +66,12 @@ public class Rectangle extends TheShape {
     @Override
     public void draw(final GraphicsContext canvas) {
         // TODO Auto-generated method stub
+        final javafx.scene.paint.Color fxColor = javafx.scene.paint.Color.rgb(this.fillCol.getRed(), this.fillCol.getGreen(), this.fillCol.getBlue(), this.fillCol.getAlpha()/255.0);
+        canvas.setFill(fxColor);
+        canvas.fillRect(this.pos.x, this.pos.y, prop.get(width).intValue(), prop.get(height).intValue());
+        final javafx.scene.paint.Color fillfx = javafx.scene.paint.Color.rgb(this.col.getRed(), this.col.getGreen(), this.col.getBlue(), this.col.getAlpha()/255.0);
+        canvas.setFill(fillfx);
+        canvas.strokeRect(this.pos.x, this.pos.y, prop.get(width).intValue(), prop.get(height).intValue());
 
     }
 

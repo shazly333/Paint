@@ -17,8 +17,8 @@ public class Triangle extends TheShape {
     final String pointcy = "pointcy";
     final String pointbx = "pointbx";
     final String pointby = "pointby";
-    int [] allx;
-    int [] ally;
+    int [] allofx;
+    int [] allofy;
     public Triangle ()
     {
         this.typeind = 4;
@@ -28,12 +28,12 @@ public class Triangle extends TheShape {
         this.prop.put(pointby, 5.0);
         this.prop.put(pointcx, 9.0);
         this.prop.put(pointcy, 9.0);
-        final int [] xx = {1, 5, 9};
-        final int [] yy = {1, 5, 9};
+        final int [] x = {1, 5, 9};
+        final int [] y = {1, 5, 9};
         this.pos.x = prop.get(pointax).intValue();
         this.pos.y = prop.get(pointay).intValue();
-        allx = xx;
-        ally = yy;
+        allofx = x;
+        allofy = y;
     }
     public Triangle (final Point a, final Point b, final Point c)
     {
@@ -46,19 +46,19 @@ public class Triangle extends TheShape {
         this.prop.put(pointcy, (double) c.y);
         this.pos.x = prop.get(pointax).intValue();
         this.pos.y = prop.get(pointay).intValue();
-        final int [] xx = {a.x, b.x, c.x};
-        final int [] yy = {a.y, b.y, c.y};
-        allx = xx;
-        ally = yy;
+        final int [] x = {a.x, b.x, c.x};
+        final int [] y = {a.y, b.y, c.y};
+        allofx = x;
+        allofy = y;
     }
     @Override
     public void draw(final Graphics canvas) {
         // TODO Auto-generated method stub
         ((Graphics2D)canvas).setColor(this.fillCol);
-        canvas.fillPolygon(allx, ally, 3);
+        canvas.fillPolygon(allofx, allofy, 3);
         ((Graphics2D)canvas).setColor(this.col);
         ((Graphics2D)canvas).setStroke(new BasicStroke(2));
-        canvas.drawPolygon(allx, ally, 3);
+        canvas.drawPolygon(allofx, allofy, 3);
 
     }
     @Override
@@ -67,8 +67,8 @@ public class Triangle extends TheShape {
         final double[] xfx = new double[3];
         for (int i = 0; i < 3; i++)
         {
-            yfx[i] = ally[i];
-            xfx[i] = allx[i];
+            yfx[i] = allofy[i];
+            xfx[i] = allofx[i];
         }
         final javafx.scene.paint.Color fxColor = javafx.scene.paint.Color.rgb(this.fillCol.getRed(), this.fillCol.getGreen(), this.fillCol.getBlue(), this.fillCol.getAlpha()/255.0);
         canvas.setFill(fxColor);

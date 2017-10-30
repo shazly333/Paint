@@ -13,34 +13,34 @@ public class Ellipse extends TheShape {
 
     final String height = "height";
     final String width = "width";
-    final String centerxx = "centerx";
-    final String centeryy = "centery";
+    final String centerx = "centerx";
+    final String centery = "centery";
     public Ellipse() {
         this.typeind = 2;
         this.prop.put(height, 5.0);
         this.prop.put(width, 8.0);
-        this.prop.put(centerxx, 0.0);
-        this.prop.put(centeryy, 0.0);
-        this.pos.x = prop.get(centerxx).intValue();
-        this.pos.y = prop.get(centeryy).intValue();
+        this.prop.put(centerx, 0.0);
+        this.prop.put(centery, 0.0);
+        this.pos.x = prop.get(centerx).intValue();
+        this.pos.y = prop.get(centery).intValue();
     }
     public Ellipse (final double wdth, final double high, final Point center) {
         this.typeind = 2;
         this.prop.put(width, wdth);
         this.prop.put(height, high);
-        this.prop.put(centerxx, (double)center.x);
-        this.prop.put(centeryy, (double)center.y);
-        this.pos.x = prop.get(centerxx).intValue();
-        this.pos.y = prop.get(centeryy).intValue();
+        this.prop.put(centerx, (double)center.x);
+        this.prop.put(centery, (double)center.y);
+        this.pos.x = prop.get(centerx).intValue();
+        this.pos.y = prop.get(centery).intValue();
     }
     @Override
     public void draw(final Graphics canvas) {
         // TODO Auto-generated method stub
         ((Graphics2D)canvas).setColor(this.fillCol);
-        canvas.fillOval(prop.get(centerxx).intValue(), prop.get(centeryy).intValue(), prop.get(width).intValue(), prop.get(height).intValue());
+        canvas.fillOval(prop.get(centerx).intValue(), prop.get(centery).intValue(), prop.get(width).intValue(), prop.get(height).intValue());
         ((Graphics2D)canvas).setColor(this.col);
         ((Graphics2D)canvas).setStroke(new BasicStroke(2));
-        canvas.drawOval(prop.get(centerxx).intValue(), prop.get(centeryy).intValue(), prop.get(width).intValue(), prop.get(height).intValue());
+        canvas.drawOval(prop.get(centerx).intValue(), prop.get(centery).intValue(), prop.get(width).intValue(), prop.get(height).intValue());
 
     }
 
@@ -64,6 +64,13 @@ public class Ellipse extends TheShape {
     @Override
     public void draw(final GraphicsContext canvas) {
         // TODO Auto-generated method stub
+        final javafx.scene.paint.Color fxColor = javafx.scene.paint.Color.rgb(this.fillCol.getRed(), this.fillCol.getGreen(), this.fillCol.getBlue(), this.fillCol.getAlpha()/255.0);
+        canvas.setFill(fxColor);
+        canvas.fillOval(prop.get(centerx).intValue(), prop.get(centery).intValue(), prop.get(width).intValue(), prop.get(height).intValue());
+        final javafx.scene.paint.Color fillfx = javafx.scene.paint.Color.rgb(this.col.getRed(), this.col.getGreen(), this.col.getBlue(), this.col.getAlpha()/255.0);
+        canvas.setFill(fillfx);
+        canvas.strokeOval(prop.get(centerx).intValue(), prop.get(centery).intValue(), prop.get(width).intValue(), prop.get(height).intValue());
+
 
     }
 
