@@ -11,7 +11,7 @@ public class UpdateShape implements Command{
     public UpdateShape(final Shape oldShape,final Shape newShape){
         this.newShape = newShape;
         this.oldShape = oldShape;
-        removeShape = new RemoveShape(oldShape);
+        removeShape = new RemoveShape(this.oldShape);
         addShape = new AddShape(this.newShape);
     }
 

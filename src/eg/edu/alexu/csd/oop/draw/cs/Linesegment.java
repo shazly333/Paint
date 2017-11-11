@@ -1,12 +1,10 @@
 package eg.edu.alexu.csd.oop.draw.cs;
 
-import java.awt.BasicStroke;
-import java.awt.Graphics;
-import java.awt.Graphics2D;
+import javafx.scene.canvas.GraphicsContext;
+
+import java.awt.*;
 import java.util.HashMap;
 import java.util.Map;
-
-import javafx.scene.canvas.GraphicsContext;
 
 public class Linesegment extends TheShape {
 
@@ -16,7 +14,6 @@ public class Linesegment extends TheShape {
     final String Startyy = "Starty";
 
     public Linesegment () {
-        this.typeind = 3;
         this.prop.put(endxx, 1.0);
         this.prop.put(endyy, 1.0);
         this.prop.put(startxx, 2.0);
@@ -26,7 +23,6 @@ public class Linesegment extends TheShape {
     }
 
     public Linesegment (final double endx, final double endy, final double startx, final double Starty) {
-        this.typeind = 3;
         this.prop.put(startxx, startx);
         this.prop.put(Startyy, Starty);
         this.prop.put(endxx, endx);

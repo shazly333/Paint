@@ -51,7 +51,7 @@ public class Saver {
         return shapes;
     }
     private static void writeTheShape(BufferedWriter outstream, TheShape shape) throws IOException {
-        writeInt(outstream,shape.getTypeInd());
+        writeString(outstream,shape.getClass().getName());
         writePoint(outstream,shape.getPosition());
         writeColor(outstream,shape.getColor());
         writeColor(outstream,shape.getFillColor());
@@ -67,6 +67,9 @@ public class Saver {
     private static void writeInt(BufferedWriter outstream, int n) throws IOException {
         outstream.write(Integer.toString(n)+"\n");
     }
+    private static void writeString(BufferedWriter outstream, String str) throws IOException {
+        outstream.write(str+"\n");
+    }
     private static void writeDouble(BufferedWriter outstream,double n) throws IOException {
         outstream.write(Double.toString(n)+"\n");
     }
@@ -80,6 +83,9 @@ public class Saver {
     }
     private static int readInt(BufferedReader instream) throws IOException {
         return Integer.parseInt(instream.readLine());
+    }
+    private static String readString(BufferedReader instream) throws IOException {
+        return instream.readLine();
     }
     private static double readDouble(BufferedReader instream) throws IOException {
         return Double.parseDouble(instream.readLine());
@@ -105,7 +111,7 @@ public class Saver {
         return new Color(readInt(instream));
     }
     private static TheShape readTheShape(BufferedReader instream) throws IOException {
-        TheShape theShape = TheShape.shapesFactory(readInt(instream));
+        TheShape theShape = TheShape.shapesFactory(readString(instream));
         theShape.setPosition(readPoint(instream));
         theShape.setColor(readColor(instream));
         theShape.setFillColor(readColor(instream));

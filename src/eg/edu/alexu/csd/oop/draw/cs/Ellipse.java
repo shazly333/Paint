@@ -1,13 +1,10 @@
 package eg.edu.alexu.csd.oop.draw.cs;
 
-import java.awt.BasicStroke;
-import java.awt.Graphics;
-import java.awt.Graphics2D;
-import java.awt.Point;
+import javafx.scene.canvas.GraphicsContext;
+
+import java.awt.*;
 import java.util.HashMap;
 import java.util.Map;
-
-import javafx.scene.canvas.GraphicsContext;
 
 public class Ellipse extends TheShape {
 
@@ -16,7 +13,6 @@ public class Ellipse extends TheShape {
     final String centerx = "centerx";
     final String centery = "centery";
     public Ellipse() {
-        this.typeind = 2;
         this.prop.put(height, 5.0);
         this.prop.put(width, 8.0);
         this.prop.put(centerx, 0.0);
@@ -25,7 +21,6 @@ public class Ellipse extends TheShape {
         this.pos.y = prop.get(centery).intValue();
     }
     public Ellipse (final double wdth, final double high, final Point center) {
-        this.typeind = 2;
         this.prop.put(width, wdth);
         this.prop.put(height, high);
         this.prop.put(centerx, (double)center.x);

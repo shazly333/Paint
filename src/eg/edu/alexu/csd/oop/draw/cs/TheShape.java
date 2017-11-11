@@ -1,28 +1,21 @@
 package eg.edu.alexu.csd.oop.draw.cs;
 
-import java.awt.Color;
-import java.awt.Graphics;
-import java.awt.Point;
+import javafx.scene.canvas.GraphicsContext;
+
+import java.awt.*;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-import javafx.scene.canvas.GraphicsContext;
-
 
 public abstract class TheShape implements eg.edu.alexu.csd.oop.draw.Shape {
-    public static String[] types = {"Circle","Rectangle","Ellipse","Line","Triangle","Square"};
 
-    public int  typeind = -1;
+
     Point pos = new Point(0,0);
     Map<String, Double> prop = new HashMap<String, Double>();
     public static ArrayList<TheShape> allshapes = new ArrayList<>();
     Color col = new Color(Color.HSBtoRGB(0,0,0));
     Color fillCol = new Color(Color.HSBtoRGB(100,100,100));
-
-    public int getTypeInd() {
-        return typeind;
-    }
 
     @Override
     public void setPosition(final Point position) {
@@ -71,8 +64,14 @@ public abstract class TheShape implements eg.edu.alexu.csd.oop.draw.Shape {
     public abstract Object clone() throws CloneNotSupportedException;
 
     public abstract void draw(final GraphicsContext canvas);
-    public static TheShape shapesFactory(final int typeInd)
-    {
-        return new Circle();
+
+
+    public static TheShape shapesFactory(String shapeName) {
+        try {
+            return (TheShape) Class.forName(shapeName).newInstance();
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
+        }
     }
 }

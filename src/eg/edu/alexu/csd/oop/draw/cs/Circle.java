@@ -1,19 +1,16 @@
 package eg.edu.alexu.csd.oop.draw.cs;
 
-import java.awt.BasicStroke;
-import java.awt.Graphics;
-import java.awt.Graphics2D;
+import javafx.scene.canvas.GraphicsContext;
+
+import java.awt.*;
 import java.util.HashMap;
 import java.util.Map;
-
-import javafx.scene.canvas.GraphicsContext;
 
 public class Circle extends TheShape {
     final String radius1 = "radius";
     final String centerxx = "centerx";
     final String centeryy = "centery";
     public Circle() {
-        this.typeind = 0;
         this.prop.put(radius1, 100.0);
         this.prop.put(centerxx, 0.0);
         this.prop.put(centeryy, 0.0);
@@ -21,7 +18,6 @@ public class Circle extends TheShape {
         this.pos.y = prop.get(centeryy).intValue();
     }
     public Circle(final double radius, final double xx, final double yy) {
-        this.typeind = 0;
         this.prop.put(radius1, radius);
         this.prop.put(centerxx, xx);
         this.prop.put(centeryy, yy);

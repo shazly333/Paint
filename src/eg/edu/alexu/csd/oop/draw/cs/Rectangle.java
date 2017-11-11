@@ -1,13 +1,10 @@
 package eg.edu.alexu.csd.oop.draw.cs;
 
-import java.awt.BasicStroke;
-import java.awt.Graphics;
-import java.awt.Graphics2D;
-import java.awt.Point;
+import javafx.scene.canvas.GraphicsContext;
+
+import java.awt.*;
 import java.util.HashMap;
 import java.util.Map;
-
-import javafx.scene.canvas.GraphicsContext;
 
 public class Rectangle extends TheShape {
     final String width = "width";
@@ -16,7 +13,6 @@ public class Rectangle extends TheShape {
     final String Starty = "Starty";
 
     public Rectangle () {
-        this.typeind = 1;
         this.prop.put(width, 1.0);
         this.prop.put(height, 1.0);
         this.prop.put(startx, 2.0);
@@ -26,7 +22,6 @@ public class Rectangle extends TheShape {
     }
 
     public Rectangle (final double lenx, final double leny, final Point bottomleft) {
-        this.typeind = 1;
         this.prop.put(width, lenx);
         this.prop.put(height, leny);
         this.prop.put(startx, (double) bottomleft.x);

@@ -1,13 +1,10 @@
 package eg.edu.alexu.csd.oop.draw.cs;
 
-import java.awt.BasicStroke;
-import java.awt.Graphics;
-import java.awt.Graphics2D;
-import java.awt.Point;
+import javafx.scene.canvas.GraphicsContext;
+
+import java.awt.*;
 import java.util.HashMap;
 import java.util.Map;
-
-import javafx.scene.canvas.GraphicsContext;
 
 public class Square extends TheShape {
     final String length = "length";
@@ -15,7 +12,6 @@ public class Square extends TheShape {
     final String Starty = "Starty";
 
     public Square () {
-        this.typeind = 5;
         this.prop.put(length, 1.0);
         this.prop.put(startx, 2.0);
         this.prop.put(Starty, 2.0);
@@ -23,7 +19,6 @@ public class Square extends TheShape {
         this.pos.y = prop.get(Starty).intValue();
     }
     public Square (final double len, final Point bottomleft) {
-        this.typeind = 5;
         this.prop.put(length, len);
         this.prop.put(startx, (double) bottomleft.x);
         this.prop.put(Starty, (double) bottomleft.y);

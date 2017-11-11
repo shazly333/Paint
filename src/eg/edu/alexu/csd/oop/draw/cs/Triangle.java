@@ -1,13 +1,10 @@
 package eg.edu.alexu.csd.oop.draw.cs;
 
-import java.awt.BasicStroke;
-import java.awt.Graphics;
-import java.awt.Graphics2D;
-import java.awt.Point;
+import javafx.scene.canvas.GraphicsContext;
+
+import java.awt.*;
 import java.util.HashMap;
 import java.util.Map;
-
-import javafx.scene.canvas.GraphicsContext;
 
 public class Triangle extends TheShape {
 
@@ -21,7 +18,6 @@ public class Triangle extends TheShape {
     int [] allofy;
     public Triangle ()
     {
-        this.typeind = 4;
         this.prop.put(pointax, 1.0);
         this.prop.put(pointay, 1.0);
         this.prop.put(pointbx, 5.0);
@@ -37,7 +33,6 @@ public class Triangle extends TheShape {
     }
     public Triangle (final Point a, final Point b, final Point c)
     {
-        this.typeind = 4;
         this.prop.put(pointax, (double) a.x);
         this.prop.put(pointay, (double) a.y);
         this.prop.put(pointbx, (double) b.x);

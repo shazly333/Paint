@@ -1,8 +1,6 @@
 package eg.edu.alexu.csd.oop.draw.cs;
 
 
-import java.util.Map;
-
 import javafx.application.Application;
 import javafx.event.EventHandler;
 import javafx.scene.Group;
@@ -12,6 +10,8 @@ import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.shape.ArcType;
 import javafx.stage.Stage;
+
+import java.util.Map;
 
 public class BasicOpsTest extends Application {
     double globalX = 100;
@@ -38,8 +38,10 @@ public class BasicOpsTest extends Application {
         root.setOnMouseDragged(new EventHandler<MouseEvent>()
         {
 
+
             @Override
             public void handle(final MouseEvent events) {
+                //System.out.print(100);
                 final double startX = events.getSceneX();
                 final double startY = events.getSceneY();
                 graphicsContext.clearRect(0, 0, 1000, 1000);

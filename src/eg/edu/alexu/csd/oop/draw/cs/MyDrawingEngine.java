@@ -1,14 +1,13 @@
 package eg.edu.alexu.csd.oop.draw.cs;
 
-import java.awt.Canvas;
-import java.awt.Graphics;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Stack;
-
 import eg.edu.alexu.csd.oop.draw.DrawingEngine;
 import eg.edu.alexu.csd.oop.draw.Shape;
 import javafx.scene.canvas.GraphicsContext;
+
+import java.awt.*;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Stack;
 
 public class MyDrawingEngine implements DrawingEngine {
 
@@ -29,8 +28,8 @@ public class MyDrawingEngine implements DrawingEngine {
         return drawingEngine;
     }
 
-    public void setShapes(final LinkedList<Shape> shapes) {
-        this.shapes = shapes;
+    public void setShapes(final LinkedList<Shape> newShapes) {
+        this.shapes = newShapes;
     }
 
     @Override
@@ -70,6 +69,23 @@ public class MyDrawingEngine implements DrawingEngine {
         done.push(updateShape);
     }
 
+    public void permatlyAddShape(final Shape shape) {
+        undone.empty();
+        final Command addShape = new AddShape(shape);
+        addShape.execute();
+    }
+
+    public void permatlyRemoveShape(final Shape shape) {
+        undone.empty();
+        final Command removeShape = new RemoveShape(shape);
+        removeShape.execute();
+    }
+
+    public void permatlyUpdateShape(final Shape oldShape, final Shape newShape) {
+        undone.empty();
+        final Command updateShape = new UpdateShape(oldShape,newShape);
+        updateShape.execute();
+    }
     @Override
     public Shape[] getShapes() {
         return shapes.toArray(new Shape[shapes.size()]);
@@ -77,7 +93,14 @@ public class MyDrawingEngine implements DrawingEngine {
 
     @Override
     public List<Class<? extends Shape>> getSupportedShapes() {
-        return null;
+        List<Class<? extends Shape>> supportedShapes = new LinkedList<>();
+        Class<?>[] classes = Shape.class.getClasses();
+        for (Class aClass :classes) {
+            if(aClass.getSuperclass() == TheShape.class) {
+                supportedShapes.add(aClass);
+            }
+        }
+        return supportedShapes;
     }
 
     @Override
