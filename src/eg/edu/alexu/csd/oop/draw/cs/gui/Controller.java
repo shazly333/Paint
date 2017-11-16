@@ -106,17 +106,9 @@ public class Controller {
                 }*/
                 engine.setSupportedShapes(cl);
                 plugins.add(cl);
-
-
-
-
-
-
-
                 fill_combo(engine);
                 System.out.println(engine.getSupportedShapes().size());
             } catch (final ClassNotFoundException e1) {
-                // TODO Auto-generated catch block
                 e1.printStackTrace();
             }
         }
@@ -266,10 +258,8 @@ public class Controller {
             try {
                 new_shape =  shapefactory(shape_combo.getValue());
             } catch (final InstantiationException e) {
-                // TODO Auto-generated catch block
                 e.printStackTrace();
             } catch (final IllegalAccessException e) {
-                // TODO Auto-generated catch block
                 e.printStackTrace();
             }
             System.out.println(check_fist_excute);
