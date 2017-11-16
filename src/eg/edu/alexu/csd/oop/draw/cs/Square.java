@@ -3,13 +3,11 @@ package eg.edu.alexu.csd.oop.draw.cs;
 import javafx.scene.canvas.GraphicsContext;
 
 import java.awt.*;
-import java.util.HashMap;
-import java.util.Map;
 
 public class Square extends TheShape {
     final String length = "length";
-    final String startx = "startx";
-    final String Starty = "Starty";
+    final String startx = "start x";
+    final String Starty = "Start y";
 
     public Square () {
         this.prop.put(length, 1.0);
@@ -26,43 +24,18 @@ public class Square extends TheShape {
         this.pos.y = prop.get(Starty).intValue();
 
     }
-    @Override
-    public void draw(final Graphics canvas) {
-        // TODO Auto-generated method stub
-        ((Graphics2D)canvas).setColor(this.fillCol);
-        canvas.fillRect(this.pos.x, this.pos.y, prop.get(length).intValue(), prop.get(length).intValue());
-        ((Graphics2D)canvas).setColor(this.col);
-        ((Graphics2D)canvas).setStroke(new BasicStroke(2));
-        canvas.drawRect(this.pos.x, this.pos.y, prop.get(length).intValue(), prop.get(length).intValue());
-    }
-
-    @Override
-    public Object clone() throws CloneNotSupportedException {
-        // TODO Auto-generated method stub
-        final TheShape newshape = new Circle();
-        newshape.setColor(this.col);
-        newshape.setFillColor(this.fillCol);
-        newshape.setPosition(this.pos);
-        final Map<String, Double> newprop = new HashMap<String, Double>();
-        for (final Map.Entry<String, Double> entry : this.prop.entrySet()) {
-            newprop.put(entry.getKey(), entry.getValue());
-        }
-        newshape.setProperties(newprop);
-        TheShape.allshapes.add(newshape);
-        return newshape;
-    }
 
     @Override
     public void draw(final GraphicsContext canvas) {
-        // TODO Auto-generated method stub
-        final javafx.scene.paint.Color fxColor = javafx.scene.paint.Color.rgb(this.fillCol.getRed(), this.fillCol.getGreen(), this.fillCol.getBlue(), this.fillCol.getAlpha()/255.0);
-        canvas.setFill(fxColor);
-        canvas.fillRect(this.pos.x, this.pos.y, prop.get(length).intValue(), prop.get(length).intValue());
-        final javafx.scene.paint.Color fillfx = javafx.scene.paint.Color.rgb(this.col.getRed(), this.col.getGreen(), this.col.getBlue(), this.col.getAlpha()/255.0);
-        canvas.setFill(fillfx);
-        canvas.strokeRect(this.pos.x, this.pos.y, prop.get(length).intValue(), prop.get(length).intValue());
+        final double len =( Math.sqrt(Math.pow(this.pos.x-this.second_point.x,2)+Math.pow(this.pos.y-this.second_point.y,2)))/Math.sqrt(2);
+        this.prop.put(length, len);
+        this.prop.put(startx, (double) this.pos.x);
+        this.prop.put(Starty, (double) this.pos.y);
 
-
+        canvas.setFill(this.fillCol);
+        canvas.fillRect(this.pos.x, this.pos.y, len, len);
+        canvas.setStroke(this.col);
+        canvas.strokeRect(this.pos.x, this.pos.y, len,len);
     }
 
 }

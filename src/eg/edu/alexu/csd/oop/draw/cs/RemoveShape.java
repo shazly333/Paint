@@ -9,10 +9,10 @@ public class RemoveShape implements Command{
     private Shape shape;
     MyDrawingEngine myDrawingEngine;
 
-    public RemoveShape(Shape shape)
+    public RemoveShape(Shape shape,MyDrawingEngine myDrawingEngine)
     {
         this.shape = shape;
-        myDrawingEngine = myDrawingEngine.getInstance();
+        this.myDrawingEngine = myDrawingEngine;
     }
 
     @Override

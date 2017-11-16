@@ -8,11 +8,11 @@ public class UpdateShape implements Command{
     public Shape newShape;
     Command removeShape;
     Command addShape;
-    public UpdateShape(final Shape oldShape,final Shape newShape){
+    public UpdateShape(final Shape oldShape,final Shape newShape,MyDrawingEngine myDrawingEngine){
         this.newShape = newShape;
         this.oldShape = oldShape;
-        removeShape = new RemoveShape(this.oldShape);
-        addShape = new AddShape(this.newShape);
+        removeShape = new RemoveShape(this.oldShape,myDrawingEngine);
+        addShape = new AddShape(this.newShape,myDrawingEngine);
     }
 
     @Override

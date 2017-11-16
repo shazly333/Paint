@@ -2,13 +2,11 @@ package eg.edu.alexu.csd.oop.draw.cs;
 
 
 import javafx.application.Application;
-import javafx.event.Event;
 import javafx.event.EventHandler;
 import javafx.scene.Group;
 import javafx.scene.Scene;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
-import javafx.scene.input.MouseDragEvent;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
@@ -16,7 +14,7 @@ public class BasicOpsTest2 extends Application {
 
     final Canvas canvas = new Canvas(1000, 1000);
     final GraphicsContext graphicsContext = canvas.getGraphicsContext2D();
-    MyDrawingEngine drawingEngine = MyDrawingEngine.getInstance();
+    MyDrawingEngine drawingEngine = new MyDrawingEngine();
     boolean isDrawing = false;
 
     public static void main(final String[] args) {
@@ -29,7 +27,7 @@ public class BasicOpsTest2 extends Application {
         primaryStage.setTitle("Drawing Operations Test");
         final Group root = new Group();
 
-        root.setOnDragEntered(new EventHandler<MouseDragEvent>() {
+        /*root.setOnDragEntered(new EventHandler<MouseDragEvent>() {
             @Override
             public void handle(MouseDragEvent mouseDragEvent) {
                 final double startX = mouseDragEvent.getSceneX();
@@ -42,9 +40,9 @@ public class BasicOpsTest2 extends Application {
                 drawingEngine.permatlyAddShape(firstCircle);
                 drawingEngine.refresh(graphicsContext);
             }
-        });
+        });*/
         root.setOnMouseDragged(new EventHandler<MouseEvent>() {
-            @Override
+            //@Override
             public void handle(final MouseEvent events) {
                 final double startX = events.getSceneX();
                 final double startY = events.getSceneY();

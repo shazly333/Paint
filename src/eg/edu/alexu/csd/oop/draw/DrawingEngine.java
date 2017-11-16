@@ -1,8 +1,11 @@
 package eg.edu.alexu.csd.oop.draw;
+
+import javafx.scene.canvas.GraphicsContext;
+
 public interface DrawingEngine {
     /* redraw all shapes on the canvas */
 
-    public void refresh(java.awt.Graphics canvas);
+    public void refresh(GraphicsContext canvas);
 
     public void addShape(Shape shape);
 
@@ -14,14 +17,14 @@ public interface DrawingEngine {
     public Shape[] getShapes();
 
     /* return the classes (types) of supported shapes that can
-    * be dynamically loaded at runtime (see Part 3) */
+     * be dynamically loaded at runtime (see Part 3) */
     public java.util.List<Class<? extends Shape>> getSupportedShapes();
     /* limited to 20 steps. You consider these actions in
-    * undo & redo: addShape, removeShape, updateShape */
+     * undo & redo: addShape, removeShape, updateShape */
     public void undo();
     public void redo();
     /* use the file extension to determine the type,
-    * or throw runtime exception when unexpected extension */
+     * or throw runtime exception when unexpected extension */
     public void save(String path);
     public void load(String path);
 }

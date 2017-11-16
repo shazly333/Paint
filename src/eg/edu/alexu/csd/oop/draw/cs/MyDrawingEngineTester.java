@@ -1,5 +1,7 @@
 package eg.edu.alexu.csd.oop.draw.cs;
 
+
+import eg.edu.alexu.csd.oop.draw.Shape;
 import org.junit.Test;
 
 import java.awt.*;
@@ -11,11 +13,11 @@ public class MyDrawingEngineTester {
 
     @Test
     public void tester() {
-        MyDrawingEngine myDrawingEngine = MyDrawingEngine.getInstance();
-        Circle circle1 = new Circle();
-        Circle circle2 = new Circle();
-        Point point1 = new Point(0,0);
-        Point point2 = new Point(1,1);
+        final MyDrawingEngine myDrawingEngine = new MyDrawingEngine();
+        final Circle circle1 = new Circle();
+        final Circle circle2 = new Circle();
+        final Point point1 = new Point(0,0);
+        final Point point2 = new Point(1,1);
         circle1.setPosition(point1);
         circle2.setPosition(point2);
         // Add Shape
@@ -76,10 +78,87 @@ public class MyDrawingEngineTester {
         myDrawingEngine.removeShape(circle1);
         assertEquals(0,myDrawingEngine.getShapes().length);
         //Load
-        myDrawingEngine.load("t.txt");
+        try {
+            myDrawingEngine.load("t.txt");
+        } catch (Exception e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
         assertEquals(2,myDrawingEngine.getShapes().length);
         assertEquals(point1,myDrawingEngine.getShapes()[0].getPosition());
         assertEquals(point2,myDrawingEngine.getShapes()[1].getPosition());
 
+    }
+    @Test
+    public void test1() {
+        MyDrawingEngine myDrawingEngine = new MyDrawingEngine();
+        Circle circle1 = new Circle();
+        Point point1 = new Point(1, -1);
+        Color color1 = new Color(100);
+        circle1.setPosition(point1);
+        circle1.setProperties(null);
+        myDrawingEngine.addShape(circle1);
+        myDrawingEngine.save("ss1.txt");
+        myDrawingEngine = new MyDrawingEngine();
+        myDrawingEngine.load("ss1.txt");
+        assertEquals(1, myDrawingEngine.getShapes().length);
+    }
+
+    @Test
+    public void test2() {
+        MyDrawingEngine myDrawingEngine = new MyDrawingEngine();
+        Circle circle1 = new Circle();
+        Point point1 = new Point(1, -1);
+        Color color1 = new Color(100);
+        circle1.setPosition(point1);
+        myDrawingEngine.addShape(circle1);
+        myDrawingEngine.save("ss2.txt");
+        myDrawingEngine = new MyDrawingEngine();
+        myDrawingEngine.load("ss2.txt");
+        assertEquals(1, myDrawingEngine.getShapes().length);
+    }
+    @Test
+    public void test3() {
+        MyDrawingEngine myDrawingEngine = new MyDrawingEngine();
+        Circle circle1 = new Circle();
+        Point point1 = new Point(1, -1);
+        Color color1 = new Color(1*100);
+        circle1.setPosition(point1);
+        myDrawingEngine.addShape(circle1);
+        Shape circle2 = new Square();
+        Point point2 = new Point(2, -2);
+        Color color2 = new Color(2*100);
+        circle2.setPosition(point2);
+        myDrawingEngine.addShape(circle2);
+        Shape circle3 = new Rectangle();
+        Point point3 = new Point(3, -3);
+        Color color3 = new Color(3*100);
+        circle3.setPosition(point3);
+        myDrawingEngine.addShape(circle3);
+        Shape circle4 = new Ellipse();
+        Point point4 = new Point(4, -4);
+        Color color4 = new Color(4*100);
+        circle4.setPosition(point4);
+        myDrawingEngine.addShape(circle1);
+        myDrawingEngine.updateShape(circle1, circle4);
+        myDrawingEngine.save("ss.txt");
+        myDrawingEngine = new MyDrawingEngine();
+        myDrawingEngine.load("ss.txt");
+        assertEquals(4, myDrawingEngine.getShapes().length);
+    }
+    @Test
+    public void test4() {
+        MyDrawingEngine myDrawingEngine = new MyDrawingEngine();
+        Circle circle1 = new Circle();
+        Point point1 = new Point(1, -1);
+        Color color1 = new Color(100);
+        circle1.setPosition(point1);
+        myDrawingEngine.addShape(circle1);
+        myDrawingEngine.addShape(null);
+        myDrawingEngine.save("ss.txt");
+        assertEquals(2, myDrawingEngine.getShapes().length);
+        myDrawingEngine = new MyDrawingEngine();
+        myDrawingEngine.load("ss.txt");
+        assertEquals(2, myDrawingEngine.getShapes().length);
     }
 }

@@ -3,8 +3,6 @@ package eg.edu.alexu.csd.oop.draw.cs;
 import javafx.scene.canvas.GraphicsContext;
 
 import java.awt.*;
-import java.util.HashMap;
-import java.util.Map;
 
 public class Triangle extends TheShape {
 
@@ -46,16 +44,7 @@ public class Triangle extends TheShape {
         allofx = x;
         allofy = y;
     }
-    @Override
-    public void draw(final Graphics canvas) {
-        // TODO Auto-generated method stub
-        ((Graphics2D)canvas).setColor(this.fillCol);
-        canvas.fillPolygon(allofx, allofy, 3);
-        ((Graphics2D)canvas).setColor(this.col);
-        ((Graphics2D)canvas).setStroke(new BasicStroke(2));
-        canvas.drawPolygon(allofx, allofy, 3);
 
-    }
     @Override
     public void draw( final GraphicsContext canvas) {
         final double[] yfx = new double[3];
@@ -65,33 +54,9 @@ public class Triangle extends TheShape {
             yfx[i] = allofy[i];
             xfx[i] = allofx[i];
         }
-        final javafx.scene.paint.Color fxColor = javafx.scene.paint.Color.rgb(this.fillCol.getRed(), this.fillCol.getGreen(), this.fillCol.getBlue(), this.fillCol.getAlpha()/255.0);
-        canvas.setFill(fxColor);
-        canvas.fillPolygon(yfx, xfx, 3);
-        final javafx.scene.paint.Color fillfx = javafx.scene.paint.Color.rgb(this.col.getRed(), this.col.getGreen(), this.col.getBlue(), this.col.getAlpha()/255.0);
-        canvas.setFill(fillfx);
-        canvas.strokePolygon(yfx, xfx, 3);
-
+        canvas.setFill(this.fillCol);
+        canvas.fillPolygon(xfx, yfx, 3);
+        canvas.setStroke(this.col);
+        canvas.strokePolygon(xfx, yfx, 3);
     }
-
-
-    @Override
-    public Object clone() throws CloneNotSupportedException {
-        // TODO Auto-generated method stub
-        final TheShape newshape = new Circle();
-        newshape.setColor(this.col);
-        newshape.setFillColor(this.fillCol);
-        newshape.setPosition(this.pos);
-        final Map<String, Double> newprop = new HashMap<String, Double>();
-        for (final Map.Entry<String, Double> entry : this.prop.entrySet()) {
-            newprop.put(entry.getKey(), entry.getValue());
-        }
-        newshape.setProperties(newprop);
-        TheShape.allshapes.add(newshape);
-        return newshape;
-    }
-
-
-
-
 }

@@ -1,0 +1,10 @@
+.hbox {
+    -fx-padding: 10;
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+    }
+.background {
+    -fx-background-color: #FFFFFF ;
+    }
+
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */

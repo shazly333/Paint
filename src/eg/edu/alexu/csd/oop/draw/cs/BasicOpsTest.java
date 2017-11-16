@@ -20,7 +20,7 @@ public class BasicOpsTest extends Application {
 
     final Canvas canvas = new Canvas(1000, 1000);
     final GraphicsContext graphicsContext = canvas.getGraphicsContext2D();
-    MyDrawingEngine drawingEngine = MyDrawingEngine.getInstance();
+    MyDrawingEngine drawingEngine = new MyDrawingEngine();
     double globalY = 100;
     final Circle firstCircle =new Circle(100, globalX, globalY);
     public static void main(final String[] args) {

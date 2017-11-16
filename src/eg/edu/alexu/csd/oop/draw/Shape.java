@@ -1,5 +1,8 @@
 package eg.edu.alexu.csd.oop.draw;
 
+import javafx.scene.canvas.GraphicsContext;
+import javafx.scene.paint.Color;
+
 public interface Shape {
     public void setPosition(java.awt.Point position);
     public java.awt.Point getPosition();
@@ -12,12 +15,12 @@ public interface Shape {
 
 
 
-    public void setColor(java.awt.Color color);
-    public java.awt.Color getColor();
-    public void setFillColor(java.awt.Color color);
-    public java.awt.Color getFillColor();
+    public void setColor(Color color);
+    public Color getColor();
+    public void setFillColor(Color color);
+    public Color getFillColor();
     /* redraw the shape on the canvas */
-    public void draw(java.awt.Graphics canvas);
+    public void draw(GraphicsContext canvas);
     /* create graphicsContext deep clone of the shape */
 
 

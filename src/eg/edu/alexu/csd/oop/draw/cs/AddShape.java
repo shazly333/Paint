@@ -8,10 +8,10 @@ import java.util.LinkedList;
 public class AddShape implements Command{
     private Shape shape;
     MyDrawingEngine myDrawingEngine;
-    public AddShape(Shape shape)
+    public AddShape(Shape shape,MyDrawingEngine myDrawingEngine)
     {
         this.shape = shape;
-        myDrawingEngine = myDrawingEngine.getInstance();
+        this.myDrawingEngine = myDrawingEngine;
     }
 
     @Override

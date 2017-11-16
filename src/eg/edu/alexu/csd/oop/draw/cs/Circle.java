@@ -2,10 +2,6 @@ package eg.edu.alexu.csd.oop.draw.cs;
 
 import javafx.scene.canvas.GraphicsContext;
 
-import java.awt.*;
-import java.util.HashMap;
-import java.util.Map;
-
 public class Circle extends TheShape {
     final String radius1 = "radius";
     final String centerxx = "centerx";
@@ -27,38 +23,17 @@ public class Circle extends TheShape {
     }
 
     @Override
-    public void draw(final Graphics canvas) {
-        ((Graphics2D)canvas).setColor(this.fillCol);
-        canvas.fillOval(prop.get(centerxx).intValue(), prop.get(centeryy).intValue(), prop.get(radius1).intValue(), prop.get(radius1).intValue());
-        ((Graphics2D)canvas).setColor(this.col);
-        ((Graphics2D)canvas).setStroke(new BasicStroke(2));
-        canvas.drawOval(prop.get(centerxx).intValue(), prop.get(centeryy).intValue(), prop.get(radius1).intValue(), prop.get(radius1).intValue());
-
-    }
-    @Override
     public void draw(final GraphicsContext canvas) {
-        final javafx.scene.paint.Color fxColor = javafx.scene.paint.Color.rgb(this.fillCol.getRed(), this.fillCol.getGreen(), this.fillCol.getBlue(), this.fillCol.getAlpha()/255.0);
-        canvas.setFill(fxColor);
-        canvas.fillOval(prop.get(centerxx).intValue() - prop.get(radius1).intValue()/2, prop.get(centeryy).intValue() - prop.get(radius1).intValue()/2, prop.get(radius1).intValue(), prop.get(radius1).intValue());
-        final javafx.scene.paint.Color fillfx = javafx.scene.paint.Color.rgb(this.col.getRed(), this.col.getGreen(), this.col.getBlue(), this.col.getAlpha()/255.0);
-        canvas.setFill(fillfx);
-        canvas.strokeOval(prop.get(centerxx).intValue() - prop.get(radius1).intValue()/2, prop.get(centeryy).intValue() - prop.get(radius1).intValue()/2, prop.get(radius1).intValue(), prop.get(radius1).intValue());
+
+        final double len =( Math.sqrt(Math.pow(this.pos.x-this.second_point.x,2)+Math.pow(this.pos.y-this.second_point.y,2)));
+
+        this.prop.put(radius1, len);
+        this.prop.put(centerxx,(double) this.pos.x);
+        this.prop.put(centeryy, (double) this.pos.x);
+        canvas.setFill(this.fillCol);
+        canvas.fillOval(prop.get(centerxx).intValue() - prop.get(radius1).intValue(), prop.get(centeryy).intValue() - prop.get(radius1).intValue(), prop.get(radius1).intValue(), prop.get(radius1).intValue());
+        canvas.setStroke(this.col);
+        canvas.strokeOval(prop.get(centerxx).intValue() - prop.get(radius1).intValue(), prop.get(centeryy).intValue() - prop.get(radius1).intValue(), prop.get(radius1).intValue(), prop.get(radius1).intValue());
 
     }
-
-    @Override
-    public Object clone() throws CloneNotSupportedException {
-        final TheShape newshape = new Circle();
-        newshape.setColor(this.col);
-        newshape.setFillColor(this.fillCol);
-        newshape.setPosition(this.pos);
-        final Map<String, Double> newprop = new HashMap<String, Double>();
-        for (final Map.Entry<String, Double> entry : this.prop.entrySet()) {
-            newprop.put(entry.getKey(), entry.getValue());
-        }
-        newshape.setProperties(newprop);
-        TheShape.allshapes.add(newshape);
-        return newshape;
-    }
-
 }
