@@ -1,12 +1,12 @@
 package eg.edu.alexu.csd.oop.draw.cs;
 
-import eg.edu.alexu.csd.oop.draw.Shape;
-import javafx.scene.canvas.GraphicsContext;
-
-import java.awt.*;
+import java.awt.Point;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
+
+import eg.edu.alexu.csd.oop.draw.Shape;
+import javafx.scene.canvas.GraphicsContext;
 
 
 public abstract class TheShape implements Shape {
@@ -14,6 +14,7 @@ public abstract class TheShape implements Shape {
 
     public  Point pos = new Point(0,0);
     public Point second_point = new Point(0,0);
+    public Point thirdPoint = new Point(0,0);
 
     protected Map<String, Double> prop = new HashMap<String, Double>();
     public static ArrayList<TheShape> allshapes = new ArrayList<>();
@@ -24,7 +25,10 @@ public abstract class TheShape implements Shape {
     public void setPosition(final Point position) {
         pos = position;
     }
-
+    public void set_second_position(final Point point)
+    {
+        second_point = point;
+    }
     @Override
     public Point getPosition() {
         return pos;

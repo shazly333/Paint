@@ -1,13 +1,13 @@
 package eg.edu.alexu.csd.oop.draw.cs;
 
-import javafx.scene.canvas.GraphicsContext;
+import java.awt.Point;
 
-import java.awt.*;
+import javafx.scene.canvas.GraphicsContext;
 
 public class Square extends TheShape {
     final String length = "length";
-    final String startx = "start x";
-    final String Starty = "Start y";
+    final String startx = "Upper left x";
+    final String Starty = "Upper left y";
 
     public Square () {
         this.prop.put(length, 1.0);
@@ -24,18 +24,25 @@ public class Square extends TheShape {
         this.pos.y = prop.get(Starty).intValue();
 
     }
-
     @Override
-    public void draw(final GraphicsContext canvas) {
-        final double len =( Math.sqrt(Math.pow(this.pos.x-this.second_point.x,2)+Math.pow(this.pos.y-this.second_point.y,2)))/Math.sqrt(2);
-        this.prop.put(length, len);
+    public void setPosition(final Point position) {
+        pos = position;
         this.prop.put(startx, (double) this.pos.x);
         this.prop.put(Starty, (double) this.pos.y);
-
+    }
+    @Override
+    public void set_second_position(final Point point)
+    {
+        second_point = point;
+        final double len =( Math.sqrt(Math.pow(this.pos.x-this.second_point.x,2)+Math.pow(this.pos.y-this.second_point.y,2)))/Math.sqrt(2);
+        this.prop.put(length, len);
+    }
+    @Override
+    public void draw(final GraphicsContext canvas) {
         canvas.setFill(this.fillCol);
-        canvas.fillRect(this.pos.x, this.pos.y, len, len);
+        canvas.fillRect(this.prop.get(startx), this.prop.get(Starty), this.prop.get(length), this.prop.get(length));
         canvas.setStroke(this.col);
-        canvas.strokeRect(this.pos.x, this.pos.y, len,len);
+        canvas.strokeRect(this.prop.get(startx), this.prop.get(Starty), this.prop.get(length), this.prop.get(length));
     }
 
 }

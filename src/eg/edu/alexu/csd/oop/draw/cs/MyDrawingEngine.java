@@ -1,13 +1,13 @@
 package eg.edu.alexu.csd.oop.draw.cs;
 
-import eg.edu.alexu.csd.oop.draw.DrawingEngine;
-import eg.edu.alexu.csd.oop.draw.Shape;
-import javafx.scene.canvas.GraphicsContext;
-
-import java.awt.*;
+import java.awt.Canvas;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Stack;
+
+import eg.edu.alexu.csd.oop.draw.DrawingEngine;
+import eg.edu.alexu.csd.oop.draw.Shape;
+import javafx.scene.canvas.GraphicsContext;
 
 public class MyDrawingEngine implements DrawingEngine {
 
@@ -23,12 +23,12 @@ public class MyDrawingEngine implements DrawingEngine {
     }
     private void addFirstlySupportedShapes()
     {
-        Circle circle = new Circle();
-        Square square = new Square();
-        Ellipse ellipse = new Ellipse();
-        Linesegment linesegment = new Linesegment();
-        Rectangle rectangle = new Rectangle();
-        Triangle triangle = new Triangle();
+        final Circle circle = new Circle();
+        final Square square = new Square();
+        final Ellipse ellipse = new Ellipse();
+        final Linesegment linesegment = new Linesegment();
+        final Rectangle rectangle = new Rectangle();
+        final Triangle triangle = new Triangle();
         supportedShapes.add(circle.getClass());
         supportedShapes.add(square.getClass());
         supportedShapes.add(ellipse.getClass());
@@ -45,6 +45,7 @@ public class MyDrawingEngine implements DrawingEngine {
     }
 
 
+    @Override
     public void refresh(final GraphicsContext graphicsContext) {
         for (final Shape shape : shapes) {
             ((TheShape)shape).draw(graphicsContext);
@@ -59,7 +60,6 @@ public class MyDrawingEngine implements DrawingEngine {
         addShape.execute();
         addNewAction(addShape);
     }
-
 
     @Override
     public void removeShape(final Shape shape) {
@@ -138,15 +138,18 @@ public class MyDrawingEngine implements DrawingEngine {
         JsonSaver.save(path,shapes);
     }
 
+    public void removeallshape() {
+        shapes.clear();
+    }
 
     @Override
     public void load(final String path) {
         try {
             shapes = JsonLoader.load(path);
-        } catch (Exception e) {}
+        } catch (final Exception e) {}
     }
 
-    private void addNewAction(Command command) {
+    private void addNewAction(final Command command) {
         undone.clear();
         done.addLast(command);
         if(done.size() > maxSize)

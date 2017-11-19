@@ -1,7 +1,8 @@
 .hbox {
-    -fx-padding: 10;
-    -fx-border-radius: 20;
+    -fx-padding: 10px;
+    -fx-border-radius: 50;
     -fx-background-radius: 20;
+    -fx-font-size: 75%;
     }
 .background {
     -fx-background-color: #FFFFFF ;

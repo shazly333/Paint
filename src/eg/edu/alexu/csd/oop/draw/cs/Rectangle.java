@@ -1,14 +1,14 @@
 package eg.edu.alexu.csd.oop.draw.cs;
 
-import javafx.scene.canvas.GraphicsContext;
+import java.awt.Point;
 
-import java.awt.*;
+import javafx.scene.canvas.GraphicsContext;
 
 public class Rectangle extends TheShape {
     final String width = "width";
     final String height = "height";
-    final String startx = "startx";
-    final String Starty = "Starty";
+    final String startx = "Upper left x";
+    final String Starty = "Upper left y";
 
     public Rectangle () {
         this.prop.put(width, 1.0);
@@ -28,19 +28,26 @@ public class Rectangle extends TheShape {
         this.pos.y = prop.get(Starty).intValue();
 
     }
-
+    @Override
+    public void setPosition(final Point position) {
+        pos = position;
+        this.prop.put(startx, (double) this.pos.x);
+        this.prop.put(Starty, (double) this.pos.y);
+    }
+    @Override
+    public void set_second_position(final Point point)
+    {
+        second_point = point;
+        this.prop.put(width, (double) Math.abs(this.pos.x-this.second_point.x));
+        this.prop.put(height, (double) Math.abs(this.pos.y-this.second_point.y));
+    }
     @Override
     public void draw(final GraphicsContext canvas) {
         // TODO Auto-generated method stub
-        this.prop.put(width, (double) Math.abs(this.pos.x-this.second_point.x));
-        this.prop.put(height, (double) Math.abs(this.pos.y-this.second_point.y));
-        this.prop.put(startx, (double) this.pos.x);
-        this.prop.put(Starty, (double) this.pos.y);
-
         canvas.setFill(this.fillCol);
-        canvas.fillRect(this.pos.x, this.pos.y, prop.get(width).intValue(), prop.get(height).intValue());
+        canvas.fillRect(this.prop.get(startx), this.prop.get(Starty), prop.get(width).intValue(), prop.get(height).intValue());
         canvas.setStroke(this.col);
-        canvas.strokeRect(this.pos.x, this.pos.y, prop.get(width).intValue(), prop.get(height).intValue());
+        canvas.strokeRect(this.prop.get(startx), this.prop.get(Starty), prop.get(width).intValue(), prop.get(height).intValue());
     }
 
 

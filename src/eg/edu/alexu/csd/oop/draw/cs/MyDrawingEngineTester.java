@@ -1,17 +1,19 @@
 package eg.edu.alexu.csd.oop.draw.cs;
 
 
-import eg.edu.alexu.csd.oop.draw.Shape;
+import static org.junit.Assert.assertEquals;
+
+import java.awt.Color;
+import java.awt.Point;
+
 import org.junit.Test;
 
-import java.awt.*;
-
-import static org.junit.Assert.assertEquals;
+import eg.edu.alexu.csd.oop.draw.Shape;
 
 
 public class MyDrawingEngineTester {
 
-    @Test
+
     public void tester() {
         final MyDrawingEngine myDrawingEngine = new MyDrawingEngine();
         final Circle circle1 = new Circle();
@@ -80,7 +82,7 @@ public class MyDrawingEngineTester {
         //Load
         try {
             myDrawingEngine.load("t.txt");
-        } catch (Exception e) {
+        } catch (final Exception e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
@@ -92,9 +94,9 @@ public class MyDrawingEngineTester {
     @Test
     public void test1() {
         MyDrawingEngine myDrawingEngine = new MyDrawingEngine();
-        Circle circle1 = new Circle();
-        Point point1 = new Point(1, -1);
-        Color color1 = new Color(100);
+        final Circle circle1 = new Circle();
+        final Point point1 = new Point(1, -1);
+        final Color color1 = new Color(100);
         circle1.setPosition(point1);
         circle1.setProperties(null);
         myDrawingEngine.addShape(circle1);
@@ -107,9 +109,9 @@ public class MyDrawingEngineTester {
     @Test
     public void test2() {
         MyDrawingEngine myDrawingEngine = new MyDrawingEngine();
-        Circle circle1 = new Circle();
-        Point point1 = new Point(1, -1);
-        Color color1 = new Color(100);
+        final Circle circle1 = new Circle();
+        final Point point1 = new Point(1, -1);
+        final Color color1 = new Color(100);
         circle1.setPosition(point1);
         myDrawingEngine.addShape(circle1);
         myDrawingEngine.save("ss2.txt");
@@ -120,24 +122,24 @@ public class MyDrawingEngineTester {
     @Test
     public void test3() {
         MyDrawingEngine myDrawingEngine = new MyDrawingEngine();
-        Circle circle1 = new Circle();
-        Point point1 = new Point(1, -1);
-        Color color1 = new Color(1*100);
+        final Circle circle1 = new Circle();
+        final Point point1 = new Point(1, -1);
+        final Color color1 = new Color(1*100);
         circle1.setPosition(point1);
         myDrawingEngine.addShape(circle1);
-        Shape circle2 = new Square();
-        Point point2 = new Point(2, -2);
-        Color color2 = new Color(2*100);
+        final Shape circle2 = new Square();
+        final Point point2 = new Point(2, -2);
+        final Color color2 = new Color(2*100);
         circle2.setPosition(point2);
         myDrawingEngine.addShape(circle2);
-        Shape circle3 = new Rectangle();
-        Point point3 = new Point(3, -3);
-        Color color3 = new Color(3*100);
+        final Shape circle3 = new Rectangle();
+        final Point point3 = new Point(3, -3);
+        final Color color3 = new Color(3*100);
         circle3.setPosition(point3);
         myDrawingEngine.addShape(circle3);
-        Shape circle4 = new Ellipse();
-        Point point4 = new Point(4, -4);
-        Color color4 = new Color(4*100);
+        final Shape circle4 = new Ellipse();
+        final Point point4 = new Point(4, -4);
+        final Color color4 = new Color(4*100);
         circle4.setPosition(point4);
         myDrawingEngine.addShape(circle1);
         myDrawingEngine.updateShape(circle1, circle4);
@@ -149,9 +151,9 @@ public class MyDrawingEngineTester {
     @Test
     public void test4() {
         MyDrawingEngine myDrawingEngine = new MyDrawingEngine();
-        Circle circle1 = new Circle();
-        Point point1 = new Point(1, -1);
-        Color color1 = new Color(100);
+        final Circle circle1 = new Circle();
+        final Point point1 = new Point(1, -1);
+        final Color color1 = new Color(100);
         circle1.setPosition(point1);
         myDrawingEngine.addShape(circle1);
         myDrawingEngine.addShape(null);
