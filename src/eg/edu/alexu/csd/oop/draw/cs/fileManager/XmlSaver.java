@@ -1,4 +1,4 @@
-package eg.edu.alexu.csd.oop.draw.cs;
+package eg.edu.alexu.csd.oop.draw.cs.fileManager;
 
 import eg.edu.alexu.csd.oop.draw.Shape;
 import javafx.scene.paint.Color;
@@ -11,7 +11,7 @@ import javax.xml.transform.Transformer;
 import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
-import java.awt.*;
+import java.awt.Point;
 import java.io.File;
 import java.util.LinkedList;
 import java.util.Map;
@@ -52,7 +52,7 @@ public class XmlSaver {
             shapeElement.setAttribute("class", shape.getClass().getName());
             writePoint(shape.getPosition(),shapeElement,"position");
             writeColor(shape.getColor(),shapeElement,"color");
-            writeColor(shape.getColor(),shapeElement,"fillcolor");
+            writeColor(shape.getFillColor(),shapeElement,"fillcolor");
             writeDoubleMap(shape.getProperties(),shapeElement,"properties");
         }
         rootElement.appendChild(shapeElement);

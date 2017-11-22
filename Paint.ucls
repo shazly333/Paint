@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class-diagram version="1.2.2" icons="true" automaticImage="PNG" always-add-relationships="true" generalizations="true" 
   realizations="true" associations="true" dependencies="true" nesting-relationships="true" router="FAN">  
-  <class id="1" language="java" name="eg.edu.alexu.csd.oop.draw.cs.UpdateShape" project="Paint_GUI" 
+  <class id="1" language="java" name="eg.edu.alexu.csd.oop.draw.cs.commands.UpdateShape" project="Paint_GUI"
     file="/Paint_GUI/src/eg/edu/alexu/csd/oop/draw/cs/UpdateShape.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="160" width="298" x="1333" y="-167"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -10,7 +10,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="2" language="java" name="eg.edu.alexu.csd.oop.draw.cs.Ellipse" project="Paint_GUI" 
+  <class id="2" language="java" name="eg.edu.alexu.csd.oop.draw.cs.shapes.Ellipse" project="Paint_GUI"
     file="/Paint_GUI/src/eg/edu/alexu/csd/oop/draw/cs/Ellipse.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="232" width="209" x="569" y="1398"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -19,7 +19,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="3" language="java" name="eg.edu.alexu.csd.oop.draw.cs.TextLoader" project="Paint_GUI" 
+  <class id="3" language="java" name="eg.edu.alexu.csd.oop.draw.cs.fileManager.TextLoader" project="Paint_GUI"
     file="/Paint_GUI/src/eg/edu/alexu/csd/oop/draw/cs/TextLoader.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="250" width="247" x="-52" y="413"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -28,7 +28,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="4" language="java" name="eg.edu.alexu.csd.oop.draw.cs.Shapefactory" project="Paint_GUI" 
+  <class id="4" language="java" name="eg.edu.alexu.csd.oop.draw.cs.shapes.Shapefactory" project="Paint_GUI"
     file="/Paint_GUI/src/eg/edu/alexu/csd/oop/draw/cs/Shapefactory.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="106" width="208" x="235" y="413"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -37,7 +37,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="5" language="java" name="eg.edu.alexu.csd.oop.draw.cs.AddShape" project="Paint_GUI" 
+  <class id="5" language="java" name="eg.edu.alexu.csd.oop.draw.cs.commands.AddShape" project="Paint_GUI"
     file="/Paint_GUI/src/eg/edu/alexu/csd/oop/draw/cs/AddShape.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="142" width="239" x="503" y="123"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -46,7 +46,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <interface id="6" language="java" name="eg.edu.alexu.csd.oop.draw.cs.Command" project="Paint_GUI" 
+  <interface id="6" language="java" name="eg.edu.alexu.csd.oop.draw.cs.commands.Command" project="Paint_GUI"
     file="/Paint_GUI/src/eg/edu/alexu/csd/oop/draw/cs/Command.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="106" width="172" x="1083" y="937"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -55,7 +55,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </interface>  
-  <class id="7" language="java" name="eg.edu.alexu.csd.oop.draw.cs.JsonSaver" project="Paint_GUI" 
+  <class id="7" language="java" name="eg.edu.alexu.csd.oop.draw.cs.fileManager.JsonSaver" project="Paint_GUI"
     file="/Paint_GUI/src/eg/edu/alexu/csd/oop/draw/cs/JsonSaver.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="214" width="324" x="1316" y="937"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -64,7 +64,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="8" language="java" name="eg.edu.alexu.csd.oop.draw.cs.Linesegment" project="Paint_GUI" 
+  <class id="8" language="java" name="eg.edu.alexu.csd.oop.draw.cs.shapes.Linesegment" project="Paint_GUI"
     file="/Paint_GUI/src/eg/edu/alexu/csd/oop/draw/cs/Linesegment.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="232" width="272" x="33" y="1398"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -73,7 +73,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="9" language="java" name="eg.edu.alexu.csd.oop.draw.cs.Circle" project="Paint_GUI" 
+  <class id="9" language="java" name="eg.edu.alexu.csd.oop.draw.cs.shapes.Circle" project="Paint_GUI"
     file="/Paint_GUI/src/eg/edu/alexu/csd/oop/draw/cs/Circle.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="214" width="209" x="1067" y="1398"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -82,7 +82,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="10" language="java" name="eg.edu.alexu.csd.oop.draw.cs.MyDrawingEngine" project="Paint_GUI" 
+  <class id="10" language="java" name="eg.edu.alexu.csd.oop.draw.cs.drawingengine.MyDrawingEngine" project="Paint_GUI"
     file="/Paint_GUI/src/eg/edu/alexu/csd/oop/draw/cs/MyDrawingEngine.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="484" width="374" x="651" y="413"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -91,7 +91,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="11" language="java" name="eg.edu.alexu.csd.oop.draw.cs.JsonLoader" project="Paint_GUI" 
+  <class id="11" language="java" name="eg.edu.alexu.csd.oop.draw.cs.fileManager.JsonLoader" project="Paint_GUI"
     file="/Paint_GUI/src/eg/edu/alexu/csd/oop/draw/cs/JsonLoader.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="214" width="371" x="651" y="937"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -100,7 +100,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="12" language="java" name="eg.edu.alexu.csd.oop.draw.cs.Triangle" project="Paint_GUI" 
+  <class id="12" language="java" name="eg.edu.alexu.csd.oop.draw.cs.shapes.Triangle" project="Paint_GUI"
     file="/Paint_GUI/src/eg/edu/alexu/csd/oop/draw/cs/Triangle.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="268" width="184" x="345" y="1398"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -109,7 +109,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="13" language="java" name="eg.edu.alexu.csd.oop.draw.cs.TheShape" project="Paint_GUI" 
+  <class id="13" language="java" name="eg.edu.alexu.csd.oop.draw.cs.shapes.TheShape" project="Paint_GUI"
     file="/Paint_GUI/src/eg/edu/alexu/csd/oop/draw/cs/TheShape.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="411" width="256" x="135" y="937"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -118,7 +118,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="14" language="java" name="eg.edu.alexu.csd.oop.draw.cs.RemoveShape" project="Paint_GUI" 
+  <class id="14" language="java" name="eg.edu.alexu.csd.oop.draw.cs.commands.RemoveShape" project="Paint_GUI"
     file="/Paint_GUI/src/eg/edu/alexu/csd/oop/draw/cs/RemoveShape.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="142" width="262" x="782" y="123"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -127,7 +127,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="15" language="java" name="eg.edu.alexu.csd.oop.draw.cs.Square" project="Paint_GUI" 
+  <class id="15" language="java" name="eg.edu.alexu.csd.oop.draw.cs.shapes.Square" project="Paint_GUI"
     file="/Paint_GUI/src/eg/edu/alexu/csd/oop/draw/cs/Square.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="214" width="209" x="-216" y="1398"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -136,7 +136,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="16" language="java" name="eg.edu.alexu.csd.oop.draw.cs.TextSaver" project="Paint_GUI" 
+  <class id="16" language="java" name="eg.edu.alexu.csd.oop.draw.cs.fileManager.TextSaver" project="Paint_GUI"
     file="/Paint_GUI/src/eg/edu/alexu/csd/oop/draw/cs/TextSaver.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="250" width="271" x="403" y="-167"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -145,7 +145,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="17" language="java" name="eg.edu.alexu.csd.oop.draw.cs.Rectangle" project="Paint_GUI" 
+  <class id="17" language="java" name="eg.edu.alexu.csd.oop.draw.cs.shapes.Rectangle" project="Paint_GUI"
     file="/Paint_GUI/src/eg/edu/alexu/csd/oop/draw/cs/Rectangle.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="232" width="209" x="818" y="1398"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 

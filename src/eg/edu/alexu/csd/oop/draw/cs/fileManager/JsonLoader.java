@@ -1,10 +1,10 @@
-package eg.edu.alexu.csd.oop.draw.cs;
+package eg.edu.alexu.csd.oop.draw.cs.fileManager;
 
 import eg.edu.alexu.csd.oop.draw.Shape;
 import eg.edu.alexu.csd.oop.draw.cs.json.*;
 import javafx.scene.paint.Color;
 
-import java.awt.*;
+import java.awt.Point;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -103,8 +103,8 @@ public class JsonLoader {
         Map<String, Double> map = new HashMap<>();
         Map<String, Value> doubleMapProb = doubleMapObjectValue.getProp();
         for (Map.Entry entry : doubleMapProb.entrySet()) {
-            DoubleNumberValue value = (DoubleNumberValue)entry.getValue();
-            map.put((String) entry.getKey(),value.getNumber());
+            StringValue value = (StringValue)entry.getValue();
+            map.put((String) entry.getKey(),Double.parseDouble(value.getString()));
         }
         return map;
     }

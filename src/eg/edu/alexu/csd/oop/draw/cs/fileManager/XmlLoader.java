@@ -1,6 +1,7 @@
-package eg.edu.alexu.csd.oop.draw.cs;
+package eg.edu.alexu.csd.oop.draw.cs.fileManager;
 
 import eg.edu.alexu.csd.oop.draw.Shape;
+import eg.edu.alexu.csd.oop.draw.cs.shapes.TheShape;
 import javafx.scene.paint.Color;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -8,7 +9,7 @@ import org.w3c.dom.NodeList;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
-import java.awt.*;
+import java.awt.Point;
 import java.io.File;
 import java.util.HashMap;
 import java.util.LinkedList;
@@ -63,12 +64,13 @@ public class XmlLoader {
         Double green = Double.parseDouble(colorElement.getAttribute("green"));
         Double blue = Double.parseDouble(colorElement.getAttribute("blue"));
         Double opacity = Double.parseDouble(colorElement.getAttribute("opacity"));
-        return Color.color(red,green,blue,opacity);
+        return Color.color(red,blue,green,opacity);
     }
     private static TheShape readTheShape(Element shapeElement) {
         if(!isExist(shapeElement))
             return null;
         String shapeClass = shapeElement.getAttribute("class");
+        System.out.println(shapeClass);
         TheShape theShape = TheShape.shapesFactory(shapeClass);
         Point position = readPoint((Element) shapeElement.getElementsByTagName("point").item(0));
         if(position != null)
@@ -78,18 +80,18 @@ public class XmlLoader {
         for (int i = 0; i < size; i++) {
             Element fieldElement = (Element) colorNodeList.item(i);
             String filedName = fieldElement.getAttribute("name");
-            if(fieldElement.equals("color")) {
+            if(filedName.equals("color")) {
                 Color color = readColor(fieldElement);
                 if(color != null)
                     theShape.setColor(color);
             }
-            else if (fieldElement.equals("fillcolor")) {
+            else if (filedName.equals("fillcolor")) {
                 Color fillColor = readColor(fieldElement);
                 if(fillColor != null)
                     theShape.setFillColor(fillColor);
             }
         }
-        Map<String, Double> properties = readDoubleMap((Element) shapeElement.getElementsByTagName("point").item(0));
+        Map<String, Double> properties = readDoubleMap((Element) shapeElement.getElementsByTagName("doublemap").item(0));
         if(properties != null)
             theShape.setProperties(properties);
         return theShape;

@@ -1,10 +1,10 @@
-package eg.edu.alexu.csd.oop.draw.cs;
+package eg.edu.alexu.csd.oop.draw.cs.fileManager;
 
 import eg.edu.alexu.csd.oop.draw.Shape;
 import eg.edu.alexu.csd.oop.draw.cs.json.*;
 import javafx.scene.paint.Color;
 
-import java.awt.*;
+import java.awt.Point;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -78,7 +78,7 @@ public class JsonSaver {
             return new BooleanValue(null);
         HashMap<String,Value> MapProb = new HashMap<>();
         for (Map.Entry entry : map.entrySet()) {
-            MapProb.put((String) entry.getKey(),new DoubleNumberValue((Double)entry.getValue()));
+            MapProb.put((String) entry.getKey(),new StringValue(String.valueOf((Double)entry.getValue())));
         }
         ObjectValue MapValue = new ObjectValue(MapProb);
         return  MapValue;

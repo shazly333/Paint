@@ -2,6 +2,12 @@ package eg.edu.alexu.csd.oop.draw.cs;
 
 
 import eg.edu.alexu.csd.oop.draw.Shape;
+import eg.edu.alexu.csd.oop.draw.cs.drawingengine.MyDrawingEngine;
+import eg.edu.alexu.csd.oop.draw.cs.shapes.Circle;
+import eg.edu.alexu.csd.oop.draw.cs.shapes.Ellipse;
+import eg.edu.alexu.csd.oop.draw.cs.shapes.Rectangle;
+import eg.edu.alexu.csd.oop.draw.cs.shapes.Square;
+import javafx.scene.paint.Color;
 import org.junit.Test;
 
 import java.awt.*;
@@ -93,7 +99,7 @@ public class MyDrawingEngineTester {
         MyDrawingEngine myDrawingEngine = new MyDrawingEngine();
         final Circle circle1 = new Circle();
         final Point point1 = new Point(1, -1);
-        final Color color1 = new Color(100);
+        final Color color1 = Color.color(.5,.5,.5,.5);
         circle1.setPosition(point1);
         circle1.setProperties(null);
         myDrawingEngine.addShape(circle1);
@@ -108,7 +114,7 @@ public class MyDrawingEngineTester {
         MyDrawingEngine myDrawingEngine = new MyDrawingEngine();
         final Circle circle1 = new Circle();
         final Point point1 = new Point(1, -1);
-        final Color color1 = new Color(100);
+        final Color color1 = Color.color(.5,.5,.5,.5);
         circle1.setPosition(point1);
         myDrawingEngine.addShape(circle1);
         myDrawingEngine.save("ss2.txt");
@@ -121,22 +127,22 @@ public class MyDrawingEngineTester {
         MyDrawingEngine myDrawingEngine = new MyDrawingEngine();
         final Circle circle1 = new Circle();
         final Point point1 = new Point(1, -1);
-        final Color color1 = new Color(1*100);
+        final Color color1 = Color.color(.5,.5,.5,.5);
         circle1.setPosition(point1);
         myDrawingEngine.addShape(circle1);
         final Shape circle2 = new Square();
         final Point point2 = new Point(2, -2);
-        final Color color2 = new Color(2*100);
+        final Color color2 = new Color(.5,.5,.5,.5);
         circle2.setPosition(point2);
         myDrawingEngine.addShape(circle2);
-        final Shape circle3 = new Rectangle();
+        final Shape circle3 = new eg.edu.alexu.csd.oop.draw.cs.shapes.Rectangle();
         final Point point3 = new Point(3, -3);
-        final Color color3 = new Color(3*100);
+        final Color color3 = Color.color(.5,.5,.5,.5);
         circle3.setPosition(point3);
         myDrawingEngine.addShape(circle3);
         final Shape circle4 = new Ellipse();
         final Point point4 = new Point(4, -4);
-        final Color color4 = new Color(4*100);
+        final Color color4 = Color.color(.5,.5,.5,.5);
         circle4.setPosition(point4);
         myDrawingEngine.addShape(circle1);
         myDrawingEngine.updateShape(circle1, circle4);
@@ -150,7 +156,7 @@ public class MyDrawingEngineTester {
         MyDrawingEngine myDrawingEngine = new MyDrawingEngine();
         final Circle circle1 = new Circle();
         final Point point1 = new Point(1, -1);
-        final Color color1 = new Color(100);
+        final Color color1 = Color.color(.5,.5,.5,.5);
         circle1.setPosition(point1);
         myDrawingEngine.addShape(circle1);
         myDrawingEngine.addShape(null);
@@ -241,7 +247,7 @@ public class MyDrawingEngineTester {
         MyDrawingEngine myDrawingEngine = new MyDrawingEngine();
         final Circle circle1 = new Circle();
         final Point point1 = new Point(1, -1);
-        final Color color1 = new Color(100);
+        final Color color1 = Color.color(.5,.5,.5,.5);
         circle1.setPosition(point1);
         circle1.setProperties(null);
         myDrawingEngine.addShape(circle1);
@@ -256,7 +262,7 @@ public class MyDrawingEngineTester {
         MyDrawingEngine myDrawingEngine = new MyDrawingEngine();
         final Circle circle1 = new Circle();
         final Point point1 = new Point(1, -1);
-        final Color color1 = new Color(100);
+        final Color color1 = Color.color(.5,.5,.5,.5);
         circle1.setPosition(point1);
         myDrawingEngine.addShape(circle1);
         myDrawingEngine.save("ss2.Xml");
@@ -269,22 +275,22 @@ public class MyDrawingEngineTester {
         MyDrawingEngine myDrawingEngine = new MyDrawingEngine();
         final Circle circle1 = new Circle();
         final Point point1 = new Point(1, -1);
-        final Color color1 = new Color(1*100);
+        final Color color1 = Color.color(.5,.5,.5,.5);
         circle1.setPosition(point1);
         myDrawingEngine.addShape(circle1);
         final Shape circle2 = new Square();
         final Point point2 = new Point(2, -2);
-        final Color color2 = new Color(2*100);
+        final Color color2 = Color.color(.5,.5,.5,.5);
         circle2.setPosition(point2);
         myDrawingEngine.addShape(circle2);
         final Shape circle3 = new Rectangle();
         final Point point3 = new Point(3, -3);
-        final Color color3 = new Color(3*100);
+        final Color color3 = Color.color(.5,.5,.5,.5);
         circle3.setPosition(point3);
         myDrawingEngine.addShape(circle3);
         final Shape circle4 = new Ellipse();
         final Point point4 = new Point(4, -4);
-        final Color color4 = new Color(4*100);
+        final Color color4 = Color.color(.5,.5,.5,.5);
         circle4.setPosition(point4);
         myDrawingEngine.addShape(circle1);
         myDrawingEngine.updateShape(circle1, circle4);
@@ -298,7 +304,7 @@ public class MyDrawingEngineTester {
         MyDrawingEngine myDrawingEngine = new MyDrawingEngine();
         final Circle circle1 = new Circle();
         final Point point1 = new Point(1, -1);
-        final Color color1 = new Color(100);
+        final Color color1 = Color.color(.5,.5,.5,.5);
         circle1.setPosition(point1);
         myDrawingEngine.addShape(circle1);
         myDrawingEngine.addShape(null);
@@ -307,5 +313,88 @@ public class MyDrawingEngineTester {
         myDrawingEngine = new MyDrawingEngine();
         myDrawingEngine.load("ss.xml");
         assertEquals(2, myDrawingEngine.getShapes().length);
+    }
+
+    @Test
+    public void ColorXmlTest() {
+        MyDrawingEngine myDrawingEngine = new MyDrawingEngine();
+        final Circle circle1 = new Circle();
+        final Point point1 = new Point(1, -1);
+        final Color color1 = Color.color(.5,.5,.5,.5);
+        final Color color2 = Color.color(.1,.1,.1,.1);
+        circle1.setPosition(point1);
+        circle1.setColor(color1);
+        circle1.setFillColor(color2);
+        myDrawingEngine.addShape(circle1);
+        myDrawingEngine.save("color.xml");
+        assertEquals(1, myDrawingEngine.getShapes().length);
+        myDrawingEngine = new MyDrawingEngine();
+        myDrawingEngine.load("color.xml");
+        assertEquals(1, myDrawingEngine.getShapes().length);
+        Color color = myDrawingEngine.getShapes()[0].getColor();
+        Color fillColor = myDrawingEngine.getShapes()[0].getFillColor();
+        assertEquals(.5,color.getBlue(),.00001);
+        assertEquals(.5,color.getGreen(),.00001);
+        assertEquals(.5,color.getRed(),.00001);
+        assertEquals(.5,color.getOpacity(),.00001);
+        assertEquals(.1,fillColor.getBlue(),.00001);
+        assertEquals(.1,fillColor.getGreen(),.00001);
+        assertEquals(.1,fillColor.getRed(),.00001);
+        assertEquals(.1,fillColor.getOpacity(),.00001);
+    }
+    @Test
+    public void ColorJsonTest() {
+        MyDrawingEngine myDrawingEngine = new MyDrawingEngine();
+        final Circle circle1 = new Circle();
+        final Point point1 = new Point(1, -1);
+        final Color color1 = Color.color(.5,.5,.5,.5);
+        final Color color2 = Color.color(.1,.1,.1,.1);
+        circle1.setPosition(point1);
+        circle1.setColor(color1);
+        circle1.setFillColor(color2);
+        myDrawingEngine.addShape(circle1);
+        myDrawingEngine.save("color.json");
+        assertEquals(1, myDrawingEngine.getShapes().length);
+        myDrawingEngine = new MyDrawingEngine();
+        myDrawingEngine.load("color.json");
+        assertEquals(1, myDrawingEngine.getShapes().length);
+        Color color = myDrawingEngine.getShapes()[0].getColor();
+        Color fillColor = myDrawingEngine.getShapes()[0].getFillColor();
+        assertEquals(.5,color.getBlue(),.00001);
+        assertEquals(.5,color.getGreen(),.00001);
+        assertEquals(.5,color.getRed(),.00001);
+        assertEquals(.5,color.getOpacity(),.00001);
+        assertEquals(.1,fillColor.getBlue(),.00001);
+        assertEquals(.1,fillColor.getGreen(),.00001);
+        assertEquals(.1,fillColor.getRed(),.00001);
+        assertEquals(.1,fillColor.getOpacity(),.00001);
+    }
+
+    @Test
+    public void ColorTextTest() {
+        MyDrawingEngine myDrawingEngine = new MyDrawingEngine();
+        final Circle circle1 = new Circle();
+        final Point point1 = new Point(1, -1);
+        final Color color1 = Color.color(.5,.5,.5,.5);
+        final Color color2 = Color.color(.1,.1,.1,.1);
+        circle1.setPosition(point1);
+        circle1.setColor(color1);
+        circle1.setFillColor(color2);
+        myDrawingEngine.addShape(circle1);
+        myDrawingEngine.save("color.txt");
+        assertEquals(1, myDrawingEngine.getShapes().length);
+        myDrawingEngine = new MyDrawingEngine();
+        myDrawingEngine.load("color.txt");
+        assertEquals(1, myDrawingEngine.getShapes().length);
+        Color color = myDrawingEngine.getShapes()[0].getColor();
+        Color fillColor = myDrawingEngine.getShapes()[0].getFillColor();
+        assertEquals(.5,color.getBlue(),.00001);
+        assertEquals(.5,color.getGreen(),.00001);
+        assertEquals(.5,color.getRed(),.00001);
+        assertEquals(.5,color.getOpacity(),.00001);
+        assertEquals(.1,fillColor.getBlue(),.00001);
+        assertEquals(.1,fillColor.getGreen(),.00001);
+        assertEquals(.1,fillColor.getRed(),.00001);
+        assertEquals(.1,fillColor.getOpacity(),.00001);
     }
 }

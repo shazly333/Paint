@@ -1,4 +1,4 @@
-package eg.edu.alexu.csd.oop.draw.cs;
+package eg.edu.alexu.csd.oop.draw.cs.commands;
 
 public interface Command {
     public void execute();

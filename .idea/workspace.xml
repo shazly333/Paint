@@ -1,57 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/BasicOpsTest.java" line="43" />
+    <bookmark url="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/BasicOpsTest.java" line="45" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d3dc887f-e326-40a3-9b3d-f2d19f11bb42" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/Saver.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/XmlLoader.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/XmlSaver.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ss.Xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ss.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ss.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ss1.Xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ss1.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ss2.Xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ss2.txt" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hs_err_pid11324.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hs_err_pid11888.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hs_err_pid11984.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hs_err_pid12744.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hs_err_pid12908.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hs_err_pid13044.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hs_err_pid13104.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hs_err_pid13548.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hs_err_pid13556.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hs_err_pid13756.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hs_err_pid14124.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hs_err_pid15456.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hs_err_pid17492.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hs_err_pid1760.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hs_err_pid21328.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hs_err_pid8328.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/replay_pid11888.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/replay_pid11984.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/replay_pid12744.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/replay_pid12908.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/replay_pid13044.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/replay_pid13104.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/replay_pid13548.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/replay_pid13556.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/replay_pid14124.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/replay_pid15456.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/replay_pid17492.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/replay_pid1760.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/replay_pid8328.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/Shapefactory.java" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/AddShape.java" afterPath="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/commands/AddShape.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/Circle.java" afterPath="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/shapes/Circle.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/Command.java" afterPath="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/commands/Command.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/Ellipse.java" afterPath="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/shapes/Ellipse.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/JsonLoader.java" afterPath="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/fileManager/JsonLoader.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/JsonSaver.java" afterPath="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/fileManager/JsonSaver.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/Linesegment.java" afterPath="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/shapes/Linesegment.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/MyDrawingEngine.java" afterPath="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/drawingengine/MyDrawingEngine.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/Rectangle.java" afterPath="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/shapes/Rectangle.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/RemoveShape.java" afterPath="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/commands/RemoveShape.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/Saver.java" afterPath="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/fileManager/Saver.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/Square.java" afterPath="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/shapes/Square.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/TextLoader.java" afterPath="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/fileManager/TextLoader.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/TextSaver.java" afterPath="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/fileManager/TextSaver.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/TheShape.java" afterPath="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/shapes/TheShape.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/Triangle.java" afterPath="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/shapes/Triangle.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/UpdateShape.java" afterPath="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/commands/UpdateShape.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/XmlLoader.java" afterPath="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/fileManager/XmlLoader.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/XmlSaver.java" afterPath="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/fileManager/XmlSaver.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/JsonLoader.java" afterPath="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/JsonLoader.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/JsonSaver.java" afterPath="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/JsonSaver.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/MyDrawingEngine.java" afterPath="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/MyDrawingEngine.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Paint.ucls" afterPath="$PROJECT_DIR$/Paint.ucls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/BasicOpsTest.java" afterPath="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/BasicOpsTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/BasicOpsTest2.java" afterPath="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/BasicOpsTest2.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/MyDrawingEngineTester.java" afterPath="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/MyDrawingEngineTester.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/TesterMain.java" afterPath="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/TesterMain.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/TextLoader.java" afterPath="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/TextLoader.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/TextSaver.java" afterPath="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/TextSaver.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/gui/Controller.java" afterPath="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/gui/Controller.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/gui/ShapeUpdater.java" afterPath="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/gui/ShapeUpdater.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/json/DoubleNumberValue.java" afterPath="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/json/DoubleNumberValue.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -66,98 +48,119 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MyDrawingEngine.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/MyDrawingEngine.java">
+      <file leaf-file-name="Controller.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/gui/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="137" column="0" lean-forward="false" selection-start-line="137" selection-start-column="0" selection-end-line="137" selection-end-column="0" />
-              <folding>
-                <element signature="e#3834#3835#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Saver.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/Saver.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="String.class" pinned="false" current-in-tab="false">
-        <entry file="jar:///usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/rt.jar!/java/lang/String.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="123">
-              <caret line="947" column="0" lean-forward="false" selection-start-line="947" selection-start-column="0" selection-end-line="947" selection-end-column="0" />
-              <folding>
-                <element signature="e#29276#29277#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Locale.class" pinned="false" current-in-tab="false">
-        <entry file="jar:///usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/rt.jar!/java/util/Locale.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="123">
-              <caret line="127" column="0" lean-forward="false" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
-              <folding>
-                <element signature="e#5363#5364#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="XmlSaver.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/XmlSaver.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
-              <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CoreDocumentImpl.class" pinned="false" current-in-tab="false">
-        <entry file="jar:///usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/rt.jar!/com/sun/org/apache/xerces/internal/dom/CoreDocumentImpl.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="281" column="0" lean-forward="false" selection-start-line="281" selection-start-column="0" selection-end-line="281" selection-end-column="0" />
+            <state relative-caret-position="184">
+              <caret line="246" column="0" lean-forward="false" selection-start-line="246" selection-start-column="0" selection-end-line="246" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="XmlLoader.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/XmlLoader.java">
+      <file leaf-file-name="View.fxml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/gui/View.fxml">
+          <provider editor-type-id="JavaFX-Scene-Builder">
+            <state />
+          </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="26" column="65" lean-forward="true" selection-start-line="26" selection-start-column="65" selection-end-line="26" selection-end-column="65" />
+            <state relative-caret-position="128">
+              <caret line="35" column="80" lean-forward="false" selection-start-line="35" selection-start-column="80" selection-end-line="35" selection-end-column="80" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#4066#4067#0" expanded="true" />
-                <element signature="e#4132#4133#0" expanded="true" />
+                <marker date="1511377042193" expanded="true" signature="4975:4989" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MyDrawingEngineTester.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/MyDrawingEngineTester.java">
+      <file leaf-file-name="Square.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/shapes/Square.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
-              <caret line="293" column="0" lean-forward="false" selection-start-line="293" selection-start-column="0" selection-end-line="293" selection-end-column="0" />
+            <state relative-caret-position="180">
+              <caret line="42" column="27" lean-forward="false" selection-start-line="42" selection-start-column="27" selection-end-line="42" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="XmlLoader.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/fileManager/XmlLoader.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="291">
+              <caret line="86" column="13" lean-forward="true" selection-start-line="86" selection-start-column="13" selection-end-line="86" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="color.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/color.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="567" lean-forward="false" selection-start-line="0" selection-start-column="558" selection-end-line="0" selection-end-column="567" />
+              <folding>
+                <marker date="1511379959476" expanded="true" signature="576:584" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TextLoader.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/fileManager/TextLoader.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="84" column="16" lean-forward="true" selection-start-line="84" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TextSaver.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/fileManager/TextSaver.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-40">
+              <caret line="65" column="36" lean-forward="false" selection-start-line="65" selection-start-column="26" selection-end-line="65" selection-end-column="36" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JsonSaver.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/fileManager/JsonSaver.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="287">
+              <caret line="62" column="27" lean-forward="false" selection-start-line="62" selection-start-column="23" selection-end-line="62" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JsonLoader.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/fileManager/JsonLoader.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1188">
+              <caret line="66" column="62" lean-forward="true" selection-start-line="66" selection-start-column="62" selection-end-line="66" selection-end-column="62" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TheShape.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/shapes/TheShape.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="359">
+              <caret line="98" column="13" lean-forward="false" selection-start-line="98" selection-start-column="13" selection-end-line="98" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -188,6 +191,7 @@
       <find>plug</find>
       <find>color</find>
       <find>shape&gt;</find>
+      <find>new Colo</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -201,16 +205,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Shape.java" />
-        <option value="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/TheShape.java" />
-        <option value="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/Shape.java" />
-        <option value="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/Command.java" />
-        <option value="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/json/TrueValue.java" />
-        <option value="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/json/NullValue.java" />
-        <option value="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/json/FalseValue.java" />
-        <option value="$PROJECT_DIR$/.Save.json" />
-        <option value="$PROJECT_DIR$/Save.json" />
-        <option value="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/AddShape.java" />
         <option value="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/RemoveShape.java" />
         <option value="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/UpdateShape.java" />
         <option value="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/json/Value.java" />
@@ -219,7 +213,6 @@
         <option value="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/json/ArrayValue.java" />
         <option value="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/json/ValueReader.java" />
         <option value="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/json/BooleanValue.java" />
-        <option value="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/json/DoubleNumberValue.java" />
         <option value="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/json/NumberValue.java" />
         <option value="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/BasicOpsTest.java" />
         <option value="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/BasicOpsTest2.java" />
@@ -237,19 +230,32 @@
         <option value="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/GUI/View.fxml" />
         <option value="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/gui/View.fxml" />
         <option value="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/gui/ShapeUpdater.java" />
-        <option value="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/gui/Controller.java" />
-        <option value="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/TesterMain.java" />
         <option value="$PROJECT_DIR$/sss.xml" />
-        <option value="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/JsonSaver.java" />
         <option value="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/JsonLoader.java" />
         <option value="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/XmlSaver.java" />
-        <option value="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/MyDrawingEngineTester.java" />
         <option value="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/Saver.java" />
         <option value="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/TextSaver.java" />
         <option value="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/TextLoader.java" />
         <option value="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/MyDrawingEngine.java" />
         <option value="$PROJECT_DIR$/ss2.Xml" />
         <option value="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/XmlLoader.java" />
+        <option value="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/TesterMain.java" />
+        <option value="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/JsonSaver.java" />
+        <option value="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/FileManager/Saver.java" />
+        <option value="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/FileManager/JsonLoader.java" />
+        <option value="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/commands/UpdateShape.java" />
+        <option value="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/shapes/Shapefactory.java" />
+        <option value="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/fileManager/TextLoader.java" />
+        <option value="$PROJECT_DIR$/color.xml" />
+        <option value="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/MyDrawingEngineTester.java" />
+        <option value="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/fileManager/XmlSaver.java" />
+        <option value="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/json/DoubleNumberValue.java" />
+        <option value="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/drawingengine/MyDrawingEngine.java" />
+        <option value="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/gui/Controller.java" />
+        <option value="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/shapes/TheShape.java" />
+        <option value="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/fileManager/XmlLoader.java" />
+        <option value="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/fileManager/JsonSaver.java" />
+        <option value="$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/fileManager/JsonLoader.java" />
       </list>
     </option>
   </component>
@@ -312,8 +318,8 @@
       </pane>
       <pane id="Scope" />
       <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -347,11 +353,11 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MyDrawingEngineTester">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="BasicOpsTest2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="eg.edu.alexu.csd.oop.draw.cs.*" />
+          <option name="PATTERN" value="eg.edu.alexu.csd.oop.draw.cs.fileManager.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -389,7 +395,7 @@
     <configuration name="MyDrawingEngineTester" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="eg.edu.alexu.csd.oop.draw.cs.*" />
+          <option name="PATTERN" value="eg.edu.alexu.csd.oop.draw.cs.fileManager.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -414,7 +420,7 @@
     <configuration name="MyDrawingEngineTester.test3Xml" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="eg.edu.alexu.csd.oop.draw.cs.*" />
+          <option name="PATTERN" value="eg.edu.alexu.csd.oop.draw.cs.fileManager.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -439,7 +445,7 @@
     <configuration name="TesterMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="eg.edu.alexu.csd.oop.draw.cs.*" />
+          <option name="PATTERN" value="eg.edu.alexu.csd.oop.draw.cs.fileManager.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -479,10 +485,10 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.MyDrawingEngineTester" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.MyDrawingEngineTester.test3Xml" />
+        <item index="0" class="java.lang.String" itemvalue="Application.Main" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.MyDrawingEngineTester" />
         <item index="2" class="java.lang.String" itemvalue="Application.TesterMain" />
-        <item index="3" class="java.lang.String" itemvalue="Application.Main" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.MyDrawingEngineTester.test3Xml" />
         <item index="4" class="java.lang.String" itemvalue="Application.BasicOpsTest2" />
       </list>
     </recent_temporary>
@@ -513,7 +519,8 @@
       <workItem from="1510824569525" duration="7664000" />
       <workItem from="1511267764519" duration="216000" />
       <workItem from="1511268285941" duration="893000" />
-      <workItem from="1511270705752" duration="8270000" />
+      <workItem from="1511270705752" duration="8398000" />
+      <workItem from="1511375055931" duration="6995000" />
     </task>
     <task id="LOCAL-00001" summary="Added Save and Load and get ready for undo and redo in the command dp">
       <created>1509227184649</created>
@@ -550,43 +557,57 @@
       <option name="project" value="LOCAL" />
       <updated>1510843964881</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Refactored save and load and added xml saving">
+      <created>1511342232241</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1511342232241</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Deleted unnecessary files">
+      <created>1511342277735</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1511342277735</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MyDrawingEngineTester - 2017.11.22 at 11h 13m 16s.xml">
+    <history-entry file="MyDrawingEngineTester - 2017.11.22 at 21h 30m 56s.xml">
       <configuration name="MyDrawingEngineTester" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyDrawingEngineTester - 2017.11.22 at 11h 13m 22s.xml">
+    <history-entry file="MyDrawingEngineTester - 2017.11.22 at 21h 36m 27s.xml">
       <configuration name="MyDrawingEngineTester" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyDrawingEngineTester - 2017.11.22 at 11h 14m 54s.xml">
+    <history-entry file="MyDrawingEngineTester - 2017.11.22 at 21h 43m 19s.xml">
       <configuration name="MyDrawingEngineTester" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyDrawingEngineTester - 2017.11.22 at 11h 16m 11s.xml">
+    <history-entry file="MyDrawingEngineTester - 2017.11.22 at 21h 43m 35s.xml">
       <configuration name="MyDrawingEngineTester" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyDrawingEngineTester_test3Xml - 2017.11.22 at 11h 08m 22s.xml">
-      <configuration name="MyDrawingEngineTester.test3Xml" configurationId="JUnit" />
+    <history-entry file="MyDrawingEngineTester - 2017.11.22 at 21h 44m 30s.xml">
+      <configuration name="MyDrawingEngineTester" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyDrawingEngineTester_test3Xml - 2017.11.22 at 11h 12m 15s.xml">
-      <configuration name="MyDrawingEngineTester.test3Xml" configurationId="JUnit" />
+    <history-entry file="MyDrawingEngineTester - 2017.11.22 at 21h 44m 41s.xml">
+      <configuration name="MyDrawingEngineTester" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyDrawingEngineTester_test3Xml - 2017.11.22 at 11h 12m 29s.xml">
-      <configuration name="MyDrawingEngineTester.test3Xml" configurationId="JUnit" />
+    <history-entry file="MyDrawingEngineTester - 2017.11.22 at 21h 44m 46s.xml">
+      <configuration name="MyDrawingEngineTester" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyDrawingEngineTester_test3Xml - 2017.11.22 at 11h 13m 18s.xml">
-      <configuration name="MyDrawingEngineTester.test3Xml" configurationId="JUnit" />
+    <history-entry file="MyDrawingEngineTester - 2017.11.22 at 21h 45m 04s.xml">
+      <configuration name="MyDrawingEngineTester" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyDrawingEngineTester_test3Xml - 2017.11.22 at 11h 13m 33s.xml">
-      <configuration name="MyDrawingEngineTester.test3Xml" configurationId="JUnit" />
+    <history-entry file="MyDrawingEngineTester - 2017.11.22 at 21h 45m 09s.xml">
+      <configuration name="MyDrawingEngineTester" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyDrawingEngineTester_test3Xml - 2017.11.22 at 11h 14m 48s.xml">
-      <configuration name="MyDrawingEngineTester.test3Xml" configurationId="JUnit" />
+    <history-entry file="MyDrawingEngineTester - 2017.11.22 at 21h 45m 59s.xml">
+      <configuration name="MyDrawingEngineTester" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69573000" />
+    <option name="totallyTimeSpent" value="76696000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -601,32 +622,33 @@
     <frame x="65" y="24" width="1303" height="780" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32784432" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882884" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32784432" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882884" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32882884" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12912913" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12912913" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34165367" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882884" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.245196" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882884" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882884" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3993994" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3993994" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -641,7 +663,9 @@
     <MESSAGE value="impelmented permantly methods (no undo) and svae and load doesn't depend now on the class (can save and load any Shape class)" />
     <MESSAGE value="Save and load (witout .xml) and GUI (started version)" />
     <MESSAGE value="Added ShapeUpdater" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added ShapeUpdater" />
+    <MESSAGE value="Refactored save and load and added xml saving" />
+    <MESSAGE value="Deleted unnecessary files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Deleted unnecessary files" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -654,227 +678,1555 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/TesterMain.java</url>
-          <line>17</line>
+          <line>10</line>
           <properties />
           <option name="timeStamp" value="23" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/MyDrawingEngineTester.java</url>
-          <line>304</line>
+          <url>file://$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/json/ValueReader.java</url>
+          <line>77</line>
           <properties />
-          <option name="timeStamp" value="28" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/MyDrawingEngineTester.java</url>
-          <line>290</line>
-          <properties />
-          <option name="timeStamp" value="33" />
+          <option name="timeStamp" value="46" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="34" />
+      <option name="time" value="47" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/json/Value.java">
+    <entry file="uml://JAVA/eg.edu.alexu.csd.oop.draw.cs">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>eg.edu.alexu.csd.oop.draw.cs</OriginalElement>
+          <nodes>
+            <node x="2768.637314900291" y="454.0">eg.edu.alexu.csd.oop.draw.cs.JsonLoader</node>
+            <node x="1272.637314900291" y="714.0">eg.edu.alexu.csd.oop.draw.cs.Linesegment</node>
+            <node x="4570.814970577947" y="1828.0">eg.edu.alexu.csd.oop.draw.cs.BasicOpsTest2</node>
+            <node x="343.59090909090946" y="714.0">eg.edu.alexu.csd.oop.draw.cs.Triangle</node>
+            <node x="752.3478466681004" y="0.0">eg.edu.alexu.csd.oop.draw.cs.TheShape</node>
+            <node x="4465.3478466681" y="120.0">eg.edu.alexu.csd.oop.draw.cs.Command</node>
+            <node x="4231.637314900291" y="726.0">eg.edu.alexu.csd.oop.draw.cs.UpdateShape</node>
+            <node x="2597.5909090909095" y="726.0">eg.edu.alexu.csd.oop.draw.cs.FileManager.Saver</node>
+            <node x="31.590909090909463" y="714.0">eg.edu.alexu.csd.oop.draw.cs.Rectangle</node>
+            <node x="960.6373149002911" y="714.0">eg.edu.alexu.csd.oop.draw.cs.Square</node>
+            <node x="4196.167534680511" y="1732.0">eg.edu.alexu.csd.oop.draw.cs.MyDrawingEngineTester</node>
+            <node x="4107.310391823368" y="1088.0">eg.edu.alexu.csd.oop.draw.cs.MyDrawingEngine</node>
+            <node x="70.04640580938167" y="1852.0">eg.edu.alexu.csd.oop.draw.cs.gui</node>
+            <node x="3722.637314900291" y="454.0">eg.edu.alexu.csd.oop.draw.cs.FileManager.XmlSaver</node>
+            <node x="486.48689717455545" y="1292.0">eg.edu.alexu.csd.oop.draw.cs.Shapefactory</node>
+            <node x="3413.454989525243" y="144.0">eg.edu.alexu.csd.oop.draw.cs.json</node>
+            <node x="5020.275502345756" y="1840.0">eg.edu.alexu.csd.oop.draw.cs.TesterMain</node>
+            <node x="4504.986897174555" y="502.0">eg.edu.alexu.csd.oop.draw.cs.AddShape</node>
+            <node x="4754.914552852211" y="714.0">eg.edu.alexu.csd.oop.draw.cs.Circle</node>
+            <node x="3267.637314900291" y="454.0">eg.edu.alexu.csd.oop.draw.cs.JsonSaver</node>
+            <node x="648.6373149002911" y="714.0">eg.edu.alexu.csd.oop.draw.cs.Ellipse</node>
+            <node x="2351.637314900291" y="454.0">eg.edu.alexu.csd.oop.draw.cs.FileManager.XmlLoader</node>
+            <node x="5240.275502345756" y="1816.0">eg.edu.alexu.csd.oop.draw.cs.BasicOpsTest</node>
+            <node x="1596.637314900291" y="430.0">eg.edu.alexu.csd.oop.draw.cs.FileManager.TextLoader</node>
+            <node x="4316.986897174555" y="502.0">eg.edu.alexu.csd.oop.draw.cs.RemoveShape</node>
+            <node x="1956.637314900291" y="430.0">eg.edu.alexu.csd.oop.draw.cs.FileManager.TextSaver</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.Shapefactory" target="eg.edu.alexu.csd.oop.draw.cs.Triangle">
+              <point x="-82.0" y="-28.0" />
+              <point x="547.9868971745555" y="1028.0" />
+              <point x="475.59090909090946" y="1028.0" />
+              <point x="0.0" y="52.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.MyDrawingEngineTester" target="eg.edu.alexu.csd.oop.draw.cs.Ellipse">
+              <point x="-62.85714285714289" y="-136.0" />
+              <point x="4243.310391823368" y="1672.0" />
+              <point x="783.9868971745555" y="1672.0" />
+              <point x="783.9868971745555" y="998.0" />
+              <point x="758.1373149002911" y="998.0" />
+              <point x="-36.5" y="52.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.FileManager.Saver" target="eg.edu.alexu.csd.oop.draw.cs.FileManager.XmlLoader">
+              <point x="-26.916666666666742" y="-40.0" />
+              <point x="2732.174242424243" y="674.0" />
+              <point x="2550.137314900291" y="674.0" />
+              <point x="0.0" y="88.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.MyDrawingEngineTester" target="eg.edu.alexu.csd.oop.draw.cs.Rectangle">
+              <point x="-94.28571428571422" y="-136.0" />
+              <point x="4211.881820394797" y="1682.0" />
+              <point x="284.56363636363676" y="1682.0" />
+              <point x="284.56363636363676" y="1048.0" />
+              <point x="177.59090909090946" y="1048.0" />
+              <point x="0.0" y="52.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.Square" target="eg.edu.alexu.csd.oop.draw.cs.TheShape">
+              <point x="0.0" y="-52.0" />
+              <point x="1106.6373149002911" y="410.0" />
+              <point x="951.8145133347671" y="410.0" />
+              <point x="23.466666666666697" y="160.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.MyDrawingEngineTester" target="eg.edu.alexu.csd.oop.draw.cs.Square">
+              <point x="-31.42857142857156" y="-136.0" />
+              <point x="4274.738963251939" y="1662.0" />
+              <point x="1070.1373149002911" y="1662.0" />
+              <point x="-36.5" y="52.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.MyDrawingEngine" target="eg.edu.alexu.csd.oop.draw.cs.TheShape">
+              <point x="-28.384615384615472" y="-232.0" />
+              <point x="4324.925776438753" y="878.0" />
+              <point x="1586.137314900291" y="878.0" />
+              <point x="1586.137314900291" y="380.0" />
+              <point x="1022.2145133347672" y="380.0" />
+              <point x="93.86666666666679" y="160.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.JsonLoader" target="eg.edu.alexu.csd.oop.draw.cs.json">
+              <point x="0.0" y="-88.0" />
+              <point x="3008.137314900291" y="400.0" />
+              <point x="3492.5264180966715" y="400.0" />
+              <point x="17.57142857142867" y="16.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.FileManager.Saver" target="eg.edu.alexu.csd.oop.draw.cs.FileManager.TextSaver">
+              <point x="-80.75" y="-40.0" />
+              <point x="2678.3409090909095" y="684.0" />
+              <point x="2144.137314900291" y="684.0" />
+              <point x="0.0" y="112.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.FileManager.Saver" target="eg.edu.alexu.csd.oop.draw.cs.JsonLoader">
+              <point x="26.916666666666742" y="-40.0" />
+              <point x="2786.007575757576" y="674.0" />
+              <point x="3008.137314900291" y="674.0" />
+              <point x="0.0" y="88.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.json" target="eg.edu.alexu.csd.oop.draw.cs.json">
+              <point x="-35.14285714285711" y="16.0" />
+              <point x="3439.8121323823857" y="206.0" />
+              <point x="3383.454989525243" y="206.0" />
+              <point x="3383.454989525243" y="164.0" />
+              <point x="-61.5" y="4.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.MyDrawingEngine" target="eg.edu.alexu.csd.oop.draw.cs.Linesegment">
+              <point x="-85.15384615384619" y="-232.0" />
+              <point x="4268.156545669522" y="908.0" />
+              <point x="1418.637314900291" y="908.0" />
+              <point x="0.0" y="52.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.FileManager.Saver" target="eg.edu.alexu.csd.oop.draw.cs.FileManager.XmlSaver">
+              <point x="134.58333333333326" y="-40.0" />
+              <point x="2893.674242424243" y="694.0" />
+              <point x="3966.637314900291" y="694.0" />
+              <point x="0.0" y="88.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.MyDrawingEngineTester" target="eg.edu.alexu.csd.oop.draw.cs.Circle">
+              <point x="0.0" y="-136.0" />
+              <point x="4306.167534680511" y="1652.0" />
+              <point x="4096.810391823368" y="1652.0" />
+              <point x="4096.810391823368" y="1038.0" />
+              <point x="4791.414552852211" y="1038.0" />
+              <point x="-109.5" y="52.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.MyDrawingEngine" target="eg.edu.alexu.csd.oop.draw.cs.UpdateShape">
+              <point x="28.384615384615472" y="-232.0" />
+              <point x="4381.6950072079835" y="848.0" />
+              <point x="4273.637314900291" y="848.0" />
+              <point x="-42.0" y="40.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.RemoveShape" target="eg.edu.alexu.csd.oop.draw.cs.Command">
+              <point x="0.0" y="-40.0" />
+              <point x="4400.986897174555" y="410.0" />
+              <point x="4549.3478466681" y="410.0" />
+              <point x="0.0" y="40.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.UpdateShape" target="eg.edu.alexu.csd.oop.draw.cs.AddShape">
+              <point x="63.0" y="-40.0" />
+              <point x="4378.637314900291" y="694.0" />
+              <point x="4525.986897174555" y="694.0" />
+              <point x="-63.0" y="40.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.Circle" target="eg.edu.alexu.csd.oop.draw.cs.TheShape">
+              <point x="0.0" y="-52.0" />
+              <point x="4900.914552852211" y="350.0" />
+              <point x="1092.614513334767" y="350.0" />
+              <point x="164.26666666666665" y="160.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.BasicOpsTest2" target="eg.edu.alexu.csd.oop.draw.cs.MyDrawingEngine">
+              <point x="-75.0" y="-40.0" />
+              <point x="4595.814970577947" y="1622.0" />
+              <point x="4353.310391823368" y="1622.0" />
+              <point x="0.0" y="232.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.TesterMain" target="eg.edu.alexu.csd.oop.draw.cs.Circle">
+              <point x="25.0" y="-28.0" />
+              <point x="5145.275502345756" y="1712.0" />
+              <point x="5164.775502345756" y="1712.0" />
+              <point x="5164.775502345756" y="1048.0" />
+              <point x="4937.414552852211" y="1048.0" />
+              <point x="36.5" y="52.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.Triangle" target="eg.edu.alexu.csd.oop.draw.cs.TheShape">
+              <point x="-66.0" y="-52.0" />
+              <point x="409.59090909090946" y="694.0" />
+              <point x="513.1373149002911" y="694.0" />
+              <point x="513.1373149002911" y="380.0" />
+              <point x="857.9478466681003" y="380.0" />
+              <point x="-70.40000000000009" y="160.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.AddShape" target="eg.edu.alexu.csd.oop.draw.cs.MyDrawingEngine">
+              <point x="-21.0" y="40.0" />
+              <point x="4567.986897174555" y="694.0" />
+              <point x="4608.137314900291" y="694.0" />
+              <point x="4608.137314900291" y="978.0" />
+              <point x="4476.310391823368" y="978.0" />
+              <point x="123.0" y="-232.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.BasicOpsTest" target="eg.edu.alexu.csd.oop.draw.cs.Circle">
+              <point x="125.19999999999982" y="-52.0" />
+              <point x="5521.9755023457565" y="1712.0" />
+              <point x="5470.375502345756" y="1712.0" />
+              <point x="5470.375502345756" y="1008.0" />
+              <point x="5034.747886185543" y="1008.0" />
+              <point x="133.83333333333303" y="52.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.gui" target="eg.edu.alexu.csd.oop.draw.cs.Triangle">
+              <point x="10.545454545454504" y="-16.0" />
+              <point x="138.59186035483617" y="1672.0" />
+              <point x="258.0200404026359" y="1672.0" />
+              <point x="258.0200404026359" y="1058.0" />
+              <point x="369.99090909090955" y="1058.0" />
+              <point x="-105.59999999999991" y="52.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.MyDrawingEngine" target="eg.edu.alexu.csd.oop.draw.cs.Rectangle">
+              <point x="-217.61538461538453" y="-232.0" />
+              <point x="4135.6950072079835" y="978.0" />
+              <point x="302.7337662337668" y="978.0" />
+              <point x="125.14285714285717" y="52.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.MyDrawingEngine" target="eg.edu.alexu.csd.oop.draw.cs.Ellipse">
+              <point x="-160.8461538461538" y="-232.0" />
+              <point x="4192.464237977214" y="948.0" />
+              <point x="831.1373149002911" y="948.0" />
+              <point x="36.5" y="52.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.RemoveShape" target="eg.edu.alexu.csd.oop.draw.cs.MyDrawingEngine">
+              <point x="21.0" y="40.0" />
+              <point x="4421.986897174555" y="674.0" />
+              <point x="4431.137314900291" y="674.0" />
+              <point x="4431.137314900291" y="1018.0" />
+              <point x="4438.464237977214" y="1018.0" />
+              <point x="85.15384615384619" y="-232.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.FileManager.Saver" target="eg.edu.alexu.csd.oop.draw.cs.FileManager.TextLoader">
+              <point x="-134.58333333333337" y="-40.0" />
+              <point x="2624.507575757576" y="694.0" />
+              <point x="1766.637314900291" y="694.0" />
+              <point x="0.0" y="112.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.Shapefactory" target="eg.edu.alexu.csd.oop.draw.cs.Rectangle">
+              <point x="-123.0" y="-28.0" />
+              <point x="506.98689717455545" y="1038.0" />
+              <point x="219.30519480519524" y="1038.0" />
+              <point x="41.71428571428572" y="52.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.BasicOpsTest2" target="eg.edu.alexu.csd.oop.draw.cs.Circle">
+              <point x="25.0" y="-40.0" />
+              <point x="4695.814970577947" y="1702.0" />
+              <point x="5043.775502345756" y="1702.0" />
+              <point x="5043.775502345756" y="1068.0" />
+              <point x="4888.747886185544" y="1068.0" />
+              <point x="-12.166666666666515" y="52.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.FileManager.XmlLoader" target="eg.edu.alexu.csd.oop.draw.cs.TheShape">
+              <point x="0.0" y="-88.0" />
+              <point x="2550.137314900291" y="360.0" />
+              <point x="1069.1478466681003" y="360.0" />
+              <point x="140.79999999999995" y="160.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.Shapefactory" target="eg.edu.alexu.csd.oop.draw.cs.TheShape">
+              <point x="-41.0" y="-28.0" />
+              <point x="588.9868971745555" y="1068.0" />
+              <point x="618.0909090909095" y="1068.0" />
+              <point x="618.0909090909095" y="400.0" />
+              <point x="904.8811800014337" y="400.0" />
+              <point x="-23.466666666666697" y="160.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.Shapefactory" target="eg.edu.alexu.csd.oop.draw.cs.Linesegment">
+              <point x="82.0" y="-28.0" />
+              <point x="711.9868971745555" y="1018.0" />
+              <point x="1321.3039815669576" y="1018.0" />
+              <point x="-97.33333333333337" y="52.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.MyDrawingEngine" target="eg.edu.alexu.csd.oop.draw.cs.Triangle">
+              <point x="-198.69230769230762" y="-232.0" />
+              <point x="4154.618084131061" y="968.0" />
+              <point x="528.3909090909096" y="968.0" />
+              <point x="52.80000000000001" y="52.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.gui" target="eg.edu.alexu.csd.oop.draw.cs.MyDrawingEngine">
+              <point x="52.72727272727272" y="-16.0" />
+              <point x="180.7736785366542" y="1712.0" />
+              <point x="4219.12857364155" y="1712.0" />
+              <point x="-134.18181818181824" y="232.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.MyDrawingEngine" target="eg.edu.alexu.csd.oop.draw.cs.AddShape">
+              <point x="141.9230769230769" y="-232.0" />
+              <point x="4495.2334687464445" y="988.0" />
+              <point x="4619.137314900291" y="988.0" />
+              <point x="4619.137314900291" y="684.0" />
+              <point x="4609.986897174555" y="684.0" />
+              <point x="21.0" y="40.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.FileManager.Saver" target="eg.edu.alexu.csd.oop.draw.cs.JsonSaver">
+              <point x="80.75" y="-40.0" />
+              <point x="2839.8409090909095" y="684.0" />
+              <point x="3485.137314900291" y="684.0" />
+              <point x="0.0" y="88.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.MyDrawingEngineTester" target="eg.edu.alexu.csd.oop.draw.cs.MyDrawingEngine">
+              <point x="31.42857142857133" y="-136.0" />
+              <point x="4337.596106109082" y="1642.0" />
+              <point x="4263.855846368822" y="1642.0" />
+              <point x="-89.4545454545455" y="232.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.Ellipse" target="eg.edu.alexu.csd.oop.draw.cs.TheShape">
+              <point x="0.0" y="-52.0" />
+              <point x="794.6373149002911" y="410.0" />
+              <point x="928.3478466681004" y="410.0" />
+              <point x="0.0" y="160.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.gui" target="eg.edu.alexu.csd.oop.draw.cs.TheShape">
+              <point x="-31.636363636363512" y="-16.0" />
+              <point x="96.41004217301816" y="1692.0" />
+              <point x="21.090909090909463" y="1692.0" />
+              <point x="21.090909090909463" y="360.0" />
+              <point x="811.0145133347671" y="360.0" />
+              <point x="-117.33333333333326" y="160.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.UpdateShape" target="eg.edu.alexu.csd.oop.draw.cs.MyDrawingEngine">
+              <point x="42.0" y="40.0" />
+              <point x="4357.637314900291" y="838.0" />
+              <point x="4400.618084131061" y="838.0" />
+              <point x="47.30769230769238" y="-232.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.FileManager.TextLoader" target="eg.edu.alexu.csd.oop.draw.cs.TheShape">
+              <point x="0.0" y="-112.0" />
+              <point x="1766.637314900291" y="370.0" />
+              <point x="1045.6811800014336" y="370.0" />
+              <point x="117.33333333333326" y="160.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.Shapefactory" target="eg.edu.alexu.csd.oop.draw.cs.Ellipse">
+              <point x="0.0" y="-28.0" />
+              <point x="629.9868971745555" y="998.0" />
+              <point x="685.1373149002911" y="998.0" />
+              <point x="-109.5" y="52.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.MyDrawingEngine" target="eg.edu.alexu.csd.oop.draw.cs.Square">
+              <point x="-104.0769230769231" y="-232.0" />
+              <point x="4249.2334687464445" y="918.0" />
+              <point x="1216.1373149002911" y="918.0" />
+              <point x="109.5" y="52.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.MyDrawingEngine" target="eg.edu.alexu.csd.oop.draw.cs.RemoveShape">
+              <point x="66.23076923076928" y="-232.0" />
+              <point x="4420.137314900291" y="684.0" />
+              <point x="4379.986897174555" y="684.0" />
+              <point x="-21.0" y="40.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.JsonSaver" target="eg.edu.alexu.csd.oop.draw.cs.json">
+              <point x="108.75" y="-88.0" />
+              <point x="3593.887314900291" y="410.0" />
+              <point x="3527.669275239529" y="410.0" />
+              <point x="52.71428571428578" y="16.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.Shapefactory" target="eg.edu.alexu.csd.oop.draw.cs.Circle">
+              <point x="123.0" y="-28.0" />
+              <point x="752.9868971745555" y="1028.0" />
+              <point x="4767.081219518877" y="1028.0" />
+              <point x="-133.83333333333326" y="52.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.UpdateShape" target="eg.edu.alexu.csd.oop.draw.cs.RemoveShape">
+              <point x="21.0" y="-40.0" />
+              <point x="4336.637314900291" y="694.0" />
+              <point x="4337.986897174555" y="694.0" />
+              <point x="-63.0" y="40.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.gui" target="eg.edu.alexu.csd.oop.draw.cs.Rectangle">
+              <point x="-10.545454545454504" y="-16.0" />
+              <point x="117.50095126392625" y="1058.0" />
+              <point x="94.1623376623379" y="1058.0" />
+              <point x="-83.42857142857156" y="52.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.Rectangle" target="eg.edu.alexu.csd.oop.draw.cs.TheShape">
+              <point x="0.0" y="-52.0" />
+              <point x="177.59090909090946" y="370.0" />
+              <point x="834.4811800014336" y="370.0" />
+              <point x="-93.86666666666679" y="160.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.MyDrawingEngine" target="eg.edu.alexu.csd.oop.draw.cs.FileManager.Saver">
+              <point x="-9.461538461538566" y="-232.0" />
+              <point x="4343.848853361829" y="868.0" />
+              <point x="2759.0909090909095" y="868.0" />
+              <point x="0.0" y="40.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.MyDrawingEngine" target="eg.edu.alexu.csd.oop.draw.cs.Command">
+              <point x="9.461538461538339" y="-232.0" />
+              <point x="4362.771930284906" y="858.0" />
+              <point x="4221.137314900291" y="858.0" />
+              <point x="4221.137314900291" y="380.0" />
+              <point x="4477.3478466681" y="380.0" />
+              <point x="-72.0" y="40.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.BasicOpsTest" target="eg.edu.alexu.csd.oop.draw.cs.MyDrawingEngine">
+              <point x="-125.19999999999982" y="-52.0" />
+              <point x="5271.575502345757" y="1582.0" />
+              <point x="4532.219482732459" y="1582.0" />
+              <point x="178.909090909091" y="232.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.UpdateShape" target="eg.edu.alexu.csd.oop.draw.cs.Command">
+              <point x="-21.0" y="-40.0" />
+              <point x="4294.637314900291" y="400.0" />
+              <point x="4525.3478466681" y="400.0" />
+              <point x="-24.0" y="40.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.AddShape" target="eg.edu.alexu.csd.oop.draw.cs.Command">
+              <point x="0.0" y="-40.0" />
+              <point x="4588.986897174555" y="410.0" />
+              <point x="4573.3478466681" y="410.0" />
+              <point x="24.0" y="40.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.Linesegment" target="eg.edu.alexu.csd.oop.draw.cs.TheShape">
+              <point x="0.0" y="-52.0" />
+              <point x="1418.637314900291" y="400.0" />
+              <point x="975.2811800014338" y="400.0" />
+              <point x="46.933333333333394" y="160.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.Shapefactory" target="eg.edu.alexu.csd.oop.draw.cs.Square">
+              <point x="41.0" y="-28.0" />
+              <point x="670.9868971745555" y="1008.0" />
+              <point x="997.1373149002911" y="1008.0" />
+              <point x="-109.5" y="52.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.TesterMain" target="eg.edu.alexu.csd.oop.draw.cs.MyDrawingEngine">
+              <point x="-75.0" y="-28.0" />
+              <point x="5045.275502345756" y="1602.0" />
+              <point x="4442.764937277913" y="1602.0" />
+              <point x="89.4545454545455" y="232.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.MyDrawingEngine" target="eg.edu.alexu.csd.oop.draw.cs.Circle">
+              <point x="217.61538461538453" y="-232.0" />
+              <point x="4570.925776438753" y="1048.0" />
+              <point x="4815.747886185543" y="1048.0" />
+              <point x="-85.16666666666674" y="52.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.TheShape" target="eg.edu.alexu.csd.oop.draw.cs.MyDrawingEngine">
+              <point x="70.40000000000009" y="160.0" />
+              <point x="998.7478466681005" y="390.0" />
+              <point x="1575.137314900291" y="390.0" />
+              <point x="1575.137314900291" y="888.0" />
+              <point x="4306.002699515676" y="888.0" />
+              <point x="-47.30769230769238" y="-232.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.6" x="4301.0" y="1345.0" />
+          <SelectedNodes>
+            <node>eg.edu.alexu.csd.oop.draw.cs.MyDrawingEngineTester</node>
+          </SelectedNodes>
+          <Categories>
+            <Category>Methods</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JavaScript-modules-diagram//home/ayman/Downloads/Paint/src/eg/edu/alexu/csd/oop/draw/cs/json">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JavaScript-modules-diagram</ID>
+          <OriginalElement>$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/json</OriginalElement>
+          <nodes />
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.3000000000000003" x="214.61538461538458" y="154.61538461538458" />
+          <SelectedNodes />
+          <Categories>
+            <Category>All</Category>
+          </Categories>
+          <VISIBILITY>Details</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/eg.edu.alexu.csd.oop.draw.cs.Ellipse">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>eg.edu.alexu.csd.oop.draw.cs.Ellipse</OriginalElement>
+          <nodes>
+            <node x="808.9593151843372" y="192.0">eg.edu.alexu.csd.oop.draw.cs.JsonLoader</node>
+            <node x="570.0131766006986" y="294.0">eg.edu.alexu.csd.oop.draw.cs.Linesegment</node>
+            <node x="1370.610704073226" y="1012.0">eg.edu.alexu.csd.oop.draw.cs.BasicOpsTest2</node>
+            <node x="444.0131766006985" y="294.0">eg.edu.alexu.csd.oop.draw.cs.Triangle</node>
+            <node x="1541.610704073226" y="1012.0">eg.edu.alexu.csd.oop.draw.cs.gui.Main</node>
+            <node x="474.14710517212706" y="698.0">eg.edu.alexu.csd.oop.draw.cs.TheShape</node>
+            <node x="1962.7983700351374" y="0.0">eg.edu.alexu.csd.oop.draw.cs.Command</node>
+            <node x="1793.3940374065592" y="294.0">eg.edu.alexu.csd.oop.draw.cs.UpdateShape</node>
+            <node x="1416.0607040732261" y="840.0">javafx.application.Application</node>
+            <node x="1049.7544865335815" y="294.0">eg.edu.alexu.csd.oop.draw.cs.FileManager.Saver</node>
+            <node x="23.56410256410254" y="294.0">eg.edu.alexu.csd.oop.draw.cs.Rectangle</node>
+            <node x="729.0131766006986" y="294.0">eg.edu.alexu.csd.oop.draw.cs.Square</node>
+            <node x="772.5248393512619" y="1012.0">eg.edu.alexu.csd.oop.draw.cs.MyDrawingEngineTester</node>
+            <node x="1305.32591510501" y="0.0">eg.edu.alexu.csd.oop.draw.Shape</node>
+            <node x="1154.6463782768956" y="506.0">eg.edu.alexu.csd.oop.draw.cs.MyDrawingEngine</node>
+            <node x="993.9251865734841" y="192.0">eg.edu.alexu.csd.oop.draw.cs.FileManager.XmlSaver</node>
+            <node x="566.8469547358773" y="1012.0">eg.edu.alexu.csd.oop.draw.cs.Shapefactory</node>
+            <node x="407.5641025641026" y="840.0">eg.edu.alexu.csd.oop.draw.cs.gui.Controller</node>
+            <node x="1223.610704073226" y="1012.0">eg.edu.alexu.csd.oop.draw.cs.TesterMain</node>
+            <node x="1707.8940374065592" y="192.0">eg.edu.alexu.csd.oop.draw.cs.AddShape</node>
+            <node x="1131.278296057391" y="840.0">eg.edu.alexu.csd.oop.draw.cs.Circle</node>
+            <node x="1128.925186573484" y="192.0">eg.edu.alexu.csd.oop.draw.cs.JsonSaver</node>
+            <node x="873.8799348424568" y="294.0">eg.edu.alexu.csd.oop.draw.cs.Ellipse</node>
+            <node x="162.56410256410254" y="192.0">eg.edu.alexu.csd.oop.draw.cs.FileManager.XmlLoader</node>
+            <node x="1060.610704073226" y="1012.0">eg.edu.alexu.csd.oop.draw.cs.BasicOpsTest</node>
+            <node x="354.06410256410254" y="192.0">eg.edu.alexu.csd.oop.draw.cs.FileManager.TextLoader</node>
+            <node x="1904.060704073226" y="192.0">eg.edu.alexu.csd.oop.draw.cs.RemoveShape</node>
+            <node x="1269.925186573484" y="192.0">eg.edu.alexu.csd.oop.draw.cs.FileManager.TextSaver</node>
+            <node x="1577.0607040732261" y="698.0">eg.edu.alexu.csd.oop.draw.cs.gui.ShapeUpdater</node>
+            <node x="218.56410256410254" y="294.0">eg.edu.alexu.csd.oop.draw.DrawingEngine</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.gui.Controller" target="eg.edu.alexu.csd.oop.draw.cs.Rectangle">
+              <point x="-27.69230769230768" y="-16.0" />
+              <point x="439.8717948717949" y="790.0" />
+              <point x="79.82371794871801" y="790.0" />
+              <point x="79.82371794871801" y="486.0" />
+              <point x="75.18910256410254" y="486.0" />
+              <point x="-7.375" y="16.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.BasicOpsTest2" target="javafx.application.Application">
+              <point x="0.0" y="-16.0" />
+              <point x="1446.110704073226" y="972.0" />
+              <point x="1480.5607040732261" y="972.0" />
+              <point x="0.0" y="16.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.FileManager.Saver" target="eg.edu.alexu.csd.oop.draw.cs.FileManager.XmlLoader">
+              <point x="-37.71428571428578" y="-16.0" />
+              <point x="1056.0402008192957" y="274.0" />
+              <point x="255.56410256410254" y="274.0" />
+              <point x="31.0" y="16.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.MyDrawingEngineTester" target="eg.edu.alexu.csd.oop.draw.cs.Ellipse">
+              <point x="-13.75" y="-16.0" />
+              <point x="868.7748393512619" y="912.0" />
+              <point x="921.3799348424568" y="912.0" />
+              <point x="0.0" y="16.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.Shapefactory" target="eg.edu.alexu.csd.oop.draw.cs.Triangle">
+              <point x="-40.28571428571428" y="-16.0" />
+              <point x="597.061240450163" y="982.0" />
+              <point x="397.06410256410254" y="982.0" />
+              <point x="397.06410256410254" y="466.0" />
+              <point x="451.58460517212706" y="466.0" />
+              <point x="-45.428571428571445" y="16.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.MyDrawingEngineTester" target="eg.edu.alexu.csd.oop.draw.cs.Rectangle">
+              <point x="-68.75" y="-16.0" />
+              <point x="813.7748393512619" y="902.0" />
+              <point x="49.64583333333326" y="902.0" />
+              <point x="49.64583333333326" y="486.0" />
+              <point x="45.68910256410254" y="486.0" />
+              <point x="-36.875" y="16.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.Square" target="eg.edu.alexu.csd.oop.draw.cs.TheShape">
+              <point x="-39.200000000000045" y="16.0" />
+              <point x="738.8131766006985" y="486.0" />
+              <point x="605.9223068598069" y="486.0" />
+              <point x="605.9223068598069" y="568.0" />
+              <point x="553.9198324448544" y="568.0" />
+              <point x="21.272727272727252" y="-16.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.MyDrawingEngineTester" target="eg.edu.alexu.csd.oop.draw.cs.Square">
+              <point x="-41.25" y="-16.0" />
+              <point x="841.2748393512619" y="892.0" />
+              <point x="793.9354159753084" y="892.0" />
+              <point x="793.9354159753084" y="466.0" />
+              <point x="778.0131766006986" y="466.0" />
+              <point x="0.0" y="16.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.MyDrawingEngine" target="eg.edu.alexu.csd.oop.draw.cs.TheShape">
+              <point x="-71.90625" y="16.0" />
+              <point x="1171.2401282768956" y="598.0" />
+              <point x="585.8289233539452" y="598.0" />
+              <point x="53.18181818181819" y="-16.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.JsonLoader" target="eg.edu.alexu.csd.oop.draw.Shape">
+              <point x="0.0" y="-16.0" />
+              <point x="874.4593151843372" y="132.0" />
+              <point x="1334.07591510501" y="132.0" />
+              <point x="-17.25" y="16.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.gui.Main" target="javafx.application.Application">
+              <point x="0.0" y="-16.0" />
+              <point x="1583.610704073226" y="972.0" />
+              <point x="1523.5607040732261" y="972.0" />
+              <point x="43.0" y="16.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.FileManager.Saver" target="eg.edu.alexu.csd.oop.draw.cs.FileManager.TextSaver">
+              <point x="37.714285714285666" y="-16.0" />
+              <point x="1131.468772247867" y="274.0" />
+              <point x="1328.925186573484" y="274.0" />
+              <point x="0.0" y="16.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.FileManager.Saver" target="eg.edu.alexu.csd.oop.draw.cs.JsonLoader">
+              <point x="-12.571428571428555" y="-16.0" />
+              <point x="1081.1830579621528" y="254.0" />
+              <point x="874.4593151843372" y="254.0" />
+              <point x="0.0" y="16.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.MyDrawingEngine" target="eg.edu.alexu.csd.oop.draw.DrawingEngine">
+              <point x="-72.11111111111109" y="-16.0" />
+              <point x="1171.0352671657847" y="436.0" />
+              <point x="336.31410256410254" y="436.0" />
+              <point x="39.25" y="16.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.UpdateShape" target="eg.edu.alexu.csd.oop.draw.Shape">
+              <point x="-11.833333333333371" y="-16.0" />
+              <point x="1852.560704073226" y="264.0" />
+              <point x="1871.560704073226" y="264.0" />
+              <point x="1871.560704073226" y="72.0" />
+              <point x="1387.7425817716767" y="72.0" />
+              <point x="36.416666666666686" y="16.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.FileManager.XmlSaver" target="eg.edu.alexu.csd.oop.draw.Shape">
+              <point x="0.0" y="-16.0" />
+              <point x="1050.925186573484" y="142.0" />
+              <point x="1337.9092484383434" y="142.0" />
+              <point x="-13.416666666666629" y="16.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.MyDrawingEngine" target="eg.edu.alexu.csd.oop.draw.cs.Linesegment">
+              <point x="-45.888888888888914" y="-16.0" />
+              <point x="1197.257489388007" y="396.0" />
+              <point x="691.6381766006986" y="396.0" />
+              <point x="52.125" y="16.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.FileManager.Saver" target="eg.edu.alexu.csd.oop.draw.cs.FileManager.XmlSaver">
+              <point x="0.0" y="-16.0" />
+              <point x="1093.7544865335815" y="244.0" />
+              <point x="1050.925186573484" y="244.0" />
+              <point x="0.0" y="16.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.MyDrawingEngineTester" target="eg.edu.alexu.csd.oop.draw.cs.Circle">
+              <point x="68.75" y="-16.0" />
+              <point x="951.2748393512619" y="952.0" />
+              <point x="1144.478296057391" y="952.0" />
+              <point x="-30.80000000000001" y="16.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.MyDrawingEngine" target="eg.edu.alexu.csd.oop.draw.cs.UpdateShape">
+              <point x="39.33333333333326" y="-16.0" />
+              <point x="1282.479711610229" y="416.0" />
+              <point x="1828.8940374065592" y="416.0" />
+              <point x="-35.5" y="16.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.RemoveShape" target="eg.edu.alexu.csd.oop.draw.cs.Command">
+              <point x="49.0" y="-16.0" />
+              <point x="2026.560704073226" y="172.0" />
+              <point x="2022.7983700351374" y="172.0" />
+              <point x="0.0" y="16.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.UpdateShape" target="eg.edu.alexu.csd.oop.draw.cs.AddShape">
+              <point x="-35.5" y="-16.0" />
+              <point x="1828.8940374065592" y="274.0" />
+              <point x="1812.8940374065592" y="274.0" />
+              <point x="45.0" y="16.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.Circle" target="eg.edu.alexu.csd.oop.draw.cs.TheShape">
+              <point x="-29.333333333333314" y="-16.0" />
+              <point x="1145.9449627240576" y="800.0" />
+              <point x="579.4471051721271" y="800.0" />
+              <point x="46.80000000000001" y="16.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.BasicOpsTest2" target="eg.edu.alexu.csd.oop.draw.cs.MyDrawingEngine">
+              <point x="30.200000000000045" y="-16.0" />
+              <point x="1476.3107040732261" y="982.0" />
+              <point x="1555.5607040732261" y="982.0" />
+              <point x="1555.5607040732261" y="658.0" />
+              <point x="1292.9276282768956" y="658.0" />
+              <point x="49.78125" y="16.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.FileManager.Saver" target="eg.edu.alexu.csd.oop.draw.Shape">
+              <point x="12.571428571428555" y="-16.0" />
+              <point x="1106.3259151050102" y="254.0" />
+              <point x="1118.425186573484" y="254.0" />
+              <point x="1118.425186573484" y="152.0" />
+              <point x="1341.7425817716767" y="152.0" />
+              <point x="-9.583333333333314" y="16.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.FileManager.TextSaver" target="eg.edu.alexu.csd.oop.draw.Shape">
+              <point x="0.0" y="-16.0" />
+              <point x="1328.925186573484" y="172.0" />
+              <point x="1349.4092484383434" y="172.0" />
+              <point x="-1.9166666666666288" y="16.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.RemoveShape" target="eg.edu.alexu.csd.oop.draw.Shape">
+              <point x="-49.0" y="-16.0" />
+              <point x="1928.560704073226" y="62.0" />
+              <point x="1391.57591510501" y="62.0" />
+              <point x="40.25" y="16.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.gui.ShapeUpdater" target="eg.edu.alexu.csd.oop.draw.cs.MyDrawingEngine">
+              <point x="-18.5" y="-16.0" />
+              <point x="1632.5607040732261" y="628.0" />
+              <point x="1326.1151282768956" y="628.0" />
+              <point x="82.96875" y="16.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.gui.ShapeUpdater" target="eg.edu.alexu.csd.oop.draw.Shape">
+              <point x="18.5" y="-16.0" />
+              <point x="1669.5607040732261" y="678.0" />
+              <point x="1682.5607040732261" y="678.0" />
+              <point x="1682.5607040732261" y="122.0" />
+              <point x="1368.57591510501" y="122.0" />
+              <point x="17.25" y="16.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.TesterMain" target="eg.edu.alexu.csd.oop.draw.cs.Circle">
+              <point x="-15.875" y="-16.0" />
+              <point x="1271.235704073226" y="972.0" />
+              <point x="1197.278296057391" y="972.0" />
+              <point x="22.0" y="16.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.JsonSaver" target="eg.edu.alexu.csd.oop.draw.Shape">
+              <point x="0.0" y="-16.0" />
+              <point x="1189.425186573484" y="162.0" />
+              <point x="1345.57591510501" y="162.0" />
+              <point x="-5.75" y="16.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.Triangle" target="eg.edu.alexu.csd.oop.draw.cs.TheShape">
+              <point x="0.0" y="16.0" />
+              <point x="497.0131766006985" y="486.0" />
+              <point x="499.2664233539452" y="486.0" />
+              <point x="499.2664233539452" y="638.0" />
+              <point x="522.0107415357634" y="638.0" />
+              <point x="-10.636363636363626" y="-16.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.AddShape" target="eg.edu.alexu.csd.oop.draw.Shape">
+              <point x="-40.0" y="-16.0" />
+              <point x="1727.8940374065592" y="92.0" />
+              <point x="1380.07591510501" y="92.0" />
+              <point x="28.75" y="16.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.BasicOpsTest" target="eg.edu.alexu.csd.oop.draw.cs.Circle">
+              <point x="-11.916666666666657" y="-16.0" />
+              <point x="1120.1940374065593" y="972.0" />
+              <point x="1162.078296057391" y="972.0" />
+              <point x="-13.199999999999989" y="16.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.AddShape" target="eg.edu.alexu.csd.oop.draw.cs.MyDrawingEngine">
+              <point x="15.0" y="16.0" />
+              <point x="1782.8940374065592" y="406.0" />
+              <point x="1275.9241560546734" y="406.0" />
+              <point x="32.777777777777715" y="-16.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.MyDrawingEngine" target="eg.edu.alexu.csd.oop.draw.cs.Rectangle">
+              <point x="-85.22222222222217" y="-16.0" />
+              <point x="1157.9241560546734" y="456.0" />
+              <point x="119.43910256410254" y="456.0" />
+              <point x="36.875" y="16.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.MyDrawingEngine" target="eg.edu.alexu.csd.oop.draw.cs.Ellipse">
+              <point x="-26.222222222222285" y="-16.0" />
+              <point x="1216.9241560546734" y="366.0" />
+              <point x="940.3799348424568" y="366.0" />
+              <point x="19.0" y="16.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.FileManager.TextLoader" target="eg.edu.alexu.csd.oop.draw.Shape">
+              <point x="0.0" y="-16.0" />
+              <point x="418.06410256410254" y="122.0" />
+              <point x="1330.2425817716767" y="122.0" />
+              <point x="-21.083333333333314" y="16.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.RemoveShape" target="eg.edu.alexu.csd.oop.draw.cs.MyDrawingEngine">
+              <point x="-18.375" y="16.0" />
+              <point x="1959.185704073226" y="274.0" />
+              <point x="2004.4773707398926" y="274.0" />
+              <point x="2004.4773707398926" y="436.0" />
+              <point x="1295.5908227213401" y="436.0" />
+              <point x="52.44444444444446" y="-16.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.FileManager.Saver" target="eg.edu.alexu.csd.oop.draw.cs.FileManager.TextLoader">
+              <point x="-25.14285714285711" y="-16.0" />
+              <point x="1068.6116293907244" y="264.0" />
+              <point x="450.06410256410254" y="264.0" />
+              <point x="32.0" y="16.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.Shapefactory" target="eg.edu.alexu.csd.oop.draw.cs.Rectangle">
+              <point x="-60.428571428571445" y="-16.0" />
+              <point x="576.9183833073058" y="992.0" />
+              <point x="38.64583333333326" y="992.0" />
+              <point x="38.64583333333326" y="486.0" />
+              <point x="30.93910256410254" y="486.0" />
+              <point x="-51.625" y="16.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.BasicOpsTest2" target="eg.edu.alexu.csd.oop.draw.cs.Circle">
+              <point x="-60.400000000000006" y="-16.0" />
+              <point x="1385.7107040732262" y="962.0" />
+              <point x="1206.0782960573908" y="962.0" />
+              <point x="30.799999999999955" y="16.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.FileManager.XmlLoader" target="eg.edu.alexu.csd.oop.draw.cs.TheShape">
+              <point x="-31.0" y="16.0" />
+              <point x="193.56410256410254" y="658.0" />
+              <point x="500.7380142630361" y="658.0" />
+              <point x="-31.909090909090935" y="-16.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.Shapefactory" target="eg.edu.alexu.csd.oop.draw.cs.TheShape">
+              <point x="-20.14285714285711" y="-16.0" />
+              <point x="617.2040975930202" y="972.0" />
+              <point x="553.6294871794873" y="972.0" />
+              <point x="553.6294871794873" y="800.0" />
+              <point x="556.047105172127" y="800.0" />
+              <point x="23.399999999999977" y="16.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.Shapefactory" target="eg.edu.alexu.csd.oop.draw.cs.Linesegment">
+              <point x="0.0" y="-16.0" />
+              <point x="637.3469547358773" y="992.0" />
+              <point x="651.6479159753084" y="992.0" />
+              <point x="651.6479159753084" y="476.0" />
+              <point x="622.1381766006986" y="476.0" />
+              <point x="-17.375" y="16.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.MyDrawingEngine" target="eg.edu.alexu.csd.oop.draw.cs.Triangle">
+              <point x="-65.55555555555554" y="-16.0" />
+              <point x="1177.5908227213401" y="426.0" />
+              <point x="527.2988908864128" y="426.0" />
+              <point x="30.285714285714278" y="16.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.FileManager.XmlLoader" target="eg.edu.alexu.csd.oop.draw.Shape">
+              <point x="0.0" y="-16.0" />
+              <point x="224.56410256410254" y="102.0" />
+              <point x="1322.57591510501" y="102.0" />
+              <point x="-28.75" y="16.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.MyDrawingEngine" target="eg.edu.alexu.csd.oop.draw.cs.AddShape">
+              <point x="26.22222222222217" y="-16.0" />
+              <point x="1269.3686004991177" y="396.0" />
+              <point x="1776.3384818510037" y="396.0" />
+              <point x="1776.3384818510037" y="264.0" />
+              <point x="1752.8940374065592" y="264.0" />
+              <point x="-15.0" y="16.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.FileManager.Saver" target="eg.edu.alexu.csd.oop.draw.cs.JsonSaver">
+              <point x="25.14285714285711" y="-16.0" />
+              <point x="1118.8973436764386" y="264.0" />
+              <point x="1189.425186573484" y="264.0" />
+              <point x="0.0" y="16.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.MyDrawingEngineTester" target="eg.edu.alexu.csd.oop.draw.cs.MyDrawingEngine">
+              <point x="13.75" y="-16.0" />
+              <point x="896.2748393512619" y="922.0" />
+              <point x="1002.80375011722" y="922.0" />
+              <point x="1002.80375011722" y="628.0" />
+              <point x="1204.4276282768956" y="628.0" />
+              <point x="-38.71875" y="16.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.DrawingEngine" target="eg.edu.alexu.csd.oop.draw.Shape">
+              <point x="0.0" y="-16.0" />
+              <point x="297.06410256410254" y="112.0" />
+              <point x="1326.4092484383432" y="112.0" />
+              <point x="-24.916666666666686" y="16.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.Ellipse" target="eg.edu.alexu.csd.oop.draw.cs.TheShape">
+              <point x="-38.0" y="16.0" />
+              <point x="883.3799348424568" y="476.0" />
+              <point x="756.0131766006986" y="476.0" />
+              <point x="756.0131766006986" y="578.0" />
+              <point x="564.556196081218" y="578.0" />
+              <point x="31.909090909090935" y="-16.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.MyDrawingEngine" target="eg.edu.alexu.csd.oop.draw.Shape">
+              <point x="-6.555555555555543" y="-16.0" />
+              <point x="1236.5908227213401" y="346.0" />
+              <point x="1398.425186573484" y="346.0" />
+              <point x="1398.425186573484" y="162.0" />
+              <point x="1353.2425817716767" y="162.0" />
+              <point x="1.9166666666666856" y="16.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.UpdateShape" target="eg.edu.alexu.csd.oop.draw.cs.MyDrawingEngine">
+              <point x="35.5" y="16.0" />
+              <point x="1899.8940374065592" y="426.0" />
+              <point x="1289.0352671657847" y="426.0" />
+              <point x="45.888888888888914" y="-16.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.gui.Controller" target="eg.edu.alexu.csd.oop.draw.cs.Triangle">
+              <point x="9.230769230769226" y="-16.0" />
+              <point x="476.7948717948718" y="750.0" />
+              <point x="463.64710517212706" y="750.0" />
+              <point x="463.64710517212706" y="486.0" />
+              <point x="481.8703194578414" y="486.0" />
+              <point x="-15.14285714285711" y="16.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.FileManager.TextLoader" target="eg.edu.alexu.csd.oop.draw.cs.TheShape">
+              <point x="-32.0" y="16.0" />
+              <point x="386.06410256410254" y="648.0" />
+              <point x="511.3743778993998" y="648.0" />
+              <point x="-21.272727272727252" y="-16.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.Shapefactory" target="eg.edu.alexu.csd.oop.draw.cs.Ellipse">
+              <point x="40.285714285714334" y="-16.0" />
+              <point x="677.6326690215916" y="932.0" />
+              <point x="837.8844547358773" y="932.0" />
+              <point x="837.8844547358773" y="486.0" />
+              <point x="902.3799348424568" y="486.0" />
+              <point x="-19.0" y="16.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.MyDrawingEngine" target="eg.edu.alexu.csd.oop.draw.cs.Square">
+              <point x="-39.33333333333337" y="-16.0" />
+              <point x="1203.8130449435623" y="386.0" />
+              <point x="797.6131766006986" y="386.0" />
+              <point x="19.600000000000023" y="16.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.BasicOpsTest" target="javafx.application.Application">
+              <point x="59.583333333333314" y="-16.0" />
+              <point x="1191.6940374065593" y="992.0" />
+              <point x="1437.5607040732261" y="992.0" />
+              <point x="-43.0" y="16.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.MyDrawingEngine" target="eg.edu.alexu.csd.oop.draw.cs.RemoveShape">
+              <point x="59.0" y="-16.0" />
+              <point x="1302.1463782768956" y="446.0" />
+              <point x="2011.0329262954483" y="446.0" />
+              <point x="2011.0329262954483" y="264.0" />
+              <point x="1995.935704073226" y="264.0" />
+              <point x="18.375" y="16.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.gui.Controller" target="eg.edu.alexu.csd.oop.draw.cs.TheShape">
+              <point x="18.461538461538453" y="-16.0" />
+              <point x="-46.80000000000001" y="16.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.Shapefactory" target="eg.edu.alexu.csd.oop.draw.cs.Circle">
+              <point x="60.428571428571445" y="-16.0" />
+              <point x="697.7755261644487" y="942.0" />
+              <point x="1135.678296057391" y="942.0" />
+              <point x="-39.60000000000002" y="16.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.UpdateShape" target="eg.edu.alexu.csd.oop.draw.cs.RemoveShape">
+              <point x="59.166666666666686" y="-16.0" />
+              <point x="1923.560704073226" y="274.0" />
+              <point x="1922.435704073226" y="274.0" />
+              <point x="-55.125" y="16.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.Rectangle" target="eg.edu.alexu.csd.oop.draw.cs.TheShape">
+              <point x="22.125" y="16.0" />
+              <point x="104.68910256410254" y="486.0" />
+              <point x="100.05448717948718" y="486.0" />
+              <point x="100.05448717948718" y="678.0" />
+              <point x="479.46528699030887" y="678.0" />
+              <point x="-53.18181818181819" y="-16.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.MyDrawingEngine" target="eg.edu.alexu.csd.oop.draw.cs.FileManager.Saver">
+              <point x="-13.111111111111086" y="-16.0" />
+              <point x="1230.0352671657847" y="346.0" />
+              <point x="1093.7544865335815" y="346.0" />
+              <point x="0.0" y="16.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.MyDrawingEngineTester" target="eg.edu.alexu.csd.oop.draw.Shape">
+              <point x="-96.25" y="-16.0" />
+              <point x="786.2748393512619" y="912.0" />
+              <point x="0.0" y="912.0" />
+              <point x="0.0" y="62.0" />
+              <point x="1307.2425817716767" y="62.0" />
+              <point x="-44.083333333333314" y="16.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.gui.Controller" target="eg.edu.alexu.csd.oop.draw.cs.MyDrawingEngine">
+              <point x="55.38461538461536" y="-16.0" />
+              <point x="522.948717948718" y="820.0" />
+              <point x="991.80375011722" y="820.0" />
+              <point x="991.80375011722" y="618.0" />
+              <point x="1193.3651282768956" y="618.0" />
+              <point x="-49.78125" y="16.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.MyDrawingEngine" target="eg.edu.alexu.csd.oop.draw.cs.Command">
+              <point x="72.11111111111109" y="-16.0" />
+              <point x="1315.257489388007" y="466.0" />
+              <point x="2079.6777675652893" y="466.0" />
+              <point x="2079.6777675652893" y="172.0" />
+              <point x="2039.9412271779945" y="172.0" />
+              <point x="17.14285714285711" y="16.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.BasicOpsTest" target="eg.edu.alexu.csd.oop.draw.cs.MyDrawingEngine">
+              <point x="-59.583333333333314" y="-16.0" />
+              <point x="1072.5273707398928" y="932.0" />
+              <point x="1090.4440374065593" y="932.0" />
+              <point x="1090.4440374065593" y="648.0" />
+              <point x="1226.5526282768956" y="648.0" />
+              <point x="-16.59375" y="16.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.UpdateShape" target="eg.edu.alexu.csd.oop.draw.cs.Command">
+              <point x="35.5" y="-16.0" />
+              <point x="1899.8940374065592" y="274.0" />
+              <point x="1893.560704073226" y="274.0" />
+              <point x="1893.560704073226" y="172.0" />
+              <point x="2005.6555128922803" y="172.0" />
+              <point x="-17.14285714285711" y="16.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.AddShape" target="eg.edu.alexu.csd.oop.draw.cs.Command">
+              <point x="40.0" y="-16.0" />
+              <point x="1807.8940374065592" y="152.0" />
+              <point x="1971.3697986065658" y="152.0" />
+              <point x="-51.428571428571445" y="16.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.gui.Controller" target="eg.edu.alexu.csd.oop.draw.Shape">
+              <point x="-55.38461538461536" y="-16.0" />
+              <point x="412.17948717948724" y="820.0" />
+              <point x="3.833333333333485" y="820.0" />
+              <point x="3.833333333333485" y="72.0" />
+              <point x="1311.07591510501" y="72.0" />
+              <point x="-40.25" y="16.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.Linesegment" target="eg.edu.alexu.csd.oop.draw.cs.TheShape">
+              <point x="-52.125" y="16.0" />
+              <point x="587.3881766006986" y="486.0" />
+              <point x="582.1381766006984" y="486.0" />
+              <point x="582.1381766006984" y="558.0" />
+              <point x="543.2834688084906" y="558.0" />
+              <point x="10.636363636363626" y="-16.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.Shapefactory" target="eg.edu.alexu.csd.oop.draw.cs.Square">
+              <point x="20.14285714285711" y="-16.0" />
+              <point x="657.4898118787344" y="922.0" />
+              <point x="767.0131766006986" y="922.0" />
+              <point x="767.0131766006986" y="466.0" />
+              <point x="758.4131766006985" y="466.0" />
+              <point x="-19.600000000000023" y="16.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.TheShape" target="eg.edu.alexu.csd.oop.draw.Shape">
+              <point x="-42.54545454545456" y="-16.0" />
+              <point x="490.1016506266725" y="668.0" />
+              <point x="152.06410256410254" y="668.0" />
+              <point x="152.06410256410254" y="92.0" />
+              <point x="1318.7425817716767" y="92.0" />
+              <point x="-32.583333333333314" y="16.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.TesterMain" target="eg.edu.alexu.csd.oop.draw.cs.MyDrawingEngine">
+              <point x="15.875" y="-16.0" />
+              <point x="1302.985704073226" y="982.0" />
+              <point x="1313.360704073226" y="982.0" />
+              <point x="1313.360704073226" y="678.0" />
+              <point x="1270.8026282768956" y="678.0" />
+              <point x="27.65625" y="16.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.MyDrawingEngine" target="eg.edu.alexu.csd.oop.draw.cs.Circle">
+              <point x="16.59375" y="16.0" />
+              <point x="1259.7401282768956" y="678.0" />
+              <point x="1242.3898707398926" y="678.0" />
+              <point x="1242.3898707398926" y="820.0" />
+              <point x="1204.6116293907244" y="820.0" />
+              <point x="29.333333333333314" y="-16.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.gui.Controller" target="eg.edu.alexu.csd.oop.draw.DrawingEngine">
+              <point x="-9.230769230769226" y="-16.0" />
+              <point x="458.33333333333337" y="770.0" />
+              <point x="257.81410256410254" y="770.0" />
+              <point x="-39.25" y="16.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs.TheShape" target="eg.edu.alexu.csd.oop.draw.cs.MyDrawingEngine">
+              <point x="42.54545454545456" y="-16.0" />
+              <point x="575.1925597175816" y="588.0" />
+              <point x="1160.1776282768956" y="588.0" />
+              <point x="-82.96875" y="16.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.5858064516129032" x="1326.691629955947" y="507.6916299559471" />
+          <SelectedNodes>
+            <node>javafx.application.Application</node>
+          </SelectedNodes>
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/TesterMain.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="36" lean-forward="false" selection-start-line="0" selection-start-column="36" selection-end-line="0" selection-end-column="36" />
+        <state relative-caret-position="216">
+          <caret line="12" column="38" lean-forward="false" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/json/TrueValue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+    <entry file="uml://JAVA/eg.edu.alexu.csd.oop.draw">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>eg.edu.alexu.csd.oop.draw</OriginalElement>
+          <nodes>
+            <node x="216.33333333333334" y="0.0">eg.edu.alexu.csd.oop.draw.Shape</node>
+            <node x="389.34375" y="664.0">eg.edu.alexu.csd.oop.draw.cs</node>
+            <node x="0.0" y="332.0">eg.edu.alexu.csd.oop.draw.DrawingEngine</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="eg.edu.alexu.csd.oop.draw.DrawingEngine" target="eg.edu.alexu.csd.oop.draw.Shape">
+              <point x="0.0" y="-136.0" />
+              <point x="215.0" y="312.0" />
+              <point x="245.66666666666669" y="312.0" />
+              <point x="-146.66666666666666" y="136.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs" target="eg.edu.alexu.csd.oop.draw.cs">
+              <point x="-40.5" y="16.0" />
+              <point x="402.84375" y="716.0" />
+              <point x="369.34375" y="716.0" />
+              <point x="369.34375" y="692.0" />
+              <point x="-54.0" y="12.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs" target="eg.edu.alexu.csd.oop.draw.DrawingEngine">
+              <point x="-45.0" y="-16.0" />
+              <point x="398.34375" y="644.0" />
+              <point x="215.0" y="644.0" />
+              <point x="0.0" y="136.0" />
+            </edge>
+            <edge source="eg.edu.alexu.csd.oop.draw.cs" target="eg.edu.alexu.csd.oop.draw.Shape">
+              <point x="-27.0" y="-16.0" />
+              <point x="416.34375" y="624.0" />
+              <point x="440.5" y="624.0" />
+              <point x="440.5" y="312.0" />
+              <point x="304.33333333333337" y="312.0" />
+              <point x="-88.0" y="136.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.7950391644908616" x="-13.128078817733979" y="531.8719211822661" />
+          <SelectedNodes>
+            <node>eg.edu.alexu.csd.oop.draw.cs</node>
+          </SelectedNodes>
+          <Categories>
+            <Category>Methods</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/json/StringValue.java">
+    <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/shapes/Circle.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="36" lean-forward="false" selection-start-line="0" selection-start-column="36" selection-end-line="0" selection-end-column="36" />
+        <state relative-caret-position="-8">
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/json/ArrayValue.java">
+    <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/shapes/Rectangle.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="36" lean-forward="false" selection-start-line="0" selection-start-column="36" selection-end-line="0" selection-end-column="36" />
+        <state relative-caret-position="-8">
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/json/ArrayValue.class" />
-    <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/json/ObjectValue.class" />
-    <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/json/ObjectValue.java">
+    <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/shapes/Linesegment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-738">
+        <state relative-caret-position="-8">
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/shapes/Ellipse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/shapes/Triangle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
           <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/json/BooleanValue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="36" lean-forward="false" selection-start-line="0" selection-start-column="36" selection-end-line="0" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/json/DoubleNumberValue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="36" lean-forward="false" selection-start-line="0" selection-start-column="36" selection-end-line="0" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/json/ValueReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="26" column="23" lean-forward="false" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/json/NumberValue.class" />
-    <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/json/NumberValue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="36" lean-forward="false" selection-start-line="0" selection-start-column="36" selection-end-line="0" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/AddShape.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/BasicOpsTest2.java">
+    <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/commands/Command.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="16" column="40" lean-forward="false" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/Command.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
+        <state relative-caret-position="-8">
           <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/commands/RemoveShape.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/commands/AddShape.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/commands/UpdateShape.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/Shape.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+        <state relative-caret-position="324">
+          <caret line="18" column="13" lean-forward="true" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/TheShape.java">
+    <entry file="jar:///usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/rt.jar!/org/xml/sax/InputSource.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="36" lean-forward="true" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
+        <state relative-caret-position="68">
+          <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
           <folding>
-            <element signature="e#968#969#0" expanded="true" />
-            <element signature="e#1059#1060#0" expanded="true" />
+            <element signature="e#441#442#0" expanded="true" />
+            <element signature="e#483#484#0" expanded="true" />
+            <element signature="e#808#809#0" expanded="true" />
+            <element signature="e#844#845#0" expanded="true" />
+            <element signature="e#892#893#0" expanded="true" />
+            <element signature="e#932#933#0" expanded="true" />
+            <element signature="e#967#968#0" expanded="true" />
+            <element signature="e#1003#1004#0" expanded="true" />
+            <element signature="e#1146#1147#0" expanded="true" />
+            <element signature="e#1184#1185#0" expanded="true" />
+            <element signature="e#1343#1344#0" expanded="true" />
+            <element signature="e#1501#1502#0" expanded="true" />
+            <element signature="e#1544#1545#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/DrawingEngine.java">
+    <entry file="jar:///usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/rt.jar!/com/sun/org/apache/xerces/internal/dom/NodeImpl.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="29" column="1" lean-forward="false" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
+        <state relative-caret-position="123">
+          <caret line="922" column="0" lean-forward="false" selection-start-line="922" selection-start-column="0" selection-end-line="922" selection-end-column="0" />
+          <folding>
+            <element signature="e#30817#30818#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/rt.jar!/com/sun/org/apache/xerces/internal/dom/CoreDocumentImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="320" column="0" lean-forward="false" selection-start-line="320" selection-start-column="0" selection-end-line="320" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/Square.java">
+    <entry file="jar:///usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/ext/jfxrt.jar!/javafx/scene/paint/Paint.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="28" column="52" lean-forward="false" selection-start-line="28" selection-start-column="52" selection-end-line="28" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/Triangle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="36" lean-forward="false" selection-start-line="0" selection-start-column="36" selection-end-line="0" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/Rectangle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="36" lean-forward="false" selection-start-line="0" selection-start-column="36" selection-end-line="0" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/Ellipse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="36" lean-forward="true" selection-start-line="0" selection-start-column="36" selection-end-line="0" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/Linesegment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        <state relative-caret-position="144">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/Circle.java">
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/Assert.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="36" lean-forward="false" selection-start-line="0" selection-start-column="36" selection-end-line="0" selection-end-column="36" />
+        <state relative-caret-position="139">
+          <caret line="333" column="0" lean-forward="false" selection-start-line="333" selection-start-column="0" selection-end-line="333" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/fileManager/XmlSaver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="50" column="7" lean-forward="true" selection-start-line="50" selection-start-column="7" selection-end-line="50" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/ext/jfxrt.jar!/javafx/scene/paint/Color.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="487" column="0" lean-forward="false" selection-start-line="487" selection-start-column="0" selection-end-line="487" selection-end-column="0" />
+          <folding>
+            <element signature="e#19593#19594#0" expanded="true" />
+            <element signature="e#19632#19633#0" expanded="true" />
+            <element signature="e#19670#19671#0" expanded="true" />
+            <element signature="e#19711#19712#0" expanded="true" />
+            <element signature="e#19748#19749#0" expanded="true" />
+            <element signature="e#19788#19789#0" expanded="true" />
+            <element signature="e#19871#19872#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/json/NumberValue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <element signature="e#235#236#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/json/DoubleNumberValue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="15" column="43" lean-forward="false" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
+          <folding>
+            <element signature="e#245#246#0" expanded="false" />
+            <element signature="e#279#280#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/json/ArrayValue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/json/ObjectValue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="64" column="25" lean-forward="true" selection-start-line="64" selection-start-column="25" selection-end-line="64" selection-end-column="25" />
+          <folding>
+            <element signature="e#389#390#0" expanded="false" />
+            <element signature="e#421#422#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/color.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="22" lean-forward="true" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+          <folding>
+            <marker date="1511379959432" expanded="true" signature="36:52" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/rt.jar!/java/lang/Object.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/rt.jar!/java/util/AbstractCollection.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/rt.jar!/java/util/AbstractList.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/rt.jar!/java/util/AbstractSequentialList.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/rt.jar!/java/util/LinkedList.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding>
+            <element signature="e#636#637#0" expanded="true" />
+            <element signature="e#4312#4313#0" expanded="true" />
+            <element signature="e#4344#4345#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/runners/BlockJUnit4ClassRunner.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/runners/ParentRunner.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="174" column="0" lean-forward="false" selection-start-line="174" selection-start-column="0" selection-end-line="174" selection-end-column="0" />
+          <folding>
+            <element signature="e#2111#2112#0" expanded="true" />
+            <element signature="e#2155#2156#0" expanded="true" />
+            <element signature="e#6484#6648#0" expanded="true" />
+            <element signature="e#6647#6648#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/MyDrawingEngineTester.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="358" column="27" lean-forward="false" selection-start-line="358" selection-start-column="27" selection-end-line="358" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/json/ValueReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="29" column="24" lean-forward="false" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/fileManager/Saver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="jar:///usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/ext/jfxrt.jar!/javafx/fxml/FXMLLoader.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="35820">
-          <caret line="2140" column="0" lean-forward="false" selection-start-line="2140" selection-start-column="0" selection-end-line="2140" selection-end-column="0" />
+        <state relative-caret-position="139">
+          <caret line="1236" column="0" lean-forward="false" selection-start-line="1236" selection-start-column="0" selection-end-line="1236" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/gui/application.css">
+    <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/drawingengine/MyDrawingEngine.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="130">
+          <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+          <folding>
+            <element signature="e#3351#3352#0" expanded="true" />
+            <element signature="e#3414#3415#0" expanded="true" />
+            <element signature="e#4195#4196#0" expanded="true" />
+            <element signature="e#4234#4235#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/shapes/Square.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="42" column="27" lean-forward="false" selection-start-line="42" selection-start-column="27" selection-end-line="42" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/BasicOpsTest.java">
+    <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/shapes/Shapefactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1026">
-          <caret line="78" column="35" lean-forward="false" selection-start-line="78" selection-start-column="35" selection-end-line="78" selection-end-column="35" />
+        <state relative-caret-position="36">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/fileManager/TextLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="84" column="16" lean-forward="true" selection-start-line="84" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/color.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="567" lean-forward="false" selection-start-line="0" selection-start-column="558" selection-end-line="0" selection-end-column="567" />
+          <folding>
+            <marker date="1511379959476" expanded="true" signature="576:584" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/fileManager/XmlLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="86" column="13" lean-forward="true" selection-start-line="86" selection-start-column="13" selection-end-line="86" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/fileManager/TextSaver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-40">
+          <caret line="65" column="36" lean-forward="false" selection-start-line="65" selection-start-column="26" selection-end-line="65" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/fileManager/JsonSaver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="62" column="27" lean-forward="false" selection-start-line="62" selection-start-column="23" selection-end-line="62" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/shapes/TheShape.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="98" column="13" lean-forward="false" selection-start-line="98" selection-start-column="13" selection-end-line="98" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/fileManager/JsonLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1188">
+          <caret line="66" column="62" lean-forward="true" selection-start-line="66" selection-start-column="62" selection-end-line="66" selection-end-column="62" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/gui/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="246" column="0" lean-forward="false" selection-start-line="246" selection-start-column="0" selection-end-line="246" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -883,222 +2235,10 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="293" lean-forward="false" selection-start-line="17" selection-start-column="293" selection-end-line="17" selection-end-column="293" />
+        <state relative-caret-position="128">
+          <caret line="35" column="80" lean-forward="false" selection-start-line="35" selection-start-column="80" selection-end-line="35" selection-end-column="80" />
           <folding>
-            <marker date="1511268000243" expanded="true" signature="5415:5429" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/gui/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1026">
-          <caret line="102" column="44" lean-forward="false" selection-start-line="102" selection-start-column="44" selection-end-line="102" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/gui/ShapeUpdater.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="31" column="42" lean-forward="false" selection-start-line="31" selection-start-column="42" selection-end-line="31" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/gui/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="12" column="12" lean-forward="false" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/replay_pid11984.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/rt.jar!/java/io/FileInputStream.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/TesterMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/JsonSaver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="63" column="22" lean-forward="true" selection-start-line="63" selection-start-column="22" selection-end-line="63" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/JsonLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-137">
-          <caret line="84" column="6" lean-forward="true" selection-start-line="84" selection-start-column="6" selection-end-line="84" selection-end-column="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/RemoveShape.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="14" column="46" lean-forward="true" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/TextLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="75" column="77" lean-forward="false" selection-start-line="75" selection-start-column="77" selection-end-line="75" selection-end-column="77" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/TextSaver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="65" column="38" lean-forward="false" selection-start-line="65" selection-start-column="38" selection-end-line="65" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sss.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="16" lean-forward="false" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ss2.Xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="456" lean-forward="true" selection-start-line="2" selection-start-column="456" selection-end-line="2" selection-end-column="456" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/MyDrawingEngine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="137" column="0" lean-forward="false" selection-start-line="137" selection-start-column="0" selection-end-line="137" selection-end-column="0" />
-          <folding>
-            <element signature="e#3834#3835#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/rt.jar!/java/util/Locale.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="127" column="0" lean-forward="false" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
-          <folding>
-            <element signature="e#5363#5364#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/rt.jar!/java/lang/String.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="947" column="0" lean-forward="false" selection-start-line="947" selection-start-column="0" selection-end-line="947" selection-end-column="0" />
-          <folding>
-            <element signature="e#29276#29277#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/Saver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/rt.jar!/com/sun/org/apache/xerces/internal/dom/CoreDocumentImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="281" column="0" lean-forward="false" selection-start-line="281" selection-start-column="0" selection-end-line="281" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ss.Xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ss.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/MyDrawingEngineTester.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="293" column="0" lean-forward="false" selection-start-line="293" selection-start-column="0" selection-end-line="293" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/XmlSaver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/oop/draw/cs/XmlLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="26" column="65" lean-forward="true" selection-start-line="26" selection-start-column="65" selection-end-line="26" selection-end-column="65" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#4066#4067#0" expanded="true" />
-            <element signature="e#4132#4133#0" expanded="true" />
+            <marker date="1511377042193" expanded="true" signature="4975:4989" ph="..." />
           </folding>
         </state>
       </provider>
