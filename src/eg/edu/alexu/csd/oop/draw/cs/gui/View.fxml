@@ -15,89 +15,119 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 
-<BorderPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#disselect" onMouseMoved="#getscene" prefHeight="1000.0" prefWidth="1800.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eg.edu.alexu.csd.oop.draw.cs.gui.Controller">
-   <top>
-      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
-         <children>
-            <MenuBar>
-              <menus>
-                <Menu mnemonicParsing="false" text="File">
-                  <items>
-                        <MenuItem mnemonicParsing="false" onAction="#plugin" text="Add External Shape" />
-                        <MenuItem mnemonicParsing="false" onAction="#save" text="Save" />
-                        <MenuItem mnemonicParsing="false" onAction="#saveas" text="Save as" />
-                        <MenuItem mnemonicParsing="false" onAction="#load" text="Load" />
-                    <MenuItem mnemonicParsing="false" onAction="#close" text="Close" />
-                  </items>
-                </Menu>
-                <Menu mnemonicParsing="false" text="Edit">
-                     <items>
-                        <MenuItem mnemonicParsing="false" onAction="#undo" text="Undo" />
-                        <MenuItem mnemonicParsing="false" onAction="#redo" text="Redo" />
-                     </items>
-                </Menu>
-                <Menu mnemonicParsing="false" text="Help">
-                  <items>
-                    <MenuItem mnemonicParsing="false" text="About" />
-                  </items>
-                </Menu>
-              </menus>
-            </MenuBar>
-            <Pane prefHeight="200.0" prefWidth="200.0">
-               <children>
-                  <Label layoutX="1566.0" layoutY="29.0" text="Color" />
-                  <Label layoutX="1557.0" layoutY="67.0" text="Fill Color" />
-                  <ColorPicker fx:id="fillcolor" layoutX="1648.0" layoutY="63.0" />
-                  <ColorPicker fx:id="color" layoutX="1648.0" layoutY="25.0" />
-                  <ComboBox fx:id="shape_combo" layoutX="14.0" layoutY="12.0" prefHeight="25.0" prefWidth="363.0" />
-               </children>
-            </Pane>
-         </children>
-      </VBox>
-   </top>
-   <bottom>
-      <VBox prefHeight="60.0" prefWidth="640.0" BorderPane.alignment="CENTER">
-         <children>
-            <ToolBar fx:id="toolBar" prefHeight="40.0" prefWidth="200.0">
-               <items>
-                  <Pane prefHeight="25.0" prefWidth="1111.0">
-                     <children>
-                        <ColorPicker fx:id="updcol" layoutX="518.0" layoutY="-2.0" onAction="#updcolor" />
-                        <ColorPicker fx:id="updfillcol" layoutX="760.0" layoutY="-2.0" onAction="#updfillcolor" />
-                        <Button layoutX="48.0" layoutY="-2.0" mnemonicParsing="false" onAction="#up" text="Up" />
-                        <Button layoutX="92.0" layoutY="-1.0" mnemonicParsing="false" onAction="#down" text="Down" />
-                        <Button layoutX="152.0" layoutY="-1.0" mnemonicParsing="false" onAction="#left" text="Left" />
-                        <Button layoutX="203.0" layoutY="-2.0" mnemonicParsing="false" onAction="#right" text="Right" />
-                        <Button fx:id="apply" layoutX="957.0" layoutY="-2.0" mnemonicParsing="false" onAction="#applyChanges" text="Apply Changes" />
-                        <Label layoutX="444.0" layoutY="3.0" text="Color" />
-                        <Label layoutX="681.0" layoutY="2.0" text="Fill Color" />
-                     </children>
-                  </Pane>
-                  <Button fx:id="remove" mnemonicParsing="false" onAction="#removeall" text="Remove All Selected Shapes" />
-               </items></ToolBar>
-            <Label fx:id="scene" text="Label">
-               <VBox.margin>
-                  <Insets top="10.0" />
-               </VBox.margin>
-            </Label>
-         </children>
-      </VBox>
-   </bottom>
-   <left>
-      <VBox prefHeight="660.0" prefWidth="100.0" BorderPane.alignment="CENTER">
-         <BorderPane.margin>
-            <Insets bottom="100.0" />
-         </BorderPane.margin>
-      </VBox>
-   </left>
-   <center>
-      <Pane fx:id="backcanvs" onMouseDragged="#drag_canvs" onMousePressed="#drag_canvs" prefHeight="740.0" prefWidth="1473.0" style="-fx-background-color: #FFFFFF;" BorderPane.alignment="CENTER">
-         <children>
-            <Canvas fx:id="mycanvs" height="736.0" onMouseClicked="#draw_triangleandplugnis" onMouseDragged="#drag_canvs" onMousePressed="#drag_canvs" onMouseReleased="#release_canvs" width="1502.0" />
-         </children>
-      </Pane>
-   </center>
-   <right>
-      <ListView fx:id="shapelist" prefHeight="740.0" prefWidth="186.0" BorderPane.alignment="CENTER" />
-   </right>
+<BorderPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity"
+	minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#disselect"
+	onMouseMoved="#getscene" prefHeight="1000.0" prefWidth="1800.0"
+	xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="eg.edu.alexu.csd.oop.draw.cs.gui.Controller">
+	<top>
+		<VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+			<children>
+				<MenuBar>
+					<menus>
+						<Menu mnemonicParsing="false" text="File">
+							<items>
+								<MenuItem mnemonicParsing="false" onAction="#plugin"
+									text="Add External Shape" />
+								<MenuItem mnemonicParsing="false" onAction="#save"
+									text="Save" />
+								<MenuItem mnemonicParsing="false" onAction="#saveas"
+									text="Save as" />
+								<MenuItem mnemonicParsing="false" onAction="#load"
+									text="Load" />
+								<MenuItem mnemonicParsing="false" onAction="#close"
+									text="Close" />
+							</items>
+						</Menu>
+						<Menu mnemonicParsing="false" text="Edit">
+							<items>
+								<MenuItem mnemonicParsing="false" onAction="#undo"
+									text="Undo" />
+								<MenuItem mnemonicParsing="false" onAction="#redo"
+									text="Redo" />
+							</items>
+						</Menu>
+						<Menu mnemonicParsing="false" text="Help">
+							<items>
+								<MenuItem mnemonicParsing="false" text="About" />
+							</items>
+						</Menu>
+					</menus>
+				</MenuBar>
+				<Pane prefHeight="200.0" prefWidth="200.0">
+					<children>
+						<Label layoutX="1566.0" layoutY="29.0" text="Color" />
+						<Label layoutX="1557.0" layoutY="67.0" text="Fill Color" />
+						<ColorPicker fx:id="fillcolor" layoutX="1648.0"
+							layoutY="63.0" />
+						<ColorPicker fx:id="color" layoutX="1648.0" layoutY="25.0" />
+						<ComboBox fx:id="shape_combo" layoutX="14.0" layoutY="12.0"
+							prefHeight="25.0" prefWidth="363.0" />
+						<Button layoutX="1621.0" layoutY="100.0" mnemonicParsing="false"
+							onAction="#removeall" prefHeight="25.0" prefWidth="152.0"
+							text="Remove All Shapes" />
+					</children>
+				</Pane>
+			</children>
+		</VBox>
+	</top>
+	<bottom>
+		<VBox prefHeight="60.0" prefWidth="640.0" BorderPane.alignment="CENTER">
+			<children>
+				<ToolBar fx:id="toolBar" prefHeight="40.0" prefWidth="200.0">
+					<items>
+						<Pane prefHeight="25.0" prefWidth="1111.0">
+							<children>
+								<ColorPicker fx:id="updcol" layoutX="518.0" layoutY="-2.0"
+									onAction="#updcolor" />
+								<ColorPicker fx:id="updfillcol" layoutX="760.0"
+									layoutY="-2.0" onAction="#updfillcolor" />
+								<Button layoutX="48.0" layoutY="-2.0" mnemonicParsing="false"
+									onAction="#up" text="Up" />
+								<Button layoutX="92.0" layoutY="-1.0" mnemonicParsing="false"
+									onAction="#down" text="Down" />
+								<Button layoutX="152.0" layoutY="-1.0" mnemonicParsing="false"
+									onAction="#left" text="Left" />
+								<Button layoutX="203.0" layoutY="-2.0" mnemonicParsing="false"
+									onAction="#right" text="Right" />
+								<Button fx:id="apply" layoutX="957.0" layoutY="-2.0"
+									mnemonicParsing="false" onAction="#applyChanges" text="Apply Changes" />
+								<Label layoutX="444.0" layoutY="3.0" text="Color" />
+								<Label layoutX="681.0" layoutY="2.0" text="Fill Color" />
+							</children>
+						</Pane>
+						<Button fx:id="remove" mnemonicParsing="false" onAction="#removeall"
+							text="Remove All Selected Shapes" />
+					</items>
+				</ToolBar>
+				<Label fx:id="scene" text="Label">
+					<VBox.margin>
+						<Insets top="10.0" />
+					</VBox.margin>
+				</Label>
+			</children>
+		</VBox>
+	</bottom>
+	<left>
+		<VBox prefHeight="660.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+			<BorderPane.margin>
+				<Insets bottom="100.0" />
+			</BorderPane.margin>
+		</VBox>
+	</left>
+	<center>
+		<Pane fx:id="backcanvs" onMouseDragged="#drag_canvs"
+			onMousePressed="#drag_canvs" prefHeight="740.0" prefWidth="1473.0"
+			style="-fx-background-color: #FFFFFF;" BorderPane.alignment="CENTER">
+			<children>
+				<Canvas fx:id="mycanvs" height="736.0" onMouseClicked="#draw_triangleandplugnis"
+					onMouseDragged="#drag_canvs" onMousePressed="#drag_canvs"
+					onMouseReleased="#release_canvs" width="1502.0" />
+			</children>
+		</Pane>
+	</center>
+	<right>
+		<ListView fx:id="shapelist" prefHeight="740.0" prefWidth="186.0"
+			BorderPane.alignment="CENTER" />
+	</right>
 </BorderPane>

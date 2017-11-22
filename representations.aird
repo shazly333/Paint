@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<viewpoint:DAnalysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xmi:id="_ohhTkM7CEeeji9HTZ0WSjA" version="11.1.0.201608251200">
+  <semanticResources>build.fxbuild</semanticResources>
+  <semanticResources>src/eg/edu/alexu/csd/oop/draw/cs/gui/application.css</semanticResources>
+  <semanticResources>paint.uml</semanticResources>
+</viewpoint:DAnalysis>

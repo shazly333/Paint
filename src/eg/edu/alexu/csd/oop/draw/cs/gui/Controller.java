@@ -25,6 +25,8 @@ import javafx.fxml.FXML;
 import javafx.scene.Scene;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
+import javafx.scene.control.Alert;
+import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.Button;
 import javafx.scene.control.ColorPicker;
 import javafx.scene.control.ComboBox;
@@ -164,6 +166,16 @@ public class Controller {
             }
             final Map<String, Double> newprop = new HashMap<String, Double>();
             for (final Entry<String, TextField> entry : mapbetweentextfieldanddata.entrySet()) {
+                final String input = entry.getValue().getText();
+                if(!input.matches("^\\d+(\\.\\d+)?")) {
+                    final Alert alert = new Alert(AlertType.ERROR);
+                    alert.setTitle("Error Dialog");
+                    alert.setHeaderText("Invalid Input");
+                    alert.setContentText("Ooops, Input Should Be Doubles Or Integers!");
+
+                    alert.showAndWait();
+                    return;
+                }
                 newprop.put(entry.getKey(),Double.parseDouble( entry.getValue().getText()));
             }
             newshape.setColor(updatecol.getValue());
@@ -520,15 +532,16 @@ public class Controller {
     }
     public void removeall()
     {
-        for(int i=0;i<engine.getShapes().length;i++)
+        final int numberOfShapes = engine.getShapes().length;
+        while(engine.getShapes().length!=0)
         {
-            engine.removeShape(engine.getShapes()[i]);
+            engine.removeShape(engine.getShapes()[0]);
+            System.out.println(engine.getShapes().length);
         }
         gc.setFill(Color.WHITE);
         gc.fillRect(0, 0, 10000, 10000);
-
         engine.refresh(gc);
-
+        update_select_list();
     }
     public void applyChanges()
     {

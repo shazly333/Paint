@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.2.2" icons="true" automaticImage="PNG" always-add-relationships="true" generalizations="true" 
+  realizations="true" associations="true" dependencies="true" nesting-relationships="true" router="FAN">  
+  <class id="1" language="java" name="eg.edu.alexu.csd.oop.draw.cs.UpdateShape" project="Paint_GUI" 
+    file="/Paint_GUI/src/eg/edu/alexu/csd/oop/draw/cs/UpdateShape.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="160" width="298" x="1333" y="-167"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="eg.edu.alexu.csd.oop.draw.cs.Ellipse" project="Paint_GUI" 
+    file="/Paint_GUI/src/eg/edu/alexu/csd/oop/draw/cs/Ellipse.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="232" width="209" x="569" y="1398"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="eg.edu.alexu.csd.oop.draw.cs.TextLoader" project="Paint_GUI" 
+    file="/Paint_GUI/src/eg/edu/alexu/csd/oop/draw/cs/TextLoader.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="250" width="247" x="-52" y="413"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="eg.edu.alexu.csd.oop.draw.cs.Shapefactory" project="Paint_GUI" 
+    file="/Paint_GUI/src/eg/edu/alexu/csd/oop/draw/cs/Shapefactory.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="106" width="208" x="235" y="413"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="eg.edu.alexu.csd.oop.draw.cs.AddShape" project="Paint_GUI" 
+    file="/Paint_GUI/src/eg/edu/alexu/csd/oop/draw/cs/AddShape.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="142" width="239" x="503" y="123"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="6" language="java" name="eg.edu.alexu.csd.oop.draw.cs.Command" project="Paint_GUI" 
+    file="/Paint_GUI/src/eg/edu/alexu/csd/oop/draw/cs/Command.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="106" width="172" x="1083" y="937"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="7" language="java" name="eg.edu.alexu.csd.oop.draw.cs.JsonSaver" project="Paint_GUI" 
+    file="/Paint_GUI/src/eg/edu/alexu/csd/oop/draw/cs/JsonSaver.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="214" width="324" x="1316" y="937"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="8" language="java" name="eg.edu.alexu.csd.oop.draw.cs.Linesegment" project="Paint_GUI" 
+    file="/Paint_GUI/src/eg/edu/alexu/csd/oop/draw/cs/Linesegment.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="232" width="272" x="33" y="1398"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="9" language="java" name="eg.edu.alexu.csd.oop.draw.cs.Circle" project="Paint_GUI" 
+    file="/Paint_GUI/src/eg/edu/alexu/csd/oop/draw/cs/Circle.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="214" width="209" x="1067" y="1398"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="10" language="java" name="eg.edu.alexu.csd.oop.draw.cs.MyDrawingEngine" project="Paint_GUI" 
+    file="/Paint_GUI/src/eg/edu/alexu/csd/oop/draw/cs/MyDrawingEngine.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="484" width="374" x="651" y="413"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="11" language="java" name="eg.edu.alexu.csd.oop.draw.cs.JsonLoader" project="Paint_GUI" 
+    file="/Paint_GUI/src/eg/edu/alexu/csd/oop/draw/cs/JsonLoader.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="214" width="371" x="651" y="937"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="12" language="java" name="eg.edu.alexu.csd.oop.draw.cs.Triangle" project="Paint_GUI" 
+    file="/Paint_GUI/src/eg/edu/alexu/csd/oop/draw/cs/Triangle.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="268" width="184" x="345" y="1398"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="13" language="java" name="eg.edu.alexu.csd.oop.draw.cs.TheShape" project="Paint_GUI" 
+    file="/Paint_GUI/src/eg/edu/alexu/csd/oop/draw/cs/TheShape.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="411" width="256" x="135" y="937"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="14" language="java" name="eg.edu.alexu.csd.oop.draw.cs.RemoveShape" project="Paint_GUI" 
+    file="/Paint_GUI/src/eg/edu/alexu/csd/oop/draw/cs/RemoveShape.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="142" width="262" x="782" y="123"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="15" language="java" name="eg.edu.alexu.csd.oop.draw.cs.Square" project="Paint_GUI" 
+    file="/Paint_GUI/src/eg/edu/alexu/csd/oop/draw/cs/Square.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="214" width="209" x="-216" y="1398"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="16" language="java" name="eg.edu.alexu.csd.oop.draw.cs.TextSaver" project="Paint_GUI" 
+    file="/Paint_GUI/src/eg/edu/alexu/csd/oop/draw/cs/TextSaver.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="250" width="271" x="403" y="-167"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="17" language="java" name="eg.edu.alexu.csd.oop.draw.cs.Rectangle" project="Paint_GUI" 
+    file="/Paint_GUI/src/eg/edu/alexu/csd/oop/draw/cs/Rectangle.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="232" width="209" x="818" y="1398"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="18" language="java" name="eg.edu.alexu.csd.oop.draw.DrawingEngine" project="Paint_GUI" 
+    file="/Paint_GUI/src/eg/edu/alexu/csd/oop/draw/DrawingEngine.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="-78" y="219"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <interface id="19" language="java" name="eg.edu.alexu.csd.oop.draw.Shape" project="Paint_GUI" 
+    file="/Paint_GUI/src/eg/edu/alexu/csd/oop/draw/Shape.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="247" y="-49"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <realization id="20">    
+    <end type="SOURCE" refId="13"/>    
+    <end type="TARGET" refId="19"/>  
+  </realization>  
+  <dependency id="21">    
+    <end type="SOURCE" refId="18"/>    
+    <end type="TARGET" refId="19"/>  
+  </dependency>  
+  <dependency id="22">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="11"/>  
+  </dependency>  
+  <dependency id="23">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="19"/>  
+  </dependency>  
+  <realization id="24">    
+    <bendpoint x="1055" y="413"/>    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="6"/>  
+  </realization>  
+  <dependency id="25">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="7"/>  
+  </dependency>  
+  <association id="26">    
+    <end type="SOURCE" refId="10" navigable="false">      
+      <attribute id="27" name="undone"/>      
+      <multiplicity id="28" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="29">    
+    <end type="SOURCE" refId="10" navigable="false">      
+      <attribute id="30" name="shapes"/>      
+      <multiplicity id="31" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="19" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="32">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="13"/>  
+  </dependency>  
+  <realization id="33">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="18"/>  
+  </realization>  
+  <association id="34">    
+    <end type="SOURCE" refId="5" navigable="false">      
+      <attribute id="35" name="shape"/>      
+      <multiplicity id="36" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="19" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="37">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="13"/>  
+  </generalization>  
+  <dependency id="38">    
+    <bendpoint x="83" y="937"/>    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="12"/>  
+  </dependency>  
+  <generalization id="39">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="13"/>  
+  </generalization>  
+  <dependency id="40">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="13"/>  
+  </dependency>  
+  <dependency id="41">    
+    <bendpoint x="472" y="123"/>    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="10"/>  
+  </dependency>  
+  <generalization id="42">    
+    <end type="SOURCE" refId="15"/>    
+    <end type="TARGET" refId="13"/>  
+  </generalization>  
+  <realization id="43">    
+    <bendpoint x="1342" y="123"/>    
+    <bendpoint x="1264" y="413"/>    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="6"/>  
+  </realization>  
+  <dependency id="44">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="19"/>  
+  </dependency>  
+  <generalization id="45">    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="13"/>  
+  </generalization>  
+  <generalization id="46">    
+    <end type="SOURCE" refId="17"/>    
+    <end type="TARGET" refId="13"/>  
+  </generalization>  
+  <dependency id="47">    
+    <bendpoint x="452" y="937"/>    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="8"/>  
+  </dependency>  
+  <association id="48">    
+    <end type="SOURCE" refId="13" navigable="false">      
+      <attribute id="49" name="allshapes"/>      
+      <multiplicity id="50" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="13" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="51">    
+    <end type="SOURCE" refId="14" navigable="false">      
+      <attribute id="52" name="shape"/>      
+      <multiplicity id="53" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="19" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="54">    
+    <bendpoint x="1649" y="123"/>    
+    <bendpoint x="1649" y="413"/>    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="55" name="addShape"/>      
+      <multiplicity id="56" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="57">    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="58" name="oldShape"/>      
+      <multiplicity id="59" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="19" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="60">    
+    <bendpoint x="494" y="937"/>    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="17"/>  
+  </dependency>  
+  <dependency id="61">    
+    <bendpoint x="578" y="937"/>    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="2"/>  
+  </dependency>  
+  <association id="62">    
+    <end type="SOURCE" refId="10" navigable="false">      
+      <attribute id="63" name="done"/>      
+      <multiplicity id="64" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="65">    
+    <bendpoint x="515" y="937"/>    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="12"/>  
+  </dependency>  
+  <association id="66">    
+    <end type="SOURCE" refId="5" navigable="false">      
+      <attribute id="67" name="myDrawingEngine"/>      
+      <multiplicity id="68" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="10" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="69">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="13"/>  
+  </dependency>  
+  <association id="70">    
+    <bendpoint x="1628" y="123"/>    
+    <bendpoint x="1628" y="413"/>    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="71" name="removeShape"/>      
+      <multiplicity id="72" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="73">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="5"/>  
+  </dependency>  
+  <dependency id="74">    
+    <end type="SOURCE" refId="16"/>    
+    <end type="TARGET" refId="19"/>  
+  </dependency>  
+  <dependency id="75">    
+    <bendpoint x="1052" y="937"/>    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="9"/>  
+  </dependency>  
+  <dependency id="76">    
+    <bendpoint x="104" y="937"/>    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="15"/>  
+  </dependency>  
+  <association id="77">    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="78" name="newShape"/>      
+      <multiplicity id="79" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="19" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="80">    
+    <bendpoint x="599" y="937"/>    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="17"/>  
+  </dependency>  
+  <dependency id="81">    
+    <bendpoint x="62" y="937"/>    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="8"/>  
+  </dependency>  
+  <association id="82">    
+    <end type="SOURCE" refId="14" navigable="false">      
+      <attribute id="83" name="myDrawingEngine"/>      
+      <multiplicity id="84" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="10" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="85">    
+    <bendpoint x="1076" y="413"/>    
+    <end type="SOURCE" refId="14"/>    
+    <end type="TARGET" refId="6"/>  
+  </realization>  
+  <dependency id="86">    
+    <bendpoint x="536" y="937"/>    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="9"/>  
+  </dependency>  
+  <dependency id="87">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="14"/>  
+  </dependency>  
+  <dependency id="88">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="19"/>  
+  </dependency>  
+  <generalization id="89">    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="13"/>  
+  </generalization>  
+  <dependency id="90">    
+    <bendpoint x="431" y="937"/>    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="2"/>  
+  </dependency>  
+  <dependency id="91">    
+    <bendpoint x="18" y="937"/>    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="15"/>  
+  </dependency>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>
