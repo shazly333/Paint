@@ -1,13 +1,13 @@
 package eg.edu.alexu.csd.oop.draw.cs;
 
-import java.awt.Canvas;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Stack;
-
 import eg.edu.alexu.csd.oop.draw.DrawingEngine;
 import eg.edu.alexu.csd.oop.draw.Shape;
 import javafx.scene.canvas.GraphicsContext;
+
+import java.awt.*;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Stack;
 
 public class MyDrawingEngine implements DrawingEngine {
 
@@ -135,7 +135,7 @@ public class MyDrawingEngine implements DrawingEngine {
 
     @Override
     public void save(final String path) {
-        JsonSaver.save(path,shapes);
+        Saver.save(path,shapes);
     }
 
     public void removeallshape() {
@@ -145,7 +145,7 @@ public class MyDrawingEngine implements DrawingEngine {
     @Override
     public void load(final String path) {
         try {
-            shapes = JsonLoader.load(path);
+            shapes = Saver.load(path);
         } catch (final Exception e) {}
     }
 

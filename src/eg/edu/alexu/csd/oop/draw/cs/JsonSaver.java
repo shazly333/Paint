@@ -61,6 +61,7 @@ public class JsonSaver {
         colorHash.put("Red",color.getRed());
         colorHash.put("Green",color.getGreen());
         colorHash.put("Blue",color.getBlue());
+        colorHash.put("Opacity",color.getOpacity());
         return doubleMapToJsonValue(colorHash);
     }
     private static Value pointToJsonValue(Point point) {

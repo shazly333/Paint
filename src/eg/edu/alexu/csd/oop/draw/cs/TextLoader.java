@@ -72,7 +72,8 @@ public class TextLoader {
         double colorRed = readDouble();
         double colorGreen = readDouble();
         double colorBlue = readDouble();
-        Color color = Color.color(colorRed,colorGreen,colorBlue);
+        double colorOptacity = readDouble();
+        Color color = Color.color(colorRed,colorGreen,colorBlue,colorOptacity);
         return color;
     }
     private static TheShape readTheShape() throws IOException {

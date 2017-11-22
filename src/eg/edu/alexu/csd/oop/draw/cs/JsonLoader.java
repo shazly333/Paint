@@ -81,7 +81,7 @@ public class JsonLoader {
         if(colorValue instanceof BooleanValue)
             return null;
         Map<String, Double> colorMap = jsonObjectValueToDoubleMap(colorValue);
-        Color color = Color.color(colorMap.get("Red"),colorMap.get("Green"),colorMap.get("Blue"));
+        Color color = Color.color(colorMap.get("Red"),colorMap.get("Green"),colorMap.get("Blue"),colorMap.get("Opacity"));
         return color;
     }
     private static Point jsonObjectToPoint(Value pointValue){

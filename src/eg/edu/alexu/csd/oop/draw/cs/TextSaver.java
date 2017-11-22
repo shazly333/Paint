@@ -3,7 +3,7 @@ package eg.edu.alexu.csd.oop.draw.cs;
 import eg.edu.alexu.csd.oop.draw.Shape;
 import javafx.scene.paint.Color;
 
-import java.awt.*;
+import java.awt.Point;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -63,6 +63,7 @@ public class TextSaver {
         writeDouble(color.getRed());
         writeDouble(color.getGreen());
         writeDouble(color.getBlue());
+        writeDouble(color.getOpacity());
     }
     private static void writeInt(int n) throws IOException {
         outstream.write(Integer.toString(n)+"\n");
