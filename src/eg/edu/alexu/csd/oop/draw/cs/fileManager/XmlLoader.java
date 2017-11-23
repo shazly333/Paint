@@ -64,13 +64,12 @@ public class XmlLoader {
         Double green = Double.parseDouble(colorElement.getAttribute("green"));
         Double blue = Double.parseDouble(colorElement.getAttribute("blue"));
         Double opacity = Double.parseDouble(colorElement.getAttribute("opacity"));
-        return Color.color(red,blue,green,opacity);
+        return Color.color(red,green,blue,opacity);
     }
     private static TheShape readTheShape(Element shapeElement) {
         if(!isExist(shapeElement))
             return null;
         String shapeClass = shapeElement.getAttribute("class");
-        System.out.println(shapeClass);
         TheShape theShape = TheShape.shapesFactory(shapeClass);
         Point position = readPoint((Element) shapeElement.getElementsByTagName("point").item(0));
         if(position != null)
