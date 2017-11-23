@@ -265,6 +265,8 @@ public class Controller {
             plugins.clear();
             savepath = "";
             shape_combo.setValue("Select Your Shape");
+            selection_mode = 0;
+            selectedshapes.clear();
         }
     }
     public void  undo()
@@ -286,6 +288,7 @@ public class Controller {
 
     public void  release_canvs()
     {
+        System.out.println();
         // System.out.println(engine.getShapes().size());
         if(check_fist_excute == 0&&selection_mode == 0&&!is_plugin(shape_combo.getValue())&&!shape_combo.getValue().equals("Triangle"))
         {
@@ -434,7 +437,7 @@ public class Controller {
                 if(shape.getPosition().x>=newtriangle.pos.x&&shape.getPosition().x<=newtriangle.second_point.x&&shape.getPosition().y>=newtriangle.pos.y&&shape.getPosition().y<=newtriangle.second_point.y)
                 {
                     selectedshapes.add(shape);
-                    System.out.println(1);
+                    //      System.out.println(1);
                 }
             }
 
@@ -466,6 +469,7 @@ public class Controller {
             selection_mode = 0;
             new_shape.setPosition (new Point((int)globalX,(int) globalY));
             new_shape.set_second_position ( new Point((int) startX, (int) startY));
+            System.out.println(new_shape.second_point.x);
             new_shape.setColor(color.getValue());
             new_shape.setFillColor(fillcolor.getValue());
             engine.permatlyAddShape(new_shape);
@@ -535,6 +539,8 @@ public class Controller {
     public void removeall()
     {
         final int numberOfShapes = engine.getShapes().length;
+        selection_mode = 0;
+        selectedshapes.clear();
         while(engine.getShapes().length!=0)
         {
             engine.removeShape(engine.getShapes()[0]);
@@ -661,6 +667,14 @@ public class Controller {
                 newposition = movedshapes.get(i).thirdPoint;
                 newposition= setpoint(newposition, moveDirection);
                 movedshapes.get(i).thirdPoint = newposition;
+            }
+            else if(movedshapes.get(i).getClass().getSimpleName().equals("Linesegment"))
+            {
+                Point newposition =new Point();
+                newposition = new Point(movedshapes.get(i).getProperties().get("end x").intValue(),movedshapes.get(i).getProperties().get("end y").intValue());
+                newposition= setpoint(newposition, moveDirection);
+                movedshapes.get(i).set_second_position(newposition);
+
             }
             Point newposition =new Point();
             newposition = movedshapes.get(i).getPosition();

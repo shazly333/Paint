@@ -1,12 +1,12 @@
 package eg.edu.alexu.csd.oop.draw.cs.shapes;
 
-import eg.edu.alexu.csd.oop.draw.Shape;
-import javafx.scene.canvas.GraphicsContext;
-
-import java.awt.*;
+import java.awt.Point;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
+
+import eg.edu.alexu.csd.oop.draw.Shape;
+import javafx.scene.canvas.GraphicsContext;
 
 
 public abstract class TheShape implements Shape {
