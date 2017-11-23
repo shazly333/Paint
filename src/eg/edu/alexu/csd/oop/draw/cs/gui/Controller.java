@@ -3,9 +3,8 @@ package eg.edu.alexu.csd.oop.draw.cs.gui;
 import eg.edu.alexu.csd.oop.draw.DrawingEngine;
 import eg.edu.alexu.csd.oop.draw.Shape;
 import eg.edu.alexu.csd.oop.draw.cs.drawingengine.MyDrawingEngine;
+import eg.edu.alexu.csd.oop.draw.cs.shapes.*;
 import eg.edu.alexu.csd.oop.draw.cs.shapes.Rectangle;
-import eg.edu.alexu.csd.oop.draw.cs.shapes.TheShape;
-import eg.edu.alexu.csd.oop.draw.cs.shapes.Triangle;
 import javafx.application.Platform;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
@@ -39,6 +38,21 @@ import java.util.jar.JarFile;
 
 public class Controller {
     final MyDrawingEngine engine =new MyDrawingEngine();
+    private void addFirstlySupportedShapes()
+    {
+        final Circle circle = new Circle();
+        final Square square = new Square();
+        final Ellipse ellipse = new Ellipse();
+        final Linesegment linesegment = new Linesegment();
+        final eg.edu.alexu.csd.oop.draw.cs.shapes.Rectangle rectangle = new eg.edu.alexu.csd.oop.draw.cs.shapes.Rectangle();
+        final Triangle triangle = new Triangle();
+        engine.addSupportedShapes(circle.getClass());
+        engine.addSupportedShapes(square.getClass());
+        engine.addSupportedShapes(ellipse.getClass());
+        engine.addSupportedShapes(linesegment.getClass());
+        engine.addSupportedShapes(rectangle.getClass());
+        engine.addSupportedShapes(triangle.getClass());
+    }
     TheShape final_shape = null;
     String savepath = "";
     @FXML
@@ -87,6 +101,7 @@ public class Controller {
     public void initialize() {
         //  updcol.setValue(null);
         // updfillcol.setValue(null);
+        addFirstlySupportedShapes();
         toolBar.setDisable(true);
         shape_combo.setPromptText("Select Your Shape");
         fill_combo(engine);
@@ -149,7 +164,6 @@ public class Controller {
             try {
                 newshape = (TheShape) shape.clone();
             } catch (final CloneNotSupportedException e1) {
-                // TODO Auto-generated catch block
                 e1.printStackTrace();
             }
             final Map<String, Double> newprop = new HashMap<String, Double>();
@@ -204,7 +218,7 @@ public class Controller {
                 /*if(cl.newInstance() instanceof Shape){
                     System.out.println(cl.getSimpleName());
                 }*/
-                engine.setSupportedShapes(cl);
+                engine.addSupportedShapes(cl);
                 plugins.add(cl);
                 fill_combo(engine);
                 System.out.println(engine.getSupportedShapes().size());

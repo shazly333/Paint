@@ -7,7 +7,6 @@ import eg.edu.alexu.csd.oop.draw.cs.commands.Command;
 import eg.edu.alexu.csd.oop.draw.cs.commands.RemoveShape;
 import eg.edu.alexu.csd.oop.draw.cs.commands.UpdateShape;
 import eg.edu.alexu.csd.oop.draw.cs.fileManager.Saver;
-import eg.edu.alexu.csd.oop.draw.cs.shapes.*;
 import javafx.scene.canvas.GraphicsContext;
 
 import java.awt.*;
@@ -24,26 +23,8 @@ public class MyDrawingEngine implements DrawingEngine {
     private final Canvas canvas = new Canvas();
     private final LinkedList<Command> done = new LinkedList();
     private final Stack<Command> undone = new Stack<>();
-    public MyDrawingEngine() {
-        addFirstlySupportedShapes();
-    }
-    private void addFirstlySupportedShapes()
-    {
-        final Circle circle = new Circle();
-        final Square square = new Square();
-        final Ellipse ellipse = new Ellipse();
-        final Linesegment linesegment = new Linesegment();
-        final eg.edu.alexu.csd.oop.draw.cs.shapes.Rectangle rectangle = new eg.edu.alexu.csd.oop.draw.cs.shapes.Rectangle();
-        final Triangle triangle = new Triangle();
-        supportedShapes.add(circle.getClass());
-        supportedShapes.add(square.getClass());
-        supportedShapes.add(ellipse.getClass());
-        supportedShapes.add(linesegment.getClass());
-        supportedShapes.add(rectangle.getClass());
-        supportedShapes.add(triangle.getClass());
 
-    }
-    public void setSupportedShapes(final Class<? extends Shape> newshape) {
+    public void addSupportedShapes(final Class<? extends Shape> newshape) {
         this.supportedShapes.add(supportedShapes.size(),newshape);
     }
     public void setShapes(final LinkedList<Shape> newShapes) {

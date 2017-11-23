@@ -73,10 +73,8 @@ public abstract class TheShape implements Shape {
         try {
             newshape = this.getClass().newInstance();
         } catch (final InstantiationException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         } catch (final IllegalAccessException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         }
         newshape.setColor(this.col);
