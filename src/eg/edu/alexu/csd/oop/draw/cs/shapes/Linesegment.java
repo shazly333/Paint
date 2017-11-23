@@ -17,6 +17,9 @@ public class Linesegment extends TheShape {
         this.prop.put(Startyy, 2.0);
         this.pos.x = prop.get(startxx).intValue();
         this.pos.y = prop.get(Startyy).intValue();
+        this.second_point.x = prop.get(endxx).intValue();
+        this.second_point.y = prop.get(endyy).intValue();
+
     }
 
     public Linesegment (final double endx, final double endy, final double startx, final double Starty) {
@@ -26,19 +29,24 @@ public class Linesegment extends TheShape {
         this.prop.put(endyy, endy);
         this.pos.x = prop.get(startxx).intValue();
         this.pos.y = prop.get(Startyy).intValue();
+        this.second_point.x = prop.get(endxx).intValue();
+        this.second_point.y = prop.get(endyy).intValue();
+
     }
     @Override
     public void setPosition(final Point position) {
         pos = position;
         this.prop.put(startxx, (double) this.pos.x);
         this.prop.put(Startyy, (double) this.pos.y);
+        this.prop.put(endxx, (double) second_point.x);
+        this.prop.put(endyy, (double) second_point.y);
     }
     @Override
     public void set_second_position(final Point point)
     {
         second_point = point;
-        this.prop.put(endxx, (double) this.second_point.x);
-        this.prop.put(endyy, (double) this.second_point.y);
+        this.prop.put(endxx, (double) point.x);
+        this.prop.put(endyy, (double) point.y);
     }
 
     @Override

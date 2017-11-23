@@ -1,5 +1,18 @@
 package eg.edu.alexu.csd.oop.draw.cs.gui;
 
+import java.awt.Point;
+import java.io.File;
+import java.io.IOException;
+import java.net.URL;
+import java.net.URLClassLoader;
+import java.util.ArrayList;
+import java.util.Enumeration;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.jar.JarEntry;
+import java.util.jar.JarFile;
+
 import eg.edu.alexu.csd.oop.draw.DrawingEngine;
 import eg.edu.alexu.csd.oop.draw.Shape;
 import eg.edu.alexu.csd.oop.draw.cs.drawingengine.MyDrawingEngine;
@@ -12,30 +25,29 @@ import javafx.fxml.FXML;
 import javafx.scene.Scene;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
-import javafx.scene.control.*;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.Button;
+import javafx.scene.control.ColorPicker;
+import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
+import javafx.scene.control.ListView;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
-import javafx.scene.input.*;
-import javafx.scene.layout.*;
+import javafx.scene.control.ToolBar;
+import javafx.scene.input.KeyCode;
+import javafx.scene.input.KeyCodeCombination;
+import javafx.scene.input.KeyCombination;
+import javafx.scene.input.KeyEvent;
+import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.HBox;
+import javafx.scene.layout.Pane;
+import javafx.scene.layout.StackPane;
+import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
-
-import java.awt.*;
-import java.io.File;
-import java.io.IOException;
-import java.net.URL;
-import java.net.URLClassLoader;
-import java.util.ArrayList;
-import java.util.Enumeration;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Map.Entry;
-import java.util.jar.JarEntry;
-import java.util.jar.JarFile;
 
 public class Controller {
     final MyDrawingEngine engine =new MyDrawingEngine();
@@ -251,6 +263,8 @@ public class Controller {
             plugins.clear();
             savepath = "";
             shape_combo.setValue("Select Your Shape");
+            selection_mode = 0;
+            selectedshapes.clear();
         }
     }
     public void  undo()
@@ -272,6 +286,7 @@ public class Controller {
 
     public void  release_canvs()
     {
+        System.out.println();
         // System.out.println(engine.getShapes().size());
         if(check_fist_excute == 0&&selection_mode == 0&&!is_plugin(shape_combo.getValue())&&!shape_combo.getValue().equals("Triangle"))
         {
@@ -420,7 +435,7 @@ public class Controller {
                 if(shape.getPosition().x>=newtriangle.pos.x&&shape.getPosition().x<=newtriangle.second_point.x&&shape.getPosition().y>=newtriangle.pos.y&&shape.getPosition().y<=newtriangle.second_point.y)
                 {
                     selectedshapes.add(shape);
-                    System.out.println(1);
+                    //      System.out.println(1);
                 }
             }
 
@@ -452,6 +467,7 @@ public class Controller {
             selection_mode = 0;
             new_shape.setPosition (new Point((int)globalX,(int) globalY));
             new_shape.set_second_position ( new Point((int) startX, (int) startY));
+            System.out.println(new_shape.second_point.x);
             new_shape.setColor(color.getValue());
             new_shape.setFillColor(fillcolor.getValue());
             engine.permatlyAddShape(new_shape);
@@ -521,6 +537,8 @@ public class Controller {
     public void removeall()
     {
         final int numberOfShapes = engine.getShapes().length;
+        selection_mode = 0;
+        selectedshapes.clear();
         while(engine.getShapes().length!=0)
         {
             engine.removeShape(engine.getShapes()[0]);
@@ -647,6 +665,14 @@ public class Controller {
                 newposition = movedshapes.get(i).thirdPoint;
                 newposition= setpoint(newposition, moveDirection);
                 movedshapes.get(i).thirdPoint = newposition;
+            }
+            else if(movedshapes.get(i).getClass().getSimpleName().equals("Linesegment"))
+            {
+                Point newposition =new Point();
+                newposition = new Point(movedshapes.get(i).getProperties().get("end x").intValue(),movedshapes.get(i).getProperties().get("end y").intValue());
+                newposition= setpoint(newposition, moveDirection);
+                movedshapes.get(i).set_second_position(newposition);
+
             }
             Point newposition =new Point();
             newposition = movedshapes.get(i).getPosition();
